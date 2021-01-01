@@ -33,7 +33,16 @@ module.exports = {
         shd6: "#FFE4CF",
         shd7: "#FFF2E7",
       },
-      
+      success:{
+        DEFAULT:"#07B255",
+        shd1: "#09D766",
+        shd2: "#14F579",
+        shd3: "#3BF790",
+        shd4: "#62F8A6",
+        shd5: "#89FABC",
+        shd6: "#B1FCD2",
+        shd7: "#D8FDE9",
+      }
     },
     borderRadius: {
       none: "0",
