@@ -2,5 +2,50 @@
 @tailwind base;
 @tailwind components;
 
-@import "typography.css";
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2)
+		format('woff2');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2)
+		format('woff2');
+}
+
+body {
+	@apply m-12 font-sans;
+}
+
+.text-hero-large {
+	@apply text-3xl md:text-4xl;
+}
+
+.text-hero-large-bold {
+	@apply font-bold text-3xl md:text-4xl;
+}
+
+.text-hero-medium {
+	@apply text-2xl md:text-3xl;
+}
+
+.text-hero-medium-bold {
+	@apply font-bold text-2xl md:text-3xl;
+}
+
+.text-hero-small {
+	@apply text-lg md:text-2xl;
+}
+
+.text-hero-small-bold {
+	@apply font-bold text-lg md:text-2xl;
+}
+
+
 @tailwind utilities;

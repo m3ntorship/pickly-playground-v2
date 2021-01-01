@@ -366,7 +366,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Roboto; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -582,7 +582,121 @@ video {
   }
 }
 
-@import "typography.css";
+@font-face {
+  font-family: 'Roboto';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2)
+		format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2)
+		format('woff2');
+}
+
+body {
+  font-family: Roboto;
+  margin: 3rem;
+}
+
+.text-hero-large {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: -.05em;
+}
+
+@media (min-width: 768px) {
+  .text-hero-large {
+    font-size: 3rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+  }
+}
+
+.text-hero-large-bold {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: -.05em;
+}
+
+@media (min-width: 768px) {
+  .text-hero-large-bold {
+    font-size: 3rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+  }
+}
+
+.text-hero-medium {
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -.05em;
+}
+
+@media (min-width: 768px) {
+  .text-hero-medium {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+  }
+}
+
+.text-hero-medium-bold {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -.05em;
+}
+
+@media (min-width: 768px) {
+  .text-hero-medium-bold {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+  }
+}
+
+.text-hero-small {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .text-hero-small {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+  }
+}
+
+.text-hero-small-bold {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .text-hero-small-bold {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: -.05em;
+  }
+}
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -3889,15 +4003,7 @@ video {
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Roboto;
 }
 
 .font-thin {
@@ -4148,29 +4254,29 @@ video {
   height: 100vh;
 }
 
-.text-sm {
-  font-size: 14px;
-  line-height: 20px;
+.text-lg {
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
-.text-base {
-  font-size: 16px;
-  line-height: 24px;
+.text-xl {
+  font-size: 1.75rem;
+  line-height: 1.4;
 }
 
-.text-md {
+.text-2xl {
   font-size: 2rem;
   line-height: 1.3;
   letter-spacing: -.05em;
 }
 
-.text-lg {
+.text-3xl {
   font-size: 2.5rem;
   line-height: 1.3;
   letter-spacing: -.05em;
 }
 
-.text-xl {
+.text-4xl {
   font-size: 3rem;
   line-height: 1.3;
   letter-spacing: -.05em;
@@ -20848,15 +20954,7 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .sm\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Roboto;
   }
 
   .sm\:font-thin {
@@ -21107,29 +21205,29 @@ video {
     height: 100vh;
   }
 
-  .sm\:text-sm {
-    font-size: 14px;
-    line-height: 20px;
+  .sm\:text-lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
   }
 
-  .sm\:text-base {
-    font-size: 16px;
-    line-height: 24px;
+  .sm\:text-xl {
+    font-size: 1.75rem;
+    line-height: 1.4;
   }
 
-  .sm\:text-md {
+  .sm\:text-2xl {
     font-size: 2rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .sm\:text-lg {
+  .sm\:text-3xl {
     font-size: 2.5rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .sm\:text-xl {
+  .sm\:text-4xl {
     font-size: 3rem;
     line-height: 1.3;
     letter-spacing: -.05em;
@@ -37729,15 +37827,7 @@ video {
   }
 
   .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .md\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Roboto;
   }
 
   .md\:font-thin {
@@ -37988,29 +38078,29 @@ video {
     height: 100vh;
   }
 
-  .md\:text-sm {
-    font-size: 14px;
-    line-height: 20px;
+  .md\:text-lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
   }
 
-  .md\:text-base {
-    font-size: 16px;
-    line-height: 24px;
+  .md\:text-xl {
+    font-size: 1.75rem;
+    line-height: 1.4;
   }
 
-  .md\:text-md {
+  .md\:text-2xl {
     font-size: 2rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .md\:text-lg {
+  .md\:text-3xl {
     font-size: 2.5rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .md\:text-xl {
+  .md\:text-4xl {
     font-size: 3rem;
     line-height: 1.3;
     letter-spacing: -.05em;
@@ -54610,15 +54700,7 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .lg\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Roboto;
   }
 
   .lg\:font-thin {
@@ -54869,29 +54951,29 @@ video {
     height: 100vh;
   }
 
-  .lg\:text-sm {
-    font-size: 14px;
-    line-height: 20px;
+  .lg\:text-lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
   }
 
-  .lg\:text-base {
-    font-size: 16px;
-    line-height: 24px;
+  .lg\:text-xl {
+    font-size: 1.75rem;
+    line-height: 1.4;
   }
 
-  .lg\:text-md {
+  .lg\:text-2xl {
     font-size: 2rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .lg\:text-lg {
+  .lg\:text-3xl {
     font-size: 2.5rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .lg\:text-xl {
+  .lg\:text-4xl {
     font-size: 3rem;
     line-height: 1.3;
     letter-spacing: -.05em;
@@ -71491,15 +71573,7 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Roboto;
   }
 
   .xl\:font-thin {
@@ -71750,29 +71824,29 @@ video {
     height: 100vh;
   }
 
-  .xl\:text-sm {
-    font-size: 14px;
-    line-height: 20px;
+  .xl\:text-lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
   }
 
-  .xl\:text-base {
-    font-size: 16px;
-    line-height: 24px;
+  .xl\:text-xl {
+    font-size: 1.75rem;
+    line-height: 1.4;
   }
 
-  .xl\:text-md {
+  .xl\:text-2xl {
     font-size: 2rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .xl\:text-lg {
+  .xl\:text-3xl {
     font-size: 2.5rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .xl\:text-xl {
+  .xl\:text-4xl {
     font-size: 3rem;
     line-height: 1.3;
     letter-spacing: -.05em;
@@ -88372,15 +88446,7 @@ video {
   }
 
   .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
-  .\32xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .\32xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Roboto;
   }
 
   .\32xl\:font-thin {
@@ -88631,29 +88697,29 @@ video {
     height: 100vh;
   }
 
-  .\32xl\:text-sm {
-    font-size: 14px;
-    line-height: 20px;
+  .\32xl\:text-lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
   }
 
-  .\32xl\:text-base {
-    font-size: 16px;
-    line-height: 24px;
+  .\32xl\:text-xl {
+    font-size: 1.75rem;
+    line-height: 1.4;
   }
 
-  .\32xl\:text-md {
+  .\32xl\:text-2xl {
     font-size: 2rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .\32xl\:text-lg {
+  .\32xl\:text-3xl {
     font-size: 2.5rem;
     line-height: 1.3;
     letter-spacing: -.05em;
   }
 
-  .\32xl\:text-xl {
+  .\32xl\:text-4xl {
     font-size: 3rem;
     line-height: 1.3;
     letter-spacing: -.05em;
