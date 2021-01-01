@@ -13,6 +13,27 @@ module.exports = {
         shd6: "#DCD2F9",
         shd7: "#EDE8FC",
       },
+      accent:{
+        DEFAULT: "#00A8E8",
+        shd1: "#0AB9FF",
+        shd2: "#2DC3FF",
+        shd3: "#50CDFF",
+        shd4: "#73D7FF",
+        shd5: "#96E1FF",
+        shd6: "#B9EBFF",
+        shd7: "#DCF5FF",
+      },
+      warning:{
+        DEFAULT:"#FF933B",
+        shd1: "#FFA255",
+        shd2: "#FFAF6E",
+        shd3: "#FFBC86",
+        shd4: "#FFCA9E",
+        shd5: "#FFD7B6",
+        shd6: "#FFE4CF",
+        shd7: "#FFF2E7",
+      },
+      
     },
     borderRadius: {
       none: "0",
