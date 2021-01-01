@@ -68,7 +68,9 @@ module.exports = {
         shd7: "#F2F9FF",
         bg: "#FAFAFC",
         bg2: "#F8F7FA",
-        white: "#FFFFFF"
+      },
+      white:{
+        DEFAULT:"#FFFFFF"
       }
     },
     borderRadius: {
