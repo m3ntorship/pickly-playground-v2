@@ -1,0 +1,6 @@
+.hero-large {
+  @apply text-lg md:text-xl;
+}
+.hero-large-bold {
+  @apply text-xl font-bold;
+}

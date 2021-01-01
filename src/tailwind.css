@@ -1,0 +1,6 @@
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+
+@import "typography.css";
+@tailwind utilities;
