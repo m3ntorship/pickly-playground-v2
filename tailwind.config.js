@@ -88,12 +88,33 @@ module.exports = {
       none: "none",
     },
     fontSize: {
-      sm: ["14px", "20px"],
-      base: ["16px", "24px"],
-      md: ["2rem", { lineHeight: "1.3", letterSpacing: "-.05em" }],
-      lg: ["2.5rem", { lineHeight: "1.3", letterSpacing: "-.05em" }],
-      xl: ["3rem", { lineHeight: "1.3", letterSpacing: "-.05em" }],
+      "2xs": [".625rem", "1.4"], //10px
+      xs: [".75rem", "1.4"], //12px
+      sm: [".875rem", "1.4"], //14px
+      base: ["1rem", "1.4"], //16px
+      md: ["1.25rem", "1.4"], //20px
+      lg: ["1.5rem", "1.4"], //24px
+      xl: ["1.75rem", "1.4"], //28px
+      "2xl": ["2rem", { lineHeight: "1.3", letterSpacing: "-.05em" }], //32px
+      "3xl": ["2.5rem", { lineHeight: "1.3", letterSpacing: "-.05em" }], //40px
+      "4xl": ["3rem", { lineHeight: "1.3", letterSpacing: "-.05em" }], //48px
+      "8xl": ["6rem", { lineHeight: "1.3", letterSpacing: "-.05em" }], //96px
     },
+    extend: {
+      spacing: {
+        '3xs': '.125rem',
+        'xxs': '.25rem',
+        'xs': '.5rem',
+        's': '.75rem',
+        'm':'1rem',
+        'l': '1.5rem',
+        'xl': '2rem',
+        'xxl': '2.5rem',
+        '3xl': '3rem',
+        '4xl':'4rem',
+        '5xl':'8rem'
+      }
+    }
   },
   variants: {
     extend: {},
