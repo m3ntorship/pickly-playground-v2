@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="dist/tailwind.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<!-- Colors -->
-		<section></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css" />
 
-		<!-- Typography -->
-		<section>
-			<!-- Heros  -->
-			<div class="grid gap-y-12">
+  </head>
+  <body style= "background-color:#e5e5e5" >
+    <!-- Colors -->
+    <section></section>
+
+    <!-- Typography -->
+    <section>
+      <!-- Heros  -->
+      <div class="grid gap-y-12">
 				<div>
 					<p>text-hero-large</p>
 					<h2 class="text-hero-large">
@@ -57,14 +58,106 @@
 					</h2>
 				</div>
 			</div>
-			<!-- Titles -->
-			<div></div>
-		</section>
-		<!-- Radius -->
-		<section></section>
-		<!-- Shadows -->
-		<section></section>
-		<!-- Spacing -->
-		<section></section>
-	</body>
+      <!-- Titles -->
+      <div></div>
+    </section>
+    <!-- Radius -->
+    <section class=" my-8 px-8 ">
+      <h2 class="text-xl mb-xl" >
+        Radius
+      </h2>
+      <div class="flex justify-evenly">
+        <div class="items-center ">
+          <p class="text-sm mb-4">Large Radius (16)</p>
+          <div class=" bg-primary h-5xl rounded-lg "></div>
+        </div>
+
+        <div class="items-center ">
+          <p class="text-sm mb-4">Large Radius (8)</p>
+          <div class=" bg-primary h-5xl rounded-md "></div>
+        </div>
+
+        <div class="items-center  ">
+          <p class="text-sm mb-4">Large Radius (4)</p>
+          <div class=" bg-primary h-5xl rounded-sm "></div>
+        </div>
+      </div>
+    </section>
+    <!-- Shadows -->
+    <section class=" my-8 px-8 " >
+      <h2 class="text-xl mb-xl" >
+        Shadows
+      </h2>
+      <div class="flex justify-evenly">
+        <div class="items-center ">
+          <p class="text-sm mb-4">soft shadow</p>
+          <div style="height:250px;width:250px;background-color: white;" class="shadow-soft  rounded-md "></div>
+        </div>
+
+        <div class="items-center ">
+          <p class="text-sm mb-4">dark shadow</p>
+          <div style="height:250px;width:250px;background-color: white;" class="shadow-dark  rounded-md "></div>
+        </div>
+
+        <div class="items-center  ">
+          <p class="text-sm mb-4">heavy shadow</p>
+          <div style="height:250px;width:250px;background-color: white;" class=" shadow-heavy  rounded-md "></div>
+        </div>
+      </div>
+    </section>
+    <!-- Spacing -->
+    <section class=" my-8 px-8 ">
+      <h2 class="text-xl mb-xl" >
+        spacing
+      </h2>
+      <div>
+        <div class="flex justify-evenly ">
+          <div class="items-center ">
+            <p class="text-sm">3XS (2)</p>
+            <div class=" bg-primary h-3xs w-3xs "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">XXS (4)</p>
+            <div class=" bg-primary h-xxs w-xxs "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">XS (8)</p>
+            <div class=" bg-primary h-xs w-xs "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">S (12)</p>
+            <div class=" bg-primary h-s w-s "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">M (16)</p>
+            <div class=" bg-primary h-m w-m "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">L (24)</p>
+            <div class=" bg-primary h-l w-l "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">xL (32)</p>
+            <div class=" bg-primary h-xl w-xl"></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">XXL (40)</p>
+            <div class=" bg-primary h-xxl w-xxl "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">3XL (48)</p>
+            <div class=" bg-primary h-3xl w-3xl "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">4XL (64)</p>
+            <div class=" bg-primary h-4xl w-4xl "></div>
+          </div>
+          <div class="items-center ">
+            <p class="text-sm">5XL (128)</p>
+            <div class=" bg-primary h-5xl w-5xl "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
 </html>

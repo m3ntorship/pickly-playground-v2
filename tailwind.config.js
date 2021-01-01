@@ -38,7 +38,22 @@ module.exports = {
 		},
 		fontFamily: {
 			sans: ['Roboto']
-		}
+		},
+     extend: {
+      spacing: {
+        '3xs': '.125rem',
+        'xxs': '.25rem',
+        'xs': '.5rem',
+        's': '.75rem',
+        'm':'1rem',
+        'l': '1.5rem',
+        'xl': '2rem',
+        'xxl': '2.5rem',
+        '3xl': '3rem',
+        '4xl':'4rem',
+        '5xl':'8rem'
+      }
+    }
 	},
 	variants: {
 		extend: {}
