@@ -56,9 +56,9 @@ module.exports = {
         '5xl':'8rem'
       }
     }
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+	},
+	variants: {
+		extend: {}
+	},
+	plugins: []
 };
