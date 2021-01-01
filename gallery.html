@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/tailwind.css" />
     <title>Document</title>
     <link rel="stylesheet" href="dist/tailwind.css" />
 
@@ -12,11 +13,75 @@
     <section></section>
 
     <!-- Typography -->
-    <section>
+
+    <section class="p-16 md:p-36 grid grid-cols-1 md:grid-cols-2">
+      <h2 class="text-3xl md:text-8xl col-span-2 mb-16 md:mb-36">Typography</h2>
       <!-- Heros  -->
-      <div></div>
+      <div class="md:pr-36"></div>
       <!-- Titles -->
-      <div></div>
+      <div class="md:pl-36 md:border-l border-grey">
+        <!-- all text titles will be in p tag for the sake of demonsteration-->
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-title</h4>
+          <p class="text-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-title-bold</h4>
+          <p class="text-title-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-subtitle</h4>
+          <p class="text-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-subtitle-bold</h4>
+          <p class="text-subtitle-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-title-small</h4>
+          <p class="text-title-small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-title-small-bold</h4>
+          <p class="text-title-small-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-body</h4>
+          <p class="text-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-body-small</h4>
+          <p class="text-body-small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-link</h4>
+          <p class="text-link">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div class="mb-10">
+          <h4 class="text-subtitle text-grey mb-6">text-caption</h4>
+          <p class="text-caption">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+      </div>
     </section>
     <!-- Radius -->
     <section class=" my-8 px-8 ">
