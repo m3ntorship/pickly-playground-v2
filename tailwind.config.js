@@ -42,6 +42,16 @@ module.exports = {
         shd5: "#89FABC",
         shd6: "#B1FCD2",
         shd7: "#D8FDE9",
+      },
+      error:{
+        DEFAULT: "#FE544A",
+        shd1: "#FE675F",
+        shd2: "#FE7D76",
+        shd3: "#FE938D",
+        shd4: "#FFA8A4",
+        shd5: "#FFBEBA",
+        shd6: "#FFD4D1",
+        shd7: "#FFE9E8",
       }
     },
     borderRadius: {
