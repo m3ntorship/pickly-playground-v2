@@ -52,6 +52,23 @@ module.exports = {
         shd5: "#FFBEBA",
         shd6: "#FFD4D1",
         shd7: "#FFE9E8",
+      },
+      dark:{
+        DEFAULT: "#00171F",
+        grey: "#5B6366",
+      },
+      grey:{
+        DEFAULT: "#8D9A9E",
+        shd1: "#94ACB5",
+        shd2: "#A3BBC2",
+        shd3: "#B6CDD6",
+        shd4: "#C5DCE3",
+        shd5: "#D5E9F2",
+        shd6: "#E9F4F7",
+        shd7: "#F2F9FF",
+        bg: "#FAFAFC",
+        bg2: "#F8F7FA",
+        white: "#FFFFFF"
       }
     },
     borderRadius: {
