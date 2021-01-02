@@ -11,5 +11,9 @@ module.exports = {
     filename: "js/[name].bundle.js",
     path: path.resolve(__dirname, "../dist"),
   },
-  plugins: [new webpack.ProgressPlugin(), plugins.MiniCssExtractPlugin],
+  plugins: [
+    new webpack.ProgressPlugin(),
+    plugins.MiniCssExtractPlugin,
+    plugins.HtmlWebpackPlugin,
+  ],
 };
