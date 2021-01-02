@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./*.html"],
+  purge: ["./src/*.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -13,7 +13,7 @@ module.exports = {
         shd6: "#DCD2F9",
         shd7: "#EDE8FC",
       },
-      accent:{
+      accent: {
         DEFAULT: "#00A8E8",
         shd1: "#0AB9FF",
         shd2: "#2DC3FF",
@@ -23,8 +23,8 @@ module.exports = {
         shd6: "#B9EBFF",
         shd7: "#DCF5FF",
       },
-      warning:{
-        DEFAULT:"#FF933B",
+      warning: {
+        DEFAULT: "#FF933B",
         shd1: "#FFA255",
         shd2: "#FFAF6E",
         shd3: "#FFBC86",
@@ -33,8 +33,8 @@ module.exports = {
         shd6: "#FFE4CF",
         shd7: "#FFF2E7",
       },
-      success:{
-        DEFAULT:"#07B255",
+      success: {
+        DEFAULT: "#07B255",
         shd1: "#09D766",
         shd2: "#14F579",
         shd3: "#3BF790",
@@ -43,7 +43,7 @@ module.exports = {
         shd6: "#B1FCD2",
         shd7: "#D8FDE9",
       },
-      error:{
+      error: {
         DEFAULT: "#FE544A",
         shd1: "#FE675F",
         shd2: "#FE7D76",
@@ -53,11 +53,11 @@ module.exports = {
         shd6: "#FFD4D1",
         shd7: "#FFE9E8",
       },
-      dark:{
+      dark: {
         DEFAULT: "#00171F",
         grey: "#5B6366",
       },
-      grey:{
+      grey: {
         DEFAULT: "#8D9A9E",
         shd1: "#94ACB5",
         shd2: "#A3BBC2",
@@ -69,9 +69,9 @@ module.exports = {
         bg: "#FAFAFC",
         bg2: "#F8F7FA",
       },
-      white:{
-        DEFAULT:"#FFFFFF"
-      }
+      white: {
+        DEFAULT: "#FFFFFF",
+      },
     },
     borderRadius: {
       none: "0",
@@ -102,22 +102,22 @@ module.exports = {
     },
     extend: {
       spacing: {
-        '3xs': '.125rem',
-        'xxs': '.25rem',
-        'xs': '.5rem',
-        's': '.75rem',
-        'm':'1rem',
-        'l': '1.5rem',
-        'xl': '2rem',
-        'xxl': '2.5rem',
-        '3xl': '3rem',
-        '4xl':'4rem',
-        '5xl':'8rem'
-      }
-    }
-	},
-	variants: {
-		extend: {}
-	},
-	plugins: []
+        "3xs": ".125rem",
+        xxs: ".25rem",
+        xs: ".5rem",
+        s: ".75rem",
+        m: "1rem",
+        l: "1.5rem",
+        xl: "2rem",
+        xxl: "2.5rem",
+        "3xl": "3rem",
+        "4xl": "4rem",
+        "5xl": "8rem",
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 };
