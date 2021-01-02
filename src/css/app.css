@@ -2,4 +2,5 @@
 @import 'tailwindcss/components';
 @import './typography.css';
 @import 'tailwindcss/utilities';
+@import './banner.css';
 @import './buttons.css';
