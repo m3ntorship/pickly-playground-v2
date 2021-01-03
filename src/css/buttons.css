@@ -1,1 +1,36 @@
+.radio__container {
+    @apply block h-6 w-6 relative cursor-pointer;
+    border-radius: 50%;
+}
 
+/* Hide the browser's default radio button */
+.radio__input {
+    @apply opacity-0;
+}
+
+/* Create a custom radio button */
+.radio__checkmark {
+    @apply flex justify-center items-center absolute top-0 left-0 h-6 w-6 bg-white border border-solid border-primary;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio__container:hover .radio__input~.radio__checkmark {
+    @apply bg-grey-shd5;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio__input:checked~.radio__checkmark {
+    @apply bg-primary;
+}
+
+.radio__dot {
+    @apply w-2 h-2 hidden bg-white;
+    border-radius: 50%;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+.radio__input:checked~.radio__checkmark .radio__dot {
+    @apply block;
+}
