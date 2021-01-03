@@ -24,3 +24,6 @@
 .btn-secondary:hover {
   background-color: #fafafc;
 }
+.btn-secondary-disabled {
+  @apply bg-opacity-25 bg-white rounded-full text-primary font-bold outline-none flex items-center justify-center content-center;
+}
