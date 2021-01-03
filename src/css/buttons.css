@@ -1,0 +1,13 @@
+.hoverEffect {
+  border: 3px solid transparent;
+}
+.hoverEffect:hover {
+  background-color: #5f3dc4;
+}
+.hoverEffect:focus {
+  border: #5f3dc4 3px solid;
+  outline: 2px transparent;
+}
+.btn {
+  @apply bg-primary rounded-full text-white font-bold hoverEffect;
+}
