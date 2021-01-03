@@ -9,8 +9,8 @@
   outline: 2px transparent;
 }
 .btn {
-  @apply bg-primary rounded-full text-white font-bold hoverEffect;
+  @apply bg-primary rounded-full text-white font-bold hoverEffect flex items-center justify-center content-center;
 }
 .btn-disabled {
-  @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none;
+  @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center;
 }
