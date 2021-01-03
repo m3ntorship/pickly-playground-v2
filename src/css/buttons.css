@@ -8,9 +8,9 @@
   border: #5f3dc4 3px solid;
   outline: 2px transparent;
 }
-.btn {
+.btn-primary {
   @apply bg-primary rounded-full text-white font-bold hoverEffect flex items-center justify-center content-center;
 }
-.btn-disabled {
+.btn-primary-disabled {
   @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center;
 }
