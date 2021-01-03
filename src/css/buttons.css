@@ -12,7 +12,7 @@
   @apply bg-primary rounded-full text-white font-bold hoverEffect flex items-center justify-center content-center;
 }
 .btn-primary-disabled {
-  @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center;
+  @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
 .btn-secondary {
   @apply text-primary bg-white font-bold border-2 border-primary rounded-full flex items-center justify-center content-center;
@@ -25,5 +25,5 @@
   background-color: #fafafc;
 }
 .btn-secondary-disabled {
-  @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center;
+  @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
