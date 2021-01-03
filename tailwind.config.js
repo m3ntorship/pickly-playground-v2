@@ -94,6 +94,9 @@ module.exports = {
       '4xl': ['3rem', { lineHeight: '1.3', letterSpacing: '-.05em' }], //48px
       '8xl': ['6rem', { lineHeight: '1.3', letterSpacing: '-.05em' }] //96px
     },
+    fontFamily: {
+      sans: ['Roboto']
+    },
     extend: {
       spacing: {
         '3xs': '.125rem',
