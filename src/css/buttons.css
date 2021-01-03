@@ -14,3 +14,13 @@
 .btn-primary-disabled {
   @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center;
 }
+.btn-secondary {
+  @apply text-primary bg-white font-bold border-2 border-primary rounded-full flex items-center justify-center content-center;
+}
+.btn-secondary:focus {
+  border: #5f3dc4 2px solid;
+  outline: 2px transparent;
+}
+.btn-secondary:hover {
+  background-color: #fafafc;
+}
