@@ -1,6 +1,5 @@
 .radio__container {
-    @apply block h-6 w-6 relative cursor-pointer;
-    border-radius: 50%;
+    @apply block h-6 w-6 relative cursor-pointer rounded-full group;
 }
 
 /* Hide the browser's default radio button */
@@ -10,13 +9,12 @@
 
 /* Create a custom radio button */
 .radio__checkmark {
-    @apply flex justify-center items-center absolute top-0 left-0 h-6 w-6 bg-white border border-solid border-primary;
-    border-radius: 50%;
+    @apply flex justify-center items-center absolute top-0 left-0 h-6 w-6 bg-white border border-solid border-primary rounded-full;
 }
 
 /* On mouse-over, add a grey background color */
-.radio__container:hover .radio__input~.radio__checkmark {
-    @apply bg-grey-shd5;
+.radio__checkmark {
+    @apply group-hover:bg-grey-shd5;
 }
 
 /* When the radio button is checked, add a blue background */
@@ -25,8 +23,7 @@
 }
 
 .radio__dot {
-    @apply w-2 h-2 hidden bg-white;
-    border-radius: 50%;
+    @apply w-2 h-2 hidden bg-white rounded-full;
 }
 
 
