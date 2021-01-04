@@ -97,6 +97,13 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto']
     },
+    borderRadius: {
+      none: '0',
+      sm: '0.25rem',
+      md: '0.5rem',
+      lg: '1rem',
+      full: '999px'
+    },
     extend: {
       spacing: {
         '3xs': '.125rem',
@@ -110,12 +117,6 @@ module.exports = {
         '3xl': '3rem',
         '4xl': '4rem',
         '5xl': '8rem'
-      },
-      borderRadius: {
-        none: '0',
-        sm: '0.25rem',
-        md: '0.5rem',
-        lg: '1rem'
       }
     }
   },
