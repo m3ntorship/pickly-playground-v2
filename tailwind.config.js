@@ -117,6 +117,9 @@ module.exports = {
         '3xl': '3rem',
         '4xl': '4rem',
         '5xl': '8rem'
+      },
+      backgroundOpacity: {
+        24: '0.24'
       }
     }
   },

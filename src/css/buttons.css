@@ -1,7 +1,26 @@
-.hoverstate:hover {
+.hover-state:hover {
   background-color: #5f3dc4;
 }
 
+.hover-state-secondary:hover {
+  background-color: #fafafc;
+}
+.opacity {
+  opacity: 0.24;
+}
+
 .btn-primary {
-  @apply bg-primary text-white rounded-full font-bold hoverstate flex items-center justify-center content-center mb-5;
+  @apply bg-primary text-white rounded-full font-bold hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+}
+
+.btn-primary-opacity {
+  @apply bg-primary bg-opacity-24 text-white rounded-full font-bold hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary border border-primary rounded-full font-bold hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
+}
+
+.btn-secondary-opacity {
+  @apply bg-white opacity-25 text-primary border border-primary rounded-full font-bold hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
 }
