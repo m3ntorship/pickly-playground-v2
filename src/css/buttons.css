@@ -1,0 +1,7 @@
+.hoverstate:hover {
+  background-color: #5f3dc4;
+}
+
+.btn-primary {
+  @apply bg-primary text-white rounded-full font-bold hoverstate flex items-center justify-center content-center mb-5;
+}
