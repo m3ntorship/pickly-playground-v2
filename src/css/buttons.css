@@ -55,3 +55,11 @@ input[type='checkbox'],
   visibility: visible;
   background-color: #7048e8;
 }
+
+.default-form {
+  @apply w-72 h-10 border border-grey-shd5 rounded-md placeholder-grey-shd1 text-sm py-2.5 px-4 mb-6;
+}
+
+.success-form {
+  @apply w-72 h-10 border border-success rounded-md placeholder-grey-shd1 text-sm py-2.5 px-4 mb-6;
+}
