@@ -1,22 +1,7 @@
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-}
-
-input[type='checkbox'],
-[type='radio'] {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
 .hover-state:hover {
   background-color: #5f3dc4;
 }
 
-.hover-state-secondary:hover {
-  background-color: #fafafc;
-}
 .opacity {
   opacity: 0.24;
 }
@@ -26,26 +11,23 @@ input[type='checkbox'],
 }
 
 .btn-primary-opacity {
-  @apply bg-primary bg-opacity-24 text-white rounded-full hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-primary bg-opacity-24 text-white rounded-full focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .btn-secondary {
-  @apply bg-white text-primary border border-primary rounded-full hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-white text-primary border border-primary rounded-full hover:bg-grey-bg focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .btn-secondary-opacity {
-  @apply bg-white opacity-25 text-primary border border-primary rounded-full hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-white opacity-25 text-primary border border-primary rounded-full  focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .check-it {
-  @apply w-l h-l border border-grey-shd4 rounded-sm text-white align-baseline;
+  @apply w-l h-l appearance-none outline-none border border-grey-shd4 rounded-sm text-white align-baseline;
 }
 
 .svg-check {
-  position: absolute;
-  bottom: 14px;
-  left: 7px;
-  visibility: hidden;
+  @apply absolute bottom-3.5 invisible;
 }
 
 .check-box input:checked,
@@ -55,9 +37,13 @@ input[type='checkbox'],
 }
 
 .default-form {
-  @apply w-72 h-10 border rounded-md text-sm py-2.5 px-4 mb-10;
+  @apply w-72 h-10 border outline-none rounded-md text-sm py-2.5 px-10 mb-10;
 }
 
 .svg-form {
   @apply absolute top-xxl1 right-s3;
+}
+
+.svg-form-left {
+  @apply absolute top-xxl1 left-s3;
 }
