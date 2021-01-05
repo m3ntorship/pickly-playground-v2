@@ -108,13 +108,18 @@ module.exports = {
       spacing: {
         '3xs': '.125rem',
         xxs: '.25rem',
+        xxs1: '.375rem',
         xs: '.5rem',
+        xs1: '.563rem',
         s: '.75rem',
+        s1: '.76rem', //12.2px
         m: '1rem',
+        m1: '1.125rem',
         l: '1.5rem',
         xl: '2rem',
         xxl: '2.5rem',
         '3xl': '3rem',
+        '3xl1': '3.625',
         '4xl': '4rem',
         '5xl': '8rem'
       },

@@ -22,19 +22,19 @@ input[type='checkbox'],
 }
 
 .btn-primary {
-  @apply bg-primary text-white rounded-full font-bold hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-primary text-white rounded-full hover-state focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .btn-primary-opacity {
-  @apply bg-primary bg-opacity-24 text-white rounded-full font-bold hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-primary bg-opacity-24 text-white rounded-full hover-state focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .btn-secondary {
-  @apply bg-white text-primary border border-primary rounded-full font-bold hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-white text-primary border border-primary rounded-full hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .btn-secondary-opacity {
-  @apply bg-white opacity-25 text-primary border border-primary rounded-full font-bold hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-white opacity-25 text-primary border border-primary rounded-full hover-state-secondary focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .check-it {
