@@ -3,15 +3,18 @@ body {
 }
 
 .btn {
-  @apply bg-primary justify-center align-middle  rounded-lg text-white  p-1 cursor-pointer ml-3;
+  @apply bg-primary justify-center align-middle  rounded-xl text-white  p-1 cursor-pointer ml-3 font-sans;
+}
+.btn-disabled {
+  @apply bg-primary  justify-center align-middle rounded-xl text-white  p-1 cursor-default opacity-25 ml-3;
 }
 
 .btn-secondery {
-  @apply bg-white justify-center align-middle  rounded-lg text-primary  p-1 cursor-pointer ml-3 border-primary border-2;
+  @apply bg-white justify-center align-middle  rounded-xl text-primary  p-1 cursor-pointer ml-3 border-primary border-2;
 }
 
 .btn-secondery-disabled {
-  @apply bg-white  justify-center align-middle rounded-lg text-primary  p-1 cursor-default opacity-25 ml-3 border-solid border-primary border-2;
+  @apply bg-white  justify-center align-middle rounded-xl text-primary  p-1 cursor-default opacity-25 ml-3 border-solid border-primary border-2;
 }
 
 .btn-secondery:hover {
@@ -28,10 +31,6 @@ body {
 
 .btn:focus {
   @apply border-2;
-}
-
-.btn-disabled {
-  @apply bg-primary  justify-center align-middle rounded-lg text-white  p-1 cursor-default opacity-25 ml-3;
 }
 
 .btn-circle-radius {
