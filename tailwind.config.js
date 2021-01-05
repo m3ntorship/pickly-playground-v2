@@ -113,11 +113,14 @@ module.exports = {
         xs1: '.563rem',
         s: '.75rem',
         s1: '.76rem', //12.2px
+        s2: '.813rem', //13px
+        s3: '.833rem', //13.33px
         m: '1rem',
         m1: '1.125rem',
         l: '1.5rem',
         xl: '2rem',
         xxl: '2.5rem',
+        xxl1: '2.875rem',
         '3xl': '3rem',
         '3xl1': '3.625',
         '4xl': '4rem',
