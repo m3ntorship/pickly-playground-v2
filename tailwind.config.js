@@ -77,8 +77,12 @@ module.exports = {
       none: '0',
       sm: '0.25rem',
       md: '0.5rem',
+feature/components-with-tailwind
       lg: '1rem',
       xl: '6.25rem'
+
+      lg: '1rem'
+ master
     },
     boxShadow: {
       soft: '0px 4px 12px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.04)',
