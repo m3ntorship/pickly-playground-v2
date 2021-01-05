@@ -7,23 +7,24 @@
 .hoverEffect:focus {
   border: #5f3dc4 3px solid;
 }
-.btn-secondary:focus {
+.btn--secondary:focus {
   border: #5f3dc4 2px solid;
 }
-.btn-secondary:hover {
+
+.btn--secondary:hover {
   background-color: #fafafc;
 }
 
-.btn-primary {
+.btn--primary {
   @apply bg-primary rounded-full text-white font-bold hoverEffect flex items-center justify-center content-center focus:outline-none;
 }
-.btn-primary-disabled {
+.btn--primary--disabled {
   @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
-.btn-secondary {
+.btn--secondary {
   @apply text-primary bg-white font-bold border-2 border-primary rounded-full flex items-center justify-center content-center focus:outline-none;
 }
 
-.btn-secondary-disabled {
+.btn--secondary--disabled {
   @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
