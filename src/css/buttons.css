@@ -47,7 +47,7 @@
 }
 
 .btn-secondary {
-  @apply bg-white text-primary border border-primary rounded-full hover:bg-grey-bg focus:outline-none focus:border-2 flex items-center justify-center content-center mb-5;
+  @apply bg-white text-primary border border-primary rounded-full hover:bg-grey-bg focus:outline-none flex items-center justify-center content-center mb-5;
 }
 
 .btn-secondary-opacity {
