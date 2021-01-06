@@ -79,6 +79,7 @@ module.exports = {
       md: '0.5rem',
       lg: '1rem',
       full: '999px'
+    },
     boxShadow: {
       dark:
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
