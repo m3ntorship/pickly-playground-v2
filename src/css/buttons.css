@@ -10,6 +10,10 @@
 .btn--secondary:focus {
   border: #5f3dc4 2px solid;
 }
+/*color 0092C9, 100% not in config with 1 use*/
+.text-accent:hover {
+  color: #0092c9;
+}
 
 .btn--secondary:hover {
   background-color: #fafafc;
