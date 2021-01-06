@@ -73,6 +73,13 @@ module.exports = {
         DEFAULT: '#FFFFFF'
       }
     },
+    borderRadius: {
+      none: '0',
+      sm: '0.25rem',
+      md: '0.5rem',
+      lg: '1rem',
+      full: '999px'
+    },
     boxShadow: {
       soft: '0px 4px 12px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.04)',
       dark:
@@ -97,13 +104,6 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto']
     },
-    borderRadius: {
-      none: '0',
-      sm: '0.25rem',
-      md: '0.5rem',
-      lg: '1rem',
-      full: '999px'
-    },
     extend: {
       spacing: {
         '3xs': '.125rem',
@@ -120,7 +120,6 @@ module.exports = {
       }
     }
   },
-
   variants: {
     extend: {}
   },
