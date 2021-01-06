@@ -18,7 +18,9 @@
 .btn--secondary:hover {
   background-color: #fafafc;
 }
-
+. btn--primary{
+  border: 9px solid red;
+}
 .btn--primary {
   @apply bg-primary rounded-full text-white font-bold hoverEffect flex items-center justify-center content-center focus:outline-none;
 }
