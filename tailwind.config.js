@@ -78,10 +78,10 @@ module.exports = {
       sm: '0.25rem',
       md: '0.5rem',
       lg: '1rem',
-      full: '9999px'
+      xl: '6.25rem',
+      full: '999px'
     },
     boxShadow: {
-      soft: '0px 4px 12px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.04)',
       dark:
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
       heavy:
@@ -127,12 +127,23 @@ module.exports = {
         '5xl': '8rem'
       },
       backgroundOpacity: {
-        24: '0.24'
+        24: '0.24',
+        xs: '.5rem',
+        s: '.75rem',
+        m: '1rem',
+        l: '1.5rem',
+        xl: '2rem',
+        xxl: '2.5rem',
+        '3xl': '3rem',
+        '4xl': '4rem',
+        '5xl': '8rem'
       }
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      textDecoration: ['group-focus']
+    }
   },
   plugins: []
 };
