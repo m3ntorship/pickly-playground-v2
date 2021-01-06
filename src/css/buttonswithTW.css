@@ -10,7 +10,7 @@ body {
 }
 
 .btn-secondery {
-  @apply bg-white justify-center align-middle  rounded-xl text-primary  p-1 cursor-pointer ml-3 border-primary border-2;
+  @apply bg-white justify-center align-middle  rounded-xl text-primary  p-1 cursor-pointer ml-3 border-primary border;
 }
 
 .btn-secondery-disabled {
@@ -22,7 +22,15 @@ body {
 }
 
 .btn-secondery:focus {
-  @apply border-2;
+  @apply border-2 outline-none;
+}
+
+.btn-secondery-disabled:focus {
+  @apply outline-none;
+}
+
+.btn-disabled:focus {
+  @apply outline-none;
 }
 
 .btn:hover {
@@ -30,7 +38,7 @@ body {
 }
 
 .btn:focus {
-  @apply border-2;
+  @apply border-2 outline-none;
 }
 
 .btn-circle-radius {
