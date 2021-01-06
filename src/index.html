@@ -1,75 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div>
-    <h2 class="bg-primary grid">main section</h2>
-    <h2>main section</h2>
-    <!-- Banner section -->
-    <section class="banner font-bold">
-      <h2>banner titile</h2>
-      <p>banner description</p>
-    </section>
-    <h3>Test 2</h3>
-    <!-- Tabs Section -->
-    <section class="my-8 py-4 bg-grey-bg flex justify-evenly items-center">
-      <!-- Add Tab -->
-      <button style="border-radius: 99px;"
-        class="flex items-center justify-around px-8 h-14 border border-primary border-solid hover:bg-grey-shd6">
-        <label class='radio__container mr-2'>
-          <input type="radio" class='radio__input' name='radio'>
-          <div class='radio__checkmark'>
-            <div class="radio__dot"></div>
-          </div>
-        </label>
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
-          </path>
-        </svg>
-        <span class="text-link">Image Poll</span>
-      </button>
-      <!-- Second Tab -->
-      <button style="border-radius: 99px;"
-        class="flex items-center justify-around px-8 h-14 border border-primary border-solid hover:bg-grey-shd6">
-        <label class='radio__container mr-2'>
-          <input type="radio" class='radio__input' name='radio'>
-          <div class='radio__checkmark'>
-            <div class="radio__dot"></div>
-          </div>
-        </label>
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-          </path>
-        </svg>
-        <span class="text-link">Text Poll</span>
-      </button>
-      <!-- Third Tab -->
-      <button style="border-radius: 99px;"
-        class="flex items-center justify-around px-8 h-14 border border-primary border-solid hover:bg-grey-shd6">
-        <label class='radio__container mr-2'>
-          <input type="radio" class='radio__input' name='radio'>
-          <div class='radio__checkmark'>
-            <div class="radio__dot"></div>
-          </div>
-        </label>
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8">
-          </path>
-        </svg>
-        <span class="text-link">Mini Survey</span>
-      </button>
-    </section>
-  </div>
-</body>
-
+  <body>
+    <div>
+      <h2 class="bg-primary grid">main section</h2>
+      <h2>main section</h2>
+      <!-- Banner section -->
+      <section class="banner font-bold">
+        <h2>banner titile</h2>
+        <p>banner description</p>
+      </section>
+      <h3>Test 2</h3>
+      <!-- upload-button -->
+      <section class="my-8 py-4 bg-grey-bg flex justify-center items-center">
+        <button
+          class="border-2 border-dashed border-accent bg-grey-shd7 rounded-md text-accent focus:outline-none flex justify-center items-center mx-2 sm:mx-0 max-w-xl w-full h-14"
+        >
+          <svg
+            class="mr-1 w-4 h-4 fill-current"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 5H17V12H19V5C19 3.897 18.103 3 17 3H4C2.897 3 2 3.897 2 5V17C2 18.103 2.897 19 4 19H12V17H4V5Z"
+              fill="currentColor"
+            />
+            <path d="M8 11L5 15H16L12 9L9 13L8 11Z" fill="currentColor" />
+            <path
+              d="M19 14H17V17H14V19H17V22H19V19H22V17H19V14Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span class="text-link">Upload one or multiple images</span>
+        </button>
+      </section>
+      <!-- Tabs Section -->
+      <section class="my-8 py-4 bg-grey-bg flex justify-evenly items-center">
+        <!-- Add Tab -->
+        <button
+          style="border-radius: 99px"
+          class="flex items-center justify-around px-8 h-14 border border-primary border-solid hover:bg-grey-shd6"
+        >
+          <label class="radio__container mr-2">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="radio__checkmark">
+              <div class="radio__dot"></div>
+            </div>
+          </label>
+          <svg
+            class="w-6 h-6 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <span class="text-link">Image Poll</span>
+        </button>
+        <!-- Second Tab -->
+        <button
+          style="border-radius: 99px"
+          class="flex items-center justify-around px-8 h-14 border border-primary border-solid hover:bg-grey-shd6"
+        >
+          <label class="radio__container mr-2">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="radio__checkmark">
+              <div class="radio__dot"></div>
+            </div>
+          </label>
+          <svg
+            class="w-6 h-6 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            ></path>
+          </svg>
+          <span class="text-link">Text Poll</span>
+        </button>
+        <!-- Third Tab -->
+        <button
+          style="border-radius: 99px"
+          class="flex items-center justify-around px-8 h-14 border border-primary border-solid hover:bg-grey-shd6"
+        >
+          <label class="radio__container mr-2">
+            <input type="radio" class="radio__input" name="radio" />
+            <div class="radio__checkmark">
+              <div class="radio__dot"></div>
+            </div>
+          </label>
+          <svg
+            class="w-6 h-6 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+            ></path>
+          </svg>
+          <span class="text-link">Mini Survey</span>
+        </button>
+      </section>
+    </div>
+  </body>
 </html>
