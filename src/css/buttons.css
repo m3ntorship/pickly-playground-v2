@@ -47,3 +47,8 @@
 .svg-form-left {
   @apply absolute top-xxl1 left-s3;
 }
+
+/* Radio buttons*/
+input[type='radio']:checked {
+  background-color: #7048e8;
+}
