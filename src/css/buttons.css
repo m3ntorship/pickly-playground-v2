@@ -49,6 +49,7 @@
 }
 
 /* Radio buttons*/
-input[type='radio']:checked {
+input[type='radio']:checked,
+.radio-button:focus > label > input[type='radio'] {
   background-color: #7048e8;
 }
