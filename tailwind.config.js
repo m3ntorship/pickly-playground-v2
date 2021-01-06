@@ -121,7 +121,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      textDecoration: ['group-focus']
+    }
   },
   plugins: []
 };
