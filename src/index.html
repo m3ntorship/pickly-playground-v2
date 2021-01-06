@@ -33,10 +33,12 @@
       </div>
 
       <div class="flex pl-3 pt-5 justify-items-start align-middle p">
-        <button class="btn w-44 h-14 items-center flex text-md border">
+        <button
+          class="btn w-44 h-14 items-center flex text-md border justify-center align-middle"
+        >
           Button Text
           <svg
-            class="w-5 h-4 pt-1 pl-1"
+            class="w-5 h-5 pt-1 pl-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -54,7 +56,7 @@
         <button class="btn-disabled w-44 h-14 items-center flex text-md">
           Button Text
           <svg
-            class="w-5 h-4 pt-1 pl-1"
+            class="w-5 h-5 pt-1 pl-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -69,10 +71,12 @@
           </svg>
         </button>
 
-        <button class="btn w-36 h-10 items-center flex text-base">
+        <button
+          class="btn w-36 h-10 items-center flex justify-center align-middle"
+        >
           Button Text
           <svg
-            class="w-5 h-4 pt-1 pl-1"
+            class="w-5 h-3 pt-0 pl-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -90,7 +94,7 @@
         <button class="btn-disabled w-36 h-10 items-center flex text-base">
           Button Text
           <svg
-            class="w-5 h-4 pt-1 pl-1"
+            class="w-5 h-3 pt-0 pl-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -108,7 +112,7 @@
         <button class="btn w-24 h-8 text-xs items-center flex">
           Button Text
           <svg
-            class="w-5 h-4 pt-1 pl-1"
+            class="w-5 h-3 pt-0 pl-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -126,7 +130,7 @@
         <button class="btn-disabled w-24 h-8 text-xs items-center flex">
           Button Text
           <svg
-            class="w-5 h-4 pt-1 pl-1"
+            class="w-5 h-3 pt-0 pl-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -438,7 +442,7 @@
             >Label</label
           >
           <div
-            class="flex items-center align-middle rounded-md border border-dark"
+            class="flex items-center pl-1 align-middle rounded-md border border-dark"
           >
             <input
               type="text"
@@ -468,7 +472,7 @@
             >Label</label
           >
           <div
-            class="flex items-center align-middle rounded-md border border-error"
+            class="flex items-center align-middle rounded-md pl-1 border border-error"
           >
             <input
               type="text"
@@ -497,7 +501,7 @@
             >Label</label
           >
           <div
-            class="flex items-center align-middle rounded-md border border-success"
+            class="flex items-center pl-1 align-middle rounded-md border border-success"
           >
             <input
               type="text"
@@ -523,19 +527,139 @@
         </div>
       </div>
 
+      <!-- <div class="banner font-bold bg-success items-center mt-8">
+        <h1 class="text-center text-xl text-white">checkbox</h1>
+      </div> -->
+
+      <!-- <div class="flex pl-3 pt-3">
+        <label class="container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+      </div> -->
+
       <div class="banner font-bold bg-success items-center mt-8">
-        <h1 class="text-center text-xl text-white">check</h1>
+        <h1 class="text-center text-xl text-white"></h1>
       </div>
       <div class="flex pl-3 pt-3">
-        <input
-          type="checkbox"
-          class="w-6 h-6 border-gray-100 rounded-sm m-3 bg-primary"
-        />
-        <input
-          type="checkbox"
-          class="w-6 h-6 border-gray-100 rounded-xl m-3 bg-red-900"
-          checked
-        />
+        <div class="bg-primary w-40 h-1 rounded-sm"></div>
+        <div class="bg-success w-52 h-1 rounded-sm ml-3"></div>
+      </div>
+      <div class="banner font-bold bg-success items-center mt-8">
+        <h1 class="text-center text-xl text-white"></h1>
+      </div>
+    </section>
+
+    <!--*********************************************************************************************************************-->
+    <!--***************************************************K Molecules******************************************************************-->
+    <section>
+      <div class="w-72 h-11 font-sans text-4xl text-black mb-5">
+        <p>Tab Group</p>
+      </div>
+
+      <div class="flex">
+        <!--The First Tab Group-->
+        <div
+          class="flex w-36 h-8 rounded-xl border border-grey items-center relative"
+        >
+          <div class="outer h-4 w-4 bg-primary m-2">
+            <div class="inner h-2 w-2 bg-white"></div>
+          </div>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.99951 7.33334C5.5518 7.33334 5.99951 6.88562 5.99951 6.33334C5.99951 5.78105 5.5518 5.33334 4.99951 5.33334C4.44723 5.33334 3.99951 5.78105 3.99951 6.33334C3.99951 6.88562 4.44723 7.33334 4.99951 7.33334Z"
+              fill="#5B6366"
+            />
+            <path
+              d="M6.99951 9.33333L5.99951 8L3.99951 10.6667H5.99951H7.99951H11.9995L8.99951 6.66666L6.99951 9.33333Z"
+              fill="#5B6366"
+            />
+            <path
+              d="M13.3325 2.66666H2.66585C1.93052 2.66666 1.33252 3.26466 1.33252 4V12C1.33252 12.7353 1.93052 13.3333 2.66585 13.3333H13.3325C14.0679 13.3333 14.6659 12.7353 14.6659 12V4C14.6659 3.26466 14.0679 2.66666 13.3325 2.66666ZM2.66585 12V4H13.3325L13.3339 12H2.66585Z"
+              fill="#5B6366"
+            />
+          </svg>
+          <label class="pl-3 font-sans w-24 h-5 text-sm text-dark-grey">
+            Image Poll</label
+          >
+        </div>
+
+        <!--The Secound Tab Group-->
+
+        <div
+          class="flex w-36 h-8 rounded-xl border border-grey-bg items-center relative"
+        >
+          <div class="outer h-4 w-4 border-grey-shd4 border m-2 bg-white"></div>
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.6665 5.33333H7.33317V6.66666H2.6665V5.33333ZM2.6665 2.66666H9.97984V4H2.6665V2.66666ZM2.6665 8H11.3332V9.33333H2.6665V8ZM0.666504 0.666664H1.99984V11.3333H0.666504V0.666664Z"
+              fill="#5B6366"
+            />
+          </svg>
+
+          <label class="pl-3 font-sans w-24 h-5 text-sm text-dark-grey">
+            Text Poll</label
+          >
+        </div>
+      </div>
+
+      <div class="w-72 h-11 font-sans text-4xl text-black mb-5">
+        <p>Image Upload</p>
+      </div>
+      <!--**************************************************Working With Image***************************************************************-->
+      <div
+        class="items-center align-middle h-14 border-dashed rounded-md border border-accent bg-grey-shd7 ml-4"
+        style="width: 704px"
+      >
+        <div class="flex items-center align-middle pt-5 pl-60">
+          <svg
+            width="17"
+            height="16"
+            viewBox="0 0 17 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.16683 3.33333H11.8335V8H13.1668V3.33333C13.1668 2.598 12.5688 2 11.8335 2H3.16683C2.4315 2 1.8335 2.598 1.8335 3.33333V11.3333C1.8335 12.0687 2.4315 12.6667 3.16683 12.6667H8.50016V11.3333H3.16683V3.33333Z"
+              fill="#00A8E8"
+            />
+            <path
+              d="M5.8335 7.33333L3.8335 10H11.1668L8.50016 6L6.50016 8.66667L5.8335 7.33333Z"
+              fill="#00A8E8"
+            />
+            <path
+              d="M13.1668 9.33333H11.8335V11.3333H9.8335V12.6667H11.8335V14.6667H13.1668V12.6667H15.1668V11.3333H13.1668V9.33333Z"
+              fill="#00A8E8"
+            />
+          </svg>
+          <label class="pl-3 font-sans w-56 h-5 text-sm text-accent">
+            Upload one or multiple Image
+          </label>
+        </div>
+      </div>
+
+      <div class="w-72 h-11 font-sans text-4xl text-black mb-5">
+        <p>Uploading Image</p>
+      </div>
+      <div class="flex-col">
+        <img src="./img/image.png" alt="Image" width="704" height="720" />
+        <div width="704" class="h-10 border-grey-shd5 border"></div>
       </div>
     </section>
   </body>
