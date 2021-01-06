@@ -78,6 +78,7 @@ module.exports = {
       sm: '0.25rem',
       md: '0.5rem',
       lg: '1rem',
+      xl: '6.25rem',
       full: '999px'
     },
     boxShadow: {
@@ -140,7 +141,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      textDecoration: ['group-focus']
+    }
   },
   plugins: []
 };
