@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .hoverEffect {
   border: 3px solid transparent;
 }
@@ -33,8 +32,6 @@
 .btn--secondary--disabled {
   @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
-=======
->>>>>>> fa18ece80b27b81cad5774e44baf80d219c54581
 .radio__container {
   @apply block h-6 w-6 relative cursor-pointer rounded-full group;
 }
