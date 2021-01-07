@@ -70,12 +70,16 @@
   background-color: #5f3dc4;
 }
 
+.focus-state:focus {
+  border: 2px solid #5034a6;
+}
+
 .opacity {
   opacity: 0.24;
 }
 
 .btn-primary {
-  @apply bg-primary text-white rounded-full hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-primary text-white rounded-full hover-state focus:outline-none focus-state flex items-center justify-center content-center mb-5;
 }
 
 .btn-primary-opacity {
@@ -83,7 +87,7 @@
 }
 
 .btn-secondary {
-  @apply bg-white text-primary border border-primary rounded-full hover:bg-grey-bg focus:outline-none flex items-center justify-center content-center mb-5;
+  @apply bg-white text-primary border border-primary rounded-full hover:bg-grey-bg focus:outline-none focus-state flex items-center justify-center content-center mb-5;
 }
 
 .btn-secondary-opacity {
@@ -109,11 +113,12 @@
 }
 
 .svg-form {
-  @apply absolute top-xxl1 right-s3;
+  @apply absolute right-3.5;
+  top: 2.875rem;
 }
 
 .svg-form-left {
-  @apply absolute top-xxl1 left-s3;
+  @apply absolute left-3.5 top-11;
 }
 
 /* Radio buttons*/
@@ -121,10 +126,6 @@ input[type='radio']:checked {
   background-color: #7048e8;
 }
 
-.hoverstate:hover {
-  background-color: #5f3dc4;
-}
-
-.btn-primary {
-  @apply bg-primary text-white rounded-full font-bold hoverstate flex items-center justify-center content-center mb-5;
+.radio-button:active > label input[type='radio']:checked {
+  background-color: #7048e8;
 }

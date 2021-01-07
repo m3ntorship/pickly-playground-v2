@@ -1,130 +1,153 @@
-.hoverEffect {
-  border: 3px solid transparent;
+body {
+  background-color: white;
 }
-.hoverEffect:hover {
+
+.btn {
+  @apply bg-primary justify-center align-middle  rounded-xl text-white  p-1 cursor-pointer ml-3 font-sans;
+}
+.btn-disabled {
+  @apply bg-primary  justify-center align-middle rounded-xl text-white  p-1 cursor-default opacity-25 ml-3;
+}
+
+.btn-secondery {
+  @apply bg-white justify-center align-middle  rounded-xl text-primary  p-1 cursor-pointer ml-3 border-primary border;
+}
+
+.btn-secondery-disabled {
+  @apply bg-white  justify-center align-middle rounded-xl text-primary  p-1 cursor-default opacity-25 ml-3 border-solid border-primary border-2;
+}
+
+.btn-secondery:hover {
+  @apply bg-grey-bg;
+}
+
+.btn-secondery:focus {
+  @apply border-2 outline-none;
+}
+
+.btn-secondery-disabled:focus {
+  @apply outline-none;
+}
+
+.btn-disabled:focus {
+  @apply outline-none;
+}
+
+.btn:hover {
   background-color: #5f3dc4;
 }
-.hoverEffect:focus {
-  border: #5f3dc4 3px solid;
-}
-.btn--secondary:focus {
-  border: #5f3dc4 2px solid;
-}
-/*color 0092C9, 100% not in config with 1 use*/
-.text-accent:hover {
-  color: #0092c9;
+
+.btn:focus {
+  @apply border-2 outline-none;
 }
 
-.btn--secondary:hover {
-  background-color: #fafafc;
-}
-.btn--primary {
-  border: 9px solid red;
-}
-.btn--primary {
-  @apply bg-primary rounded-full text-white font-bold hoverEffect flex items-center justify-center content-center focus:outline-none;
-}
-.btn--primary--disabled {
-  @apply bg-opacity-25 bg-primary rounded-full text-white font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
-}
-.btn--secondary {
-  @apply text-primary bg-white font-bold border-2 border-primary rounded-full flex items-center justify-center content-center focus:outline-none;
+.btn-circle-radius {
+  border-radius: 50%;
 }
 
-.btn--secondary--disabled {
-  @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
-}
-.radio__container {
-  @apply block h-6 w-6 relative cursor-pointer rounded-full group;
+/*working With Checkbox*/
+
+.container {
+  @apply block relative  cursor-pointer select-none;
 }
 
-/* Hide the browser's default radio button */
-.radio__input {
-  @apply opacity-0;
+/* Hide the browser's default checkbox */
+.container input {
+  @apply absolute cursor-pointer w-0 h-0 select-none opacity-0;
 }
 
-/* Create a custom radio button */
-.radio__checkmark {
-  @apply flex justify-center items-center absolute top-0 left-0 h-6 w-6 bg-white border border-solid border-primary rounded-full;
+/* Create a custom checkbox */
+.checkmark {
+  @apply absolute top-0 left-0 w-6 h-6 border-grey-shd4 border bg-white rounded-sm;
 }
 
 /* On mouse-over, add a grey background color */
-.radio__checkmark {
-  @apply group-hover:bg-grey-shd5;
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
-.radio__input:checked ~ .radio__checkmark {
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
   @apply bg-primary;
 }
 
-.radio__dot {
-  @apply w-2 h-2 hidden bg-white rounded-full;
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/**********************Radio Button***************************************************************************************/
+.container2 {
+  @apply block relative  cursor-pointer select-none;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+  @apply absolute cursor-pointer w-0 h-0 select-none opacity-0;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  @apply absolute top-0 left-0 h-4 w-4 rounded-xl bg-primary;
+}
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+  @apply bg-grey-shd6;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ .checkmark2 {
+  @apply bg-primary;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: '';
+  position: absolute;
+  display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radio__input:checked ~ .radio__checkmark .radio__dot {
-  @apply block;
-}
-.hover-state:hover {
-  background-color: #5f3dc4;
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
 }
 
-.opacity {
-  opacity: 0.24;
+/* Style the indicator (dot/circle) */
+.container2 .checkmark2:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
-.btn-primary {
-  @apply bg-primary text-white rounded-full hover-state focus:outline-none flex items-center justify-center content-center mb-5;
+.outer {
+  position: relative;
+  border-radius: 50%;
 }
 
-.btn-primary-opacity {
-  @apply bg-primary bg-opacity-24 text-white rounded-full focus:outline-none flex items-center justify-center content-center mb-5;
-}
-
-.btn-secondary {
-  @apply bg-white text-primary border border-primary rounded-full hover:bg-grey-bg focus:outline-none flex items-center justify-center content-center mb-5;
-}
-
-.btn-secondary-opacity {
-  @apply bg-white opacity-25 text-primary border border-primary rounded-full  focus:outline-none flex items-center justify-center content-center mb-5;
-}
-
-.check-it {
-  @apply w-l h-l appearance-none outline-none border border-grey-shd4 rounded-sm text-white align-baseline;
-}
-
-.svg-check {
-  @apply absolute bottom-3.5 invisible;
-}
-
-.check-box input:checked,
-.check-box input:checked + .svg-check {
-  visibility: visible;
-  background-color: #5f3dc4;
-}
-
-.default-form {
-  @apply w-72 h-10 border outline-none rounded-md text-sm py-2.5 px-10 mb-10;
-}
-
-.svg-form {
-  @apply absolute top-xxl1 right-s3;
-}
-
-.svg-form-left {
-  @apply absolute top-xxl1 left-s3;
-}
-
-/* Radio buttons*/
-input[type='radio']:checked {
-  background-color: #7048e8;
-}
-
-.hoverstate:hover {
-  background-color: #5f3dc4;
-}
-
-.btn-primary {
-  @apply bg-primary text-white rounded-full font-bold hoverstate flex items-center justify-center content-center mb-5;
+.inner {
+  top: 25%;
+  left: 25%; /* of the container */
+  position: relative;
+  border-radius: 50%;
 }
