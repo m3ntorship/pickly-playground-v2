@@ -118,6 +118,7 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem'
       },
+
       backgroundOpacity: {
         24: '0.24',
         xs: '.5rem',
@@ -129,12 +130,27 @@ module.exports = {
         '3xl': '3rem',
         '4xl': '4rem',
         '5xl': '8rem'
+      },
+      width:{
+        '39xl':'39.5rem',
+        '37xl':'37.5rem',
+        '8xl':'8.8125rem',
+        '4sxl':'4.1875rem',
+        '18xl':'18.5rem',
+
+      },
+      height:{
+        '61xl':'61.0625rem',
+        '21xl':'21.25rem',
+
+
       }
     }
   },
   variants: {
     extend: {
-      textDecoration: ['group-focus']
+      textDecoration: ['group-focus'],
+     
     }
   },
   plugins: []
