@@ -95,7 +95,7 @@
 }
 
 .check-it {
-  @apply w-l h-l appearance-none outline-none border border-grey-shd4 rounded-sm text-white align-baseline;
+  @apply w-l h-l appearance-none outline-none border border-grey-shd4 rounded-sm text-white align-baseline cursor-pointer;
 }
 
 .svg-check {
