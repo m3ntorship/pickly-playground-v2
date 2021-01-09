@@ -71,6 +71,9 @@ module.exports = {
       },
       white: {
         DEFAULT: '#FFFFFF'
+      },
+      transparent: {
+        DEFAULT: 'transparent'
       }
     },
     borderRadius: {
@@ -82,7 +85,6 @@ module.exports = {
       full: '999px'
     },
     boxShadow: {
-      soft: '0px 4px 12px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.04)',
       dark:
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
       heavy:
@@ -119,6 +121,19 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem'
       },
+
+      backgroundOpacity: {
+        24: '0.24',
+        xs: '.5rem',
+        s: '.75rem',
+        m: '1rem',
+        l: '1.5rem',
+        xl: '2rem',
+        xxl: '2.5rem',
+        '3xl': '3rem',
+        '4xl': '4rem',
+        '5xl': '8rem'
+      },
       width:{
         '39xl':'39.5rem',
         '37xl':'37.5rem',
@@ -130,6 +145,7 @@ module.exports = {
       height:{
         '61xl':'61.0625rem',
         '21xl':'21.25rem',
+
 
       }
     }
