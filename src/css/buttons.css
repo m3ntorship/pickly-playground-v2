@@ -129,3 +129,30 @@ input[type='radio']:checked {
 .radio-button:active > label input[type='radio']:checked {
   background-color: #7048e8;
 }
+.radio__container__h {
+  @apply block h-4 w-4 relative cursor-pointer rounded-full group;
+}
+
+.radio__input__h {
+  @apply opacity-0;
+}
+
+.radio__checkmark__h {
+  @apply flex justify-center items-center absolute top-0 left-0 h-4 w-4 bg-white border border-solid border-primary rounded-full;
+}
+
+.radio__checkmark__h {
+  @apply group-hover:bg-grey-shd5;
+}
+
+.radio__input__h:checked ~ .radio__checkmark__h {
+  @apply bg-primary;
+}
+
+.radio__dot__h {
+  @apply w-1.5 h-1.5 hidden bg-white rounded-full;
+}
+
+.radio__input__h:checked ~ .radio__checkmark__h .radio__dot__h {
+  @apply block;
+}
