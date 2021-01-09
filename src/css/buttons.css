@@ -35,7 +35,10 @@
   @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
 .tab-poll{
-  @apply group relative flex items-center justify-around px-3.5 py-1.5 h-14 border border-grey border-opacity-0 bg-grey-shd6  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out;
+  @apply group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-14 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out;
+}
+.tab-poll{
+  padding-right: 12px;
 }
 .checkmark{
   @apply h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-500 ease-in-out;
@@ -54,10 +57,6 @@ input:checked ~ .checkmark {
 input:checked ~ .checkmark:after {
   display: block;
 }
-input:checked ~ .tab-poll{
-  background-color: red;
-}
-
 /* Style the indicator (dot/circle) */
 .checkmark:after {
 	top: 4px;
