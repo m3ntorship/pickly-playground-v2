@@ -1,4 +1,6 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from "react";
+import "../../../../css/button.css";
+
 const PrimaryButtonMD = (props) => {
   return (
     <button className="py-2 px-4 btn-primary text-md">

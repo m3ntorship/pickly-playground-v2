@@ -1,4 +1,6 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from "react";
+import "../../../../css/button.css";
+
 const PrimaryButtonDisabledMD = (props) => {
   return (
     <button className="py-2 px-4 text-md btn-primary-disabled" disabled>

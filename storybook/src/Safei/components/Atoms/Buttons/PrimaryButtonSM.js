@@ -1,4 +1,6 @@
 import React from "react";
+import "../../../../css/button.css";
+
 const PrimaryButtonSM = (props) => {
   return (
     <button className="h-8 px-3 text-xs btn-primary">
