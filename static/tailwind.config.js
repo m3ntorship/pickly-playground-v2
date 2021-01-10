@@ -71,6 +71,9 @@ module.exports = {
       },
       white: {
         DEFAULT: '#FFFFFF'
+      },
+      transparent: {
+        DEFAULT: 'transparent'
       }
     },
     borderRadius: {
@@ -130,6 +133,7 @@ module.exports = {
         '3xl': '3rem',
         '4xl': '4rem',
         '5xl': '8rem'
+
       },
       width:{
         '39xl':'39.5rem',
@@ -142,7 +146,6 @@ module.exports = {
       height:{
         '61xl':'61.0625rem',
         '21xl':'21.25rem',
-
 
       }
     }
