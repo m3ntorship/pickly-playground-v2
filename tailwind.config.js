@@ -151,6 +151,7 @@ module.exports = {
         '46xl':'46.8125rem',
         '3sxxl':'3.25rem',
         '50xxxl':'50rem',
+        '48xxxl':'48rem',
 
       }
     }
