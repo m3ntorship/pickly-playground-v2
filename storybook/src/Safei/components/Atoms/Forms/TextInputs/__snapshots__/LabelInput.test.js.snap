@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`my beverage renders when an input based on status  1`] = `
+exports[`Label Input field renders a marked input field with icon or prefix  1`] = `
 <div
   className="border-dark border border-opacity-25 rounded-md  w-64 flex flex-row items-start content-center px-1 hover:border-grey-shd1 focus-within:border-opacity-100 bg-white label-container"
 >
