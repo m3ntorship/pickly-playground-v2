@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../../src/css/index.css";
 import Toggle from "./Toggle";
 
 export default {

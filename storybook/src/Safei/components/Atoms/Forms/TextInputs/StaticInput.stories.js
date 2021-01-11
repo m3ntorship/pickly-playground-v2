@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../../css/index.css";
 import StaticInput from "./StaticInput";
 
 export default {
