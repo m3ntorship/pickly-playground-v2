@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/.eslintcache
+/storybook/.eslintcache
 # testing
 /coverage
 
