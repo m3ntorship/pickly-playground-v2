@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
     es2021: true,
     es6: true,
+    jest: true,
   },
   extends: [
     "eslint:recommended",
@@ -24,5 +25,7 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "react/no-unescaped-entities": 0,
+    "react/prop-types": 0,
+    "react/jsx-no-duplicate-props": 0,
   },
 };
