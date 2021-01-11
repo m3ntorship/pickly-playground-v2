@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../../src/css/index.css";
 import CheckBox from "./CheckBox";
 
 export default {
