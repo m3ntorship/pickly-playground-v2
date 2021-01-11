@@ -1,7 +1,5 @@
 import React from "react";
-import "../../../../css/index.css";
 import LabelInput from "./LabelInput";
-import { text, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: "Atoms/TextInputs/LabelInput",
@@ -16,9 +14,7 @@ export default {
   },
 };
 
-const Template = (args) => (
-  <LabelInput {...args} disabled={boolean("Disabled", false)} />
-);
+const Template = (args) => <LabelInput {...args} />;
 export const Input = Template.bind({});
 Input.args = {
   status: "error",
