@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the avatar comp renders Avatar  1`] = `
+<div
+  className="inline-block"
+>
+  <img
+    className="rounded-full h-10 w-10  mt-1"
+    src="/avatar.png"
+  />
+</div>
+`;
