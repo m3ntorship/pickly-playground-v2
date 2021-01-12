@@ -2,7 +2,7 @@ import React from "react";
 import { Button, BUTTON_OPTIONS } from "./Button";
 
 export default {
-  title: "kareem/Button",
+  title: "Atoms/Buttons",
   component: Button,
   argTypes: {
     size: {
