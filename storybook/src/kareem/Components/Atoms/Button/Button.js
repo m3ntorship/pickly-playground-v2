@@ -19,13 +19,16 @@ export function Button({ primary, children, size }) {
           primary
             ? "bg-primary text-white font-sans rounded-full focus:ring-2 focus:ring-primary-shd9 focus:outline-none disabled:opacity-25 mr -4"
             : "text-primary bg-white font-sans border border-primary rounded-full  focus:ring-2 focus:ring-primary-shd9 focus:outline-none mr-4 disabled:opacity-25",
-          { "py-4 px-8 font-bold text-md": size === BUTTON_OPTIONS.SIZE.LARGE },
+          {
+            "py-3.5 px-8 font-bold text-md": size === BUTTON_OPTIONS.SIZE.LARGE,
+          },
           {
             "py-2 px-6 text-base font-medium":
               size === BUTTON_OPTIONS.SIZE.MEDIUM,
           },
           {
-            "py-1 px-4 font-medium text-sm": size === BUTTON_OPTIONS.SIZE.SMALL,
+            "py-1.5 px-4 font-medium text-sm":
+              size === BUTTON_OPTIONS.SIZE.SMALL,
           }
         )}
       >
