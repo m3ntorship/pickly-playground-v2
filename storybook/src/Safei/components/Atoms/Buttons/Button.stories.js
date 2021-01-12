@@ -1,15 +1,14 @@
-// import React from "react";
-// import Button from "./Button";
+import React from "react";
+import Button from "./Button";
 
-// export default {
-//   title: "Atoms/Buttons/Button",
-//   component: Button,
-//   //decorators: [story => <Center>{story()}</Center>]
-// };
+export default {
+  title: "Atoms/Buttons/SmallButton",
+  component: Button,
+};
 
-// const Template = (args) => <Button {...args} />;
-// export const Check = Template.bind({});
-// Check.args = {
-//   disabled: false,
-//   size: "lg",
-// };
+const Template = (args) => <Button {...args} />;
+export const SmallButton = Template.bind({});
+SmallButton.args = {
+  // disabled: false,
+  // size: "lg",
+};
