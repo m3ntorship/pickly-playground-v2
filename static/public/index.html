@@ -2356,7 +2356,7 @@
         <h1 class="text-8xl">Inputs</h1>
       </div>
       <section class="flex items-center flex-col">
-        <div class="relative check-box">
+        <label class="relative check-box">
           <input class="check-it" type="checkbox" />
           <svg
             style="left: 7px"
@@ -2372,7 +2372,7 @@
               fill="white"
             />
           </svg>
-        </div>
+        </label>
       </section>
 
       <section class="flex items-center flex-col">
@@ -2675,6 +2675,115 @@
           </label>
         </button>
       </section>
+      <div>
+        <h2 class="text-4xl">Image Upload</h2>
+          <label for="input-file" style="width: 704px; height: 56px" class="block text-center border border-dashed border-accent rounded-md pt-4 pb-5 bg-grey-shd7 cursor-pointer my-10 mx-10">
+            <svg class="inline-block" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.16683 3.33333H11.8335V8H13.1668V3.33333C13.1668 2.598 12.5688 2 11.8335 2H3.16683C2.4315 2 1.8335 2.598 1.8335 3.33333V11.3333C1.8335 12.0687 2.4315 12.6667 3.16683 12.6667H8.50016V11.3333H3.16683V3.33333Z" fill="#00A8E8"/>
+              <path d="M5.8335 7.33333L3.8335 10H11.1668L8.50016 6L6.50016 8.66667L5.8335 7.33333Z" fill="#00A8E8"/>
+              <path d="M13.1668 9.33333H11.8335V11.3333H9.8335V12.6667H11.8335V14.6667H13.1668V12.6667H15.1668V11.3333H13.1668V9.33333Z" fill="#00A8E8"/>
+              </svg>              
+            <input type="file" id="input-file" class="opacity-0 absolute" style="z-index: -1">
+            <span class="text-accent" style="font-weight: 600">Upload one or multiple images</span>
+          </label>
+    </div>
+
+    <div>
+      <h2 class="text-4xl">Uploading Images</h2>
+      <div class="mt-4 ml-4">
+          <img src="./img/image.png" alt="">
+        <div style="width: 704px; height: 40px" class="flex items-center border-grey-shd5 border rounded-bl-md rounded-br-md mt-1 mb-12">
+          <svg class="ml-xs rounded" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#F2F9FF"/>
+            <path d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z" fill="#8D9A9E"/>
+            </svg>
+          <input type="text" placeholder="Type caption (optional)" class="inline-block w-full h-5 text-sm font-sans outline-none ml-s text-grey-shd1">
+        </div>
+      </div>
+      
+  </div>
+
+  <div>
+    <h2 class="text-4xl">Uploading Images</h2>
+    <div class="mt-4 ml-4">
+      <div class="relative">
+        <img src="./img/image.png" alt="" style="opacity: 0.2; filter: blur(2px)">
+        <div class="rounded-t-md rounded-r-md absolute bottom-0 top-0 left-0 right-0 h-full opacity-80" style="width: 708px; background-color: rgba(237, 232, 252, 0.88);">
+          <div class="w-56 h-3 opacity-100 rounded-sm absolute top-1/2 left-1/3 flex items-center" style="background-color: rgba(255, 255, 255, 0.88);">
+              <div style="width:160px; height:4px; background-color:#7048E8; border-radius: 2px; margin-left:4px"></div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 704px; height: 40px" class="flex items-center border-grey-shd5 border rounded-bl-md rounded-br-md mt-1 mb-12">
+        <svg class="ml-xs rounded" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#F2F9FF"/>
+          <path d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z" fill="#8D9A9E"/>
+          </svg>
+        <input type="text" placeholder="Type caption (optional)" class="inline-block w-full h-5 text-sm font-sans outline-none ml-s text-grey-shd1">
+      </div>
+    </div>
+    <div class="mt-4 ml-4">
+      <div class="relative">
+        <img src="./img/image.png" alt="" style="opacity: 0.2; filter: blur(2px)">
+        <div class="rounded-t-md rounded-r-md absolute bottom-0 top-0 left-0 right-0 h-full opacity-80 flex items-center" style="width: 708px; background-color:rgba(255, 255, 255, 0.96);">
+          <div class=" opacity-100 rounded-sm" style="width: 354px; height: 190px; margin: 0 auto;">
+            <div class="text-center">
+            <svg class="inline-block mb-11" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M39.8432 6.66675C21.5498 6.66675 6.6665 21.6201 6.6665 40.0001C6.6665 58.3801 21.6198 73.3334 39.9998 73.3334C58.3798 73.3334 73.3332 58.3801 73.3332 40.0001C73.3332 21.6201 58.3098 6.66675 39.8432 6.66675ZM39.9998 66.6667C25.2965 66.6667 13.3332 54.7034 13.3332 40.0001C13.3332 25.2967 25.2232 13.3334 39.8432 13.3334C54.6365 13.3334 66.6665 25.2967 66.6665 40.0001C66.6665 54.7034 54.7032 66.6667 39.9998 66.6667Z" fill="#FE544A"/>
+              <path d="M36.6665 23.3333H43.3332V46.6666H36.6665V23.3333ZM36.6665 49.9999H43.3332V56.6666H36.6665V49.9999Z" fill="#FE544A"/>
+              </svg>
+              <p class="text-lg text-error font-bold pb-2">Image couldn't be uploaded!</p>
+              <p class="text-md text-error">Max size is 2 MB</p>  
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div style="width: 704px; height: 40px" class="flex items-center border-grey-shd5 border rounded-bl-md rounded-br-md mt-1 mb-12">
+        <svg class="ml-xs rounded" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#F2F9FF"/>
+          <path d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z" fill="#8D9A9E"/>
+          </svg>
+        <input type="text" placeholder="Type caption (optional)" class="inline-block w-full h-5 text-sm font-sans outline-none ml-s text-grey-shd1">
+      </div>
+    </div>
+  </div>
+
+    <h2 class="text-4xl">Option Group - Default</h2>
+    <div style="width: 600px; height: 204px; background-color: #FAFAFC; border-radius: 8px; padding:16px; margin-left: 15px;">
+      <div class="flex justify-between items-center">
+        <span class="text-sm text-dark-grey">Group 1</span>
+        <svg width="4" height="12" viewBox="0 0 4 12" fill="#5B6366" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.99984 4.6665C1.2665 4.6665 0.666504 5.2665 0.666504 5.99984C0.666504 6.73317 1.2665 7.33317 1.99984 7.33317C2.73317 7.33317 3.33317 6.73317 3.33317 5.99984C3.33317 5.2665 2.73317 4.6665 1.99984 4.6665ZM1.99984 0.666504C1.2665 0.666504 0.666504 1.2665 0.666504 1.99984C0.666504 2.73317 1.2665 3.33317 1.99984 3.33317C2.73317 3.33317 3.33317 2.73317 3.33317 1.99984C3.33317 1.2665 2.73317 0.666504 1.99984 0.666504ZM1.99984 8.6665C1.2665 8.6665 0.666504 9.2665 0.666504 9.99984C0.666504 10.7332 1.2665 11.3332 1.99984 11.3332C2.73317 11.3332 3.33317 10.7332 3.33317 9.99984C3.33317 9.2665 2.73317 8.6665 1.99984 8.6665Z" fill="#5B6366"/>
+          </svg>          
+      </div>
+      <div class="flex justify-between items-center mt-4">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E"/>
+          </svg>          
+        <div style="width: 532px; height: 40px" class="flex items-center border-grey-shd5 border rounded-md bg-white">
+          <svg class="ml-xs rounded" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#F2F9FF"/>
+            <path d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z" fill="#8D9A9E"/>
+            </svg>
+          <input type="text" placeholder="Option 1" class="inline-block w-full h-5 text-sm font-sans outline-none ml-s text-grey-shd1">
+        </div>
+      </div>
+      <div class="flex justify-between items-center mt-4">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E"/>
+          </svg>          
+        <div style="width: 532px; height: 40px" class="flex items-center border-grey-shd5 border rounded-md bg-white">
+          <svg class="ml-xs rounded" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#F2F9FF"/>
+            <path d="M9.29395 17V7.04688H12.5479C13.6279 7.04688 14.4391 7.27018 14.9814 7.7168C15.5283 8.16341 15.8018 8.82422 15.8018 9.69922C15.8018 10.1641 15.6696 10.5765 15.4053 10.9365C15.141 11.292 14.7809 11.5677 14.3252 11.7637C14.863 11.9141 15.2868 12.2012 15.5967 12.625C15.9111 13.0443 16.0684 13.5456 16.0684 14.1289C16.0684 15.0221 15.779 15.724 15.2002 16.2344C14.6214 16.7448 13.8034 17 12.7461 17H9.29395ZM10.6064 12.3447V15.9268H12.7734C13.3841 15.9268 13.8649 15.7695 14.2158 15.4551C14.5713 15.1361 14.749 14.6986 14.749 14.1426C14.749 12.944 14.0973 12.3447 12.7939 12.3447H10.6064ZM10.6064 11.292H12.5889C13.1631 11.292 13.6211 11.1484 13.9629 10.8613C14.3092 10.5742 14.4824 10.1846 14.4824 9.69238C14.4824 9.14551 14.3229 8.74902 14.0039 8.50293C13.6849 8.25228 13.1995 8.12695 12.5479 8.12695H10.6064V11.292Z" fill="#8D9A9E"/>
+            </svg>            
+          <input type="text" placeholder="Option 1" class="inline-block w-full h-5 text-sm font-sans outline-none ml-s text-grey-shd1">
+        </div>
+      </div>
+        <div></div>
+      </div>
+    
+</div>
       <input type="text" placeholder="enter text" />
       <!--Large-->
       <button
