@@ -1,7 +1,7 @@
 import React from "react";
 const UploadButton = () => {
   return (
-    <button className="border border-dashed border-accent bg-grey-shd7 rounded-md text-accent focus:outline-none flex justify-center items-center mx-2 sm:mx-0 max-w-xl w-full h-14">
+    <button className="border border-dashed border-accent bg-grey-shd7 rounded-md text-accent focus:outline-none flex justify-center items-center mx-2 sm:mx-0  w-full h-14">
       <svg
         className="mr-1 w-4 h-4 fill-current"
         viewBox="0 0 24 24"

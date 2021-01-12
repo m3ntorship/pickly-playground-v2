@@ -3,10 +3,7 @@ import React from "react";
 const Avatar = () => {
   return (
     <div className="inline-block">
-      <img
-        src="../../../../imgs/avatar.png"
-        className="rounded-full h-14 w-14 mb-1"
-      />
+      <img src="/avatar.png" className="rounded-full h-10 w-10  mt-1" />
     </div>
   );
 };
