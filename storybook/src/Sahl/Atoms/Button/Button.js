@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import DownArrow from "../../../assets/icons/DownArrow";
+import DownArrow from "../../assets/icons/DownArrow";
 
 function Button(props) {
   const {

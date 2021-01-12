@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import CheckIcon from "../../../assets/icons/Check";
+import CheckIcon from "../../assets/icons/Check";
 
 export default function CheckBox(props) {
   const { size = "default", disabled = false } = props;
@@ -27,7 +27,7 @@ export default function CheckBox(props) {
         <CheckIcon
           width={size === "default" ? "w-4" : "w-3"}
           height={size === "default" ? "h-4" : "h-3"}
-          path1Fill="#FFF"
+          color="#FFF"
         />
       )}
     </div>
