@@ -27,6 +27,6 @@ export const Divider = ({ type, range }) => {
 };
 
 Divider.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["Horizontal", "Vertical"]),
   range: PropTypes.any,
 };

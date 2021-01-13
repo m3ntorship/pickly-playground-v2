@@ -114,6 +114,6 @@ export const Choices = ({ label, type, placeholder }) => {
 
 Choices.propTypes = {
   label: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["Default", "Success", "Error", "Disabled"]),
   placeholder: PropTypes.string,
 };

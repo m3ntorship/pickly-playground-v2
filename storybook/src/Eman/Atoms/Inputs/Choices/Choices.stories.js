@@ -2,7 +2,7 @@ import React from "react";
 import { Choices, INPUT } from "./Choices";
 
 export default {
-  title: "Eman/Atoms/Inputs",
+  title: "Eman/Atoms/Inputs/ChoicesInput",
   component: Choices,
   argTypes: {
     type: {

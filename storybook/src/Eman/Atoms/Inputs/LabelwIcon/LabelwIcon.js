@@ -167,7 +167,7 @@ export const LabelwIcon = ({ label, type, icon, placeholder }) => {
 
 LabelwIcon.propTypes = {
   label: PropTypes.string,
-  type: PropTypes.string,
-  icon: PropTypes.string,
+  type: PropTypes.oneOf(["Default", "Success", "Error", "Disabled"]),
+  icon: PropTypes.oneOf(["left", "right"]),
   placeholder: PropTypes.string,
 };

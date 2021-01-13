@@ -56,6 +56,6 @@ export const ButtonIcon = ({ children, iconPosition, size }) => {
 
 ButtonIcon.propTypes = {
   children: PropTypes.string,
-  iconPosition: PropTypes.string,
-  size: PropTypes.string,
+  iconPosition: PropTypes.oneOf(["left", "right"]),
+  size: PropTypes.oneOf(["small", "medium", "big"]),
 };

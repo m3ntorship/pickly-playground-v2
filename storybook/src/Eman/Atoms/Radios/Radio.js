@@ -36,6 +36,6 @@ export const Radio = ({ status, size }) => {
 };
 
 Radio.propTypes = {
-  status: PropTypes.string,
-  size: PropTypes.string,
+  status: PropTypes.oneOf(["on", "off"]),
+  size: PropTypes.oneOf(["Default", "Small"]),
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonIconOnly, BUTTON_OPTIONS } from "./BtnIconOnly";
 
 export default {
-  title: "Eman/Atoms/Buttons",
+  title: "Eman/Atoms/Buttons/Primary-Icon-Only",
   component: ButtonIconOnly,
   argTypes: {
     size: {

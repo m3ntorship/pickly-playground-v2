@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonIcon, ICON_OPTIONS, BUTTON_OPTIONS } from "./Button-icon";
 
 export default {
-  title: "Eman/Atoms/Buttons",
+  title: "Eman/Atoms/Buttons/Primary-Icon",
   component: ButtonIcon,
   argTypes: {
     iconPosition: {

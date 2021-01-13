@@ -56,5 +56,5 @@ export const Checkbox = ({ status, size }) => {
 
 Checkbox.propTypes = {
   status: PropTypes.bool,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["Default", "Small"]),
 };

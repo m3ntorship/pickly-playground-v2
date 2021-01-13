@@ -44,8 +44,8 @@ export const Button = ({ type, content, size, disabled }) => {
 };
 
 Button.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["primary", "secondary"]),
   content: PropTypes.string,
-  size: PropTypes.string,
-  disabled: PropTypes.string,
+  size: PropTypes.oneOf(["small", "medium", "big"]),
+  disabled: PropTypes.oneOf(["on", "off"]),
 };

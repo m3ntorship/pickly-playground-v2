@@ -111,6 +111,6 @@ export const Label = ({ label, type, placeholder }) => {
 
 Label.propTypes = {
   label: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["Default", "Success", "Error", "Disabled"]),
   placeholder: PropTypes.string,
 };

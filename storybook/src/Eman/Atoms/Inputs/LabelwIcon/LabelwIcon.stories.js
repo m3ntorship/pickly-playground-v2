@@ -2,7 +2,7 @@ import React from "react";
 import { LabelwIcon, INPUT } from "./LabelwIcon";
 
 export default {
-  title: "Eman/Atoms/Inputs",
+  title: "Eman/Atoms/Inputs/Label-Icon",
   component: LabelwIcon,
   argTypes: {
     type: {

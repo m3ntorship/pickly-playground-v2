@@ -100,8 +100,8 @@ export const Tab = ({ content, icon, status, styles }) => {
 };
 
 Tab.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.oneOf(["Image", "Text", "More", "None"]),
   content: PropTypes.string,
-  status: PropTypes.string,
-  styles: PropTypes.string,
+  status: PropTypes.oneOf(["on", "off"]),
+  styles: PropTypes.oneOf(["Active", "Hover", "Inactive", "Disabled"]),
 };

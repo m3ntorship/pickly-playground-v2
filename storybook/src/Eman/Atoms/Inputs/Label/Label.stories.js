@@ -2,7 +2,7 @@ import React from "react";
 import { Label, INPUT } from "./Label";
 
 export default {
-  title: "Eman/Atoms/Inputs",
+  title: "Eman/Atoms/Inputs/Label",
   component: Label,
   argTypes: {
     type: {

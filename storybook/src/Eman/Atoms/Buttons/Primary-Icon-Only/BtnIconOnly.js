@@ -36,5 +36,5 @@ export const ButtonIconOnly = ({ size }) => {
 };
 
 ButtonIconOnly.propTypes = {
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["small", "medium", "big"]),
 };

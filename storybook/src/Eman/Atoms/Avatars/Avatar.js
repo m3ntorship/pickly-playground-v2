@@ -82,6 +82,6 @@ export const Avater = ({ type, size }) => {
 };
 
 Avater.propTypes = {
-  size: PropTypes.string,
-  type: PropTypes.string,
+  size: PropTypes.oneOf(["Large", "Medium", "Small"]),
+  type: PropTypes.oneOf(["Filled", "Anonymous", "Not Filled"]),
 };
