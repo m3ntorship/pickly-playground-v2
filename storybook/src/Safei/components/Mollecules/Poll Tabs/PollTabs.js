@@ -3,6 +3,7 @@ import PollTab from "../../Atoms/Tabs/PollTab";
 
 const PollTabs = ({ count }) => {
   const tabsArr = [];
+  if (!count) count = 1; //set default value;
   tabsArr.length = count;
   tabsArr.fill(<PollTab />);
   return (
