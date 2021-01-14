@@ -4,12 +4,17 @@ import PostingBar from "./PostingBar";
 export default {
   title: "Mollecules/PostingBar",
   component: PostingBar,
+  argTypes: {
+    disabled: {
+      control: {
+        type: "boolean",
+      },
+    },
+  },
 };
 
 const Template = (args) => <PostingBar {...args} />;
 export const _PostingBar = Template.bind({});
 _PostingBar.args = {
-  //   status: "error",
-  // prefix: '+20',
-  // direction: 'flex-row'
+  disabled: false,
 };
