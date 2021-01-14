@@ -1,9 +1,11 @@
 import React from "react";
 
-const ImageCaption = () => {
+const ImageCaption = ({ letter, source }) => {
+  if (!source) source = "Simage.png";
+  if (!letter) letter = "A";
   return (
     <div className="image-container rounded-t-md relative w-full">
-      <img src="Simage.png" alt="" />
+      <img src={source} alt="" className="w-full" />
       <div className=" text-md font-bold rounded-full w-9 h-9 p-2 absolute top-2 right-5 cursor-pointer">
         <span className="rounded-full">
           <svg
@@ -25,7 +27,7 @@ const ImageCaption = () => {
       </div>
       <div className="flex flex-row p-1 border border-grey-shd5 rounded-b-md mt-1">
         <span className="bg-grey-shd6 block text-grey text-sm text-center h-6 w-6 rounded-sm py-0.5 px-2 mt-1 mr-2 ml-1">
-          A
+          {letter.toUpperCase()}
         </span>
         <input
           type="text"
