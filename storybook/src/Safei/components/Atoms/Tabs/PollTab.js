@@ -5,7 +5,7 @@ const PollTab = () => {
   return (
     <button
       className="group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-8 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out"
-      style={{ paddingRight: "12px" }}
+      style={{ paddingRight: "12px", marginRight: "18px" }}
     >
       <label className="cursor-pointer relative flex items-center justify-items-center content-center">
         <input type="radio" name="radio" className="bg-primary" />

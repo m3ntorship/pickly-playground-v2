@@ -1,20 +1,13 @@
 import React from "react";
 import PollTab from "../../Atoms/Tabs/PollTab";
 
-const PollTabs = () => {
+const PollTabs = ({ count }) => {
+  const tabsArr = [];
+  tabsArr.length = count;
+  tabsArr.fill(<PollTab />);
   return (
     <div className="inline-block">
-      <div className="flex flex-row">
-        <div style={{ marginRight: "18px" }}>
-          <PollTab />
-        </div>
-        <div style={{ marginRight: "18px" }}>
-          <PollTab />
-        </div>
-        <div style={{ marginRight: "18px" }}>
-          <PollTab />
-        </div>
-      </div>
+      <div className="flex flex-row">{tabsArr}</div>
     </div>
   );
 };
