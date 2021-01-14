@@ -4,11 +4,25 @@ import Avatar from "./Avatar";
 export default {
   title: "Atoms/Avatar",
   component: Avatar,
-  //decorators: [story => <Center>{story()}</Center>]
+  argTypes: {
+    size: {
+      control: {
+        type: "radio",
+        options: ["sm", "md", "lg"],
+      },
+    },
+    type: {
+      control: {
+        type: "radio",
+        options: ["anon", "default", "user"],
+      },
+    },
+  },
 };
 
 const Template = (args) => <Avatar {...args} />;
 export const MainAvatar = Template.bind({});
 MainAvatar.args = {
-  //size: "lg",
+  size: "lg",
+  type: "user",
 };
