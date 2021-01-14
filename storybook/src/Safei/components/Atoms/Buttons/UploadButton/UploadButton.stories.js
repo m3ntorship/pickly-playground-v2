@@ -1,10 +1,13 @@
 import React from "react";
+import "@storybook/addon-actions";
+
 import UploadButton from "./UploadButton";
 
 export default {
   title: "Atoms/Buttons/UploadButton",
   component: UploadButton,
-  //decorators: [story => <Center>{story()}</Center>]
+  // parameters: { actions: { argTypesRegex: "^on.*" } },
+  // argTypes: { onClick: { action: "clicked" } },
 };
 
 const Template = (args) => <UploadButton {...args} />;
