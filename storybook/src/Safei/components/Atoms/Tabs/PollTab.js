@@ -34,7 +34,7 @@ const PollTab = ({ type, text }) => {
         <span className="checkmark h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-500 ease-in-out">
           {" "}
         </span>
-        <span className="ml-2">{source}</span>
+        <span className="ml-2 scale-50">{source}</span>
         <span className="ml-2 text-sm font-medium">{text}</span>
       </label>
     </button>

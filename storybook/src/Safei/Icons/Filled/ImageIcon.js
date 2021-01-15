@@ -3,6 +3,7 @@ import React from "react";
 const ImageIcon = () => {
   return (
     <svg
+      className=" h-5 w-5"
       width="24"
       height="24"
       viewBox="0 0 24 24"

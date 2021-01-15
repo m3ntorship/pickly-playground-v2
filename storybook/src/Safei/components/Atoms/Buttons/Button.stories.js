@@ -31,8 +31,8 @@ export default {
 };
 
 const Template = (args) => <Button {...args} />;
-export const SmallButton = Template.bind({});
-SmallButton.args = {
+export const _Button = Template.bind({});
+_Button.args = {
   disabled: false,
   size: "lg",
   text: "Me Button?",
