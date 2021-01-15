@@ -10,6 +10,23 @@ export default {
         type: "boolean",
       },
     },
+    size: {
+      control: {
+        type: "inline-radio",
+        options: ["lg", "md", "sm"],
+      },
+    },
+    type: {
+      control: {
+        type: "inline-radio",
+        options: ["primary", "secondary", "text"],
+      },
+    },
+    text: {
+      control: {
+        type: "text",
+      },
+    },
   },
 };
 
@@ -17,5 +34,7 @@ const Template = (args) => <Button {...args} />;
 export const SmallButton = Template.bind({});
 SmallButton.args = {
   disabled: false,
-  // size: "lg",
+  size: "lg",
+  text: "Me Button?",
+  type: "primary",
 };
