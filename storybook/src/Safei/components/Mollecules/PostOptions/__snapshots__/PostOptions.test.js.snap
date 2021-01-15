@@ -27,10 +27,10 @@ exports[`Test my PostOptions components renders a PostOptions bar  1`] = `
     </div>
   </div>
   <div
-    className="text-xs ml-2 leading-4 mb-0 pr-6  border-r border-grey-shd6"
+    className="text-xs ml-2 leading-4 mb-0 pr-6 "
     style={
       Object {
-        "paddingTop": "2px",
+        "paddingTop": "3px",
       }
     }
   >
@@ -38,17 +38,15 @@ exports[`Test my PostOptions components renders a PostOptions bar  1`] = `
   </div>
   <div
     className="text-xs ml-2 leading-4 mb-0 pr-6 cursor-pointer"
-    style={
-      Object {
-        "paddingTop": "2px",
-      }
-    }
   >
-    <label>
+    <label
+      className="font-normal text-xs text-dark-grey"
+      htmlFor="privacy"
+    >
       Privacy:
     </label>
     <select
-      className="cursor-pointer"
+      className="cursor-pointer text-center ml-2 font-medium outline-none text-sm text-dark-grey"
       id="privacy"
       name="privacy"
     >

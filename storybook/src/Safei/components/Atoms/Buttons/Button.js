@@ -4,27 +4,27 @@ import "./Button.css";
 // const Button = ({ size, type, isActive, hasIcon, iconLocation }) => {
 //   //hasIcon = ['true', false] >>> Boolean
 //   //iconLocation = ['left', 'right', 'center']
-//
-//   return <div>Not a Button Yet </div>;
-// };
 
 // export default Button;
 const Button = ({ size, type, disabled, text }) => {
   let opacity, _size, _type;
-  // _hasIcon,
-  // _iconLocation = "";
+  if (!text) {
+    text = "Button";
+  } //make sure btn not empty if no text passed.
   ////size = ['lg', 'md', 'sm]:
   if (size == "lg") _size = "px-xl py-3.5 text-md font-bold ";
-  if (size == "md") _size = "px-l py-xs text-base font-medium";
-  if (size == "sm") _size = "px-m py-1.5 font-medium text-sm";
-  //type = ['primary', 'secondary', 'text']
-  if (type == "primary") {
-    _type = "primary bg-primary text-white border-2 border-primary";
+  else if (size == "md") _size = "px-l py-xs text-base font-medium";
+  else {
+    _size = "px-m py-1.5 font-medium text-sm";
   }
+  //type = ['primary', 'secondary', 'text']
   if (type == "secondary") {
     _type = "secondary bg-white text-primary border border-primary";
+  } else if (type == "text") {
+    _type = "text text-accent focus-within";
+  } else {
+    _type = "primary bg-primary text-white border-2 border-primary";
   }
-  if (type == "text") _type = "text text-accent focus-within";
   //dsiabled?
   if (disabled) {
     opacity = "opacity-25";
