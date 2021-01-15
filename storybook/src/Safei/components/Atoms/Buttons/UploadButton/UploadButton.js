@@ -5,7 +5,7 @@ const UploadButton = () => {
       id="upload-container"
       className="border-2 border-dashed border-accent bg-grey-shd7 rounded-md text-accent focus:outline-none relative h-14 text-center"
     >
-      <span className="text-accent object-none absolute top-3.5 left-48 px-7 font-medium font-sm">
+      <span className="text-accent object-none absolute top-3.5 left-1/4 px-7 font-medium font-sm">
         <svg
           className="mr-1 w-4 h-4 fill-current inline"
           viewBox="0 0 24 24"

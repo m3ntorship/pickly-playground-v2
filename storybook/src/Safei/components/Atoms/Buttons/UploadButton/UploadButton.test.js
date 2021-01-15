@@ -4,7 +4,7 @@ import UploadButton from "./UploadButton";
 
 describe("UploadButton  field", () => {
   it("renders  UploadButton ", () => {
-    const tree = renderer.create(<UploadButton status="error" />).toJSON();
+    const tree = renderer.create(<UploadButton />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
