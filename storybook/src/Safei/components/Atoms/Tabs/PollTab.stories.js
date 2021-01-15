@@ -4,12 +4,24 @@ import PollTab from "./PollTab";
 export default {
   title: "Atoms/PollTab",
   component: PollTab,
+  argTypes: {
+    text: {
+      control: {
+        type: "text",
+      },
+    },
+    type: {
+      control: {
+        type: "inline-radio",
+        options: ["img", "poll", "file"],
+      },
+    },
+  },
 };
 
 const Template = (args) => <PollTab {...args} />;
 export const PollTabDisplay = Template.bind({});
 PollTabDisplay.args = {
-  //   status: "error",
-  // prefix: '+20',
-  // direction: 'flex-row'
+  type: "img",
+  text: "Img Poll",
 };

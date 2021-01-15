@@ -1,7 +1,21 @@
 import React from "react";
+// import IconImgPoll from "./IconImgPoll";
 import "./PollTab.css";
+import ImageIcon from "../../../Icons/Filled/ImageIcon";
+import FileIcon from "../../../Icons/Filled/FileIcon";
+import PollIcon from "../../../Icons/Filled/PollIcon";
 
-const PollTab = () => {
+//Adjusted poll tab to take args of icon and text, click on radio works only when clicking the radio button itself not the whole tab.
+const PollTab = ({ type, text }) => {
+  let source;
+  if (!text) text = "Default Poll";
+  type == "img"
+    ? (source = <ImageIcon />)
+    : type == "poll"
+    ? (source = <PollIcon />)
+    : type == "file"
+    ? (source = <FileIcon />)
+    : "";
   return (
     <button
       className="group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-8 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out"
@@ -11,25 +25,17 @@ const PollTab = () => {
         className="cursor-pointer relative flex items-center justify-items-center content-center"
         htmlFor="poll-option"
       >
-        <input type="radio" name="poll-option" className="bg-primary" />
+        <input
+          type="radio"
+          name="poll-option"
+          className="bg-primary opacity-0"
+          style={{ zIndex: 3 }}
+        />
         <span className="checkmark h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-500 ease-in-out">
           {" "}
         </span>
-        <svg
-          className="w-6 h-6 ml-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-          ></path>
-        </svg>
-        <span className="ml-2">Image Poll</span>
+        <span className="w-6 h-6 ml-2">{source}</span>
+        <span className="ml-2">{text}</span>
       </label>
     </button>
   );
