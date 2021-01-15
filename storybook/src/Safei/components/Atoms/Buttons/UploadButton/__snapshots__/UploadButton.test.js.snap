@@ -6,7 +6,7 @@ exports[`UploadButton  field renders  UploadButton  1`] = `
   id="upload-container"
 >
   <span
-    className="text-accent object-none absolute top-3.5 left-48 px-7 font-medium font-sm"
+    className="text-accent object-none absolute top-3.5 left-1/4 px-7 font-medium font-sm"
   >
     <svg
       className="mr-1 w-4 h-4 fill-current inline"
