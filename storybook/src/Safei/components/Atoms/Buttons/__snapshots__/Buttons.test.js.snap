@@ -1,59 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render button based on passed props renders large primary button with left icon 1`] = `
-<div>
-  Not a Button Yet 
-</div>
-`;
-
-exports[`render button based on passed props renders large primary button with no icon 1`] = `
-<div>
-  Not a Button Yet 
-</div>
-`;
-
-exports[`render button based on passed props renders mid primary button with left icon 1`] = `
-<div>
-  Not a Button Yet 
-</div>
-`;
-
-exports[`render button based on passed props renders mid primary button with no icon 1`] = `
-<div>
-  Not a Button Yet 
-</div>
-`;
-
-exports[`render button based on passed props renders small primary button with left icon 1`] = `
-<div>
-  Not a Button Yet 
-</div>
-`;
-
-exports[`render button based on passed props renders small primary button with no icon 1`] = `
-<div>
-  Not a Button Yet 
-</div>
-`;
-
-exports[`render my primary button render primary button comp large size 1`] = `
+exports[`render a primary lg button render primary button comp large size 1`] = `
 <button
-  className="py-4 px-10 btn-primary text-lg"
+  className=" primary bg-primary text-white border-2 border-primary px-xl py-3.5 text-md font-bold    rounded-full hover-state focus:outline-none focus-state flex items-center justify-center content-center undefined"
 >
   <span
-    className="inline-block"
-  />
-  <svg
-    className="w-9 h-9 inline-block ml-2"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
+    className="inline-block font-medium	"
   >
-    <path
-      clipRule="evenodd"
-      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-      fillRule="evenodd"
-    />
-  </svg>
+    Button
+  </span>
+</button>
+`;
+
+exports[`render a primary lg button render primary small button comp when no props are passed 1`] = `
+<button
+  className=" primary bg-primary text-white border-2 border-primary px-m py-1.5 font-medium text-sm   rounded-full hover-state focus:outline-none focus-state flex items-center justify-center content-center undefined"
+>
+  <span
+    className="inline-block font-medium	"
+  >
+    Button
+  </span>
+</button>
+`;
+
+exports[`render a primary lg button render secondary button comp md size 1`] = `
+<button
+  className=" secondary bg-white text-primary border border-primary px-l py-xs text-base font-medium   rounded-full hover-state focus:outline-none focus-state flex items-center justify-center content-center undefined"
+>
+  <span
+    className="inline-block font-medium	"
+  >
+    Button
+  </span>
+</button>
+`;
+
+exports[`render a primary lg button render text button comp sm size 1`] = `
+<button
+  className=" text text-accent focus-within px-m py-1.5 font-medium text-sm   rounded-full hover-state focus:outline-none focus-state flex items-center justify-center content-center undefined"
+>
+  <span
+    className="inline-block font-medium	"
+  >
+    Button
+  </span>
 </button>
 `;
