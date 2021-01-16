@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Button} from "./Button";
+import { Button } from "./Button";
 
 describe("Testing Button", () => {
   it("Testing Button size big", () => {
@@ -28,28 +28,37 @@ describe("Testing Button", () => {
     expect(tree).toMatchSnapshot();
   });
   it("Testing Button type primary size medium", () => {
-    const tree = renderer.create(<Button type="primary" size="medium" />).toJSON();
+    const tree = renderer
+      .create(<Button type="primary" size="medium" />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("Testing Button type primary size small", () => {
-    const tree = renderer.create(<Button type="primary" size="small" />).toJSON();
+    const tree = renderer
+      .create(<Button type="primary" size="small" />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("Testing Button type secondary size big", () => {
-    const tree = renderer.create(<Button type="secondary" size="big" />).toJSON();
+    const tree = renderer
+      .create(<Button type="secondary" size="big" />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("Testing Button type secondary size medium", () => {
-    const tree = renderer.create(<Button type="secondary" size="medium" />).toJSON();
+    const tree = renderer
+      .create(<Button type="secondary" size="medium" />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("Testing Button type secondary size small", () => {
-    const tree = renderer.create(<Button type="secondary" size="small" />).toJSON();
+    const tree = renderer
+      .create(<Button type="secondary" size="small" />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it("Testing Button with no props", () => {
     const tree = renderer.create(<Button />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

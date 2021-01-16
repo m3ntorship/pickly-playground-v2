@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Radio} from "./Radio";
+import { Radio } from "./Radio";
 
 describe("Testing Radio", () => {
   it("Testing Radio size Default", () => {

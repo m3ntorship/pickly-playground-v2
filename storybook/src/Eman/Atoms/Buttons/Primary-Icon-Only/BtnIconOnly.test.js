@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {ButtonIconOnly} from "./BtnIconOnly";
+import { ButtonIconOnly } from "./BtnIconOnly";
 
 describe("Testing ButtonIconOnly", () => {
   it("Testing ButtonIconOnly size big", () => {
@@ -19,5 +19,4 @@ describe("Testing ButtonIconOnly", () => {
     const tree = renderer.create(<ButtonIconOnly />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

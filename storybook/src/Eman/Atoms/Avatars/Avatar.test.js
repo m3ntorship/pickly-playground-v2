@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Avater} from "./Avatar";
+import { Avater } from "./Avatar";
 
 describe("Testing avatar", () => {
   it("Testing Avatar size Large", () => {
@@ -31,5 +31,4 @@ describe("Testing avatar", () => {
     const tree = renderer.create(<Avater />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

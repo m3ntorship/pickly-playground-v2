@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {LabelwIcon} from "./LabelwIcon";
+import { LabelwIcon } from "./LabelwIcon";
 
 describe("Testing LabelwIcon", () => {
   it("Testing LabelwIcon type Default", () => {

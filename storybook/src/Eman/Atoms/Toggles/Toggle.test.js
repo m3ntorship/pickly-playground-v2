@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Toggle} from "./Toggle";
+import { Toggle } from "./Toggle";
 
 describe("Testing Toggle", () => {
   it("Testing Toggle size Default", () => {
@@ -15,5 +15,4 @@ describe("Testing Toggle", () => {
     const tree = renderer.create(<Toggle />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

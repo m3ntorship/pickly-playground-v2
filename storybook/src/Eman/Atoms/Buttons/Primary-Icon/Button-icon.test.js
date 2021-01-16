@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {ButtonIcon} from "./Button-icon";
+import { ButtonIcon } from "./Button-icon";
 
 describe("Testing ButtonIcon", () => {
   it("Testing ButtonIcon size big", () => {
@@ -28,5 +28,4 @@ describe("Testing ButtonIcon", () => {
     const tree = renderer.create(<ButtonIcon />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

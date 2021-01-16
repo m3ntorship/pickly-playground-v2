@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Divider} from "./Divider";
+import { Divider } from "./Divider";
 
 describe("Testing Divider", () => {
   it("Testing Checkbox type Horizontal", () => {
@@ -15,5 +15,4 @@ describe("Testing Divider", () => {
     const tree = renderer.create(<Divider />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });

@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Label} from "./Label";
+import { Label } from "./Label";
 
 describe("Testing Label", () => {
   it("Testing Label type Default", () => {

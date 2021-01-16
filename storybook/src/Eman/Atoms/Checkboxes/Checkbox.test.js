@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Checkbox} from "./Checkbox";
+import { Checkbox } from "./Checkbox";
 
 describe("Testing Checkbox", () => {
   it("Testing Checkbox size Default", () => {
@@ -15,5 +15,4 @@ describe("Testing Checkbox", () => {
     const tree = renderer.create(<Checkbox />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 });
