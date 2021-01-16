@@ -30,7 +30,7 @@ exports[`Test my PollTab components renders a PollTab Button  1`] = `
        
     </span>
     <span
-      className="ml-2"
+      className="ml-2 scale-50"
     />
     <span
       className="ml-2 text-sm font-medium"
