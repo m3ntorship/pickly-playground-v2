@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Input field renders a marked input field with icon or prefix  1`] = `
+<div
+  className="border-error border rounded-md  w-64 flex undefined items-start content-center px-1  bg-white label-container hover:border-grey-shd1 focus-within:border-opacity-100 "
+  style={
+    Object {
+      "pointerEvents": "",
+    }
+  }
+>
+  <div
+    className="pl-1 pr-1 pt-2.5 inline-block"
+  >
+    
+  </div>
+  <div
+    className="inline-block"
+  >
+    <span
+      className="text-sm text-grey border-r-2 border-grey-shd6 pr-1.5"
+    />
+    <input
+      className="px-1.5 py-1 outline-none inline-block"
+      style={
+        Object {
+          "width": "80%",
+        }
+      }
+      type="search"
+    />
+  </div>
+  <div
+    className="pt-2.5 pr-1 mr-3"
+  >
+    <svg
+      className="w-3 h-3"
+      fill="#FE544A"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;
