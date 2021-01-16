@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 export const CHECKBOX = {
@@ -8,15 +8,31 @@ export const CHECKBOX = {
   },
 };
 
-export const Checkbox = ({ status, size }) => {
+export const Checkbox = ({ size, disabled }) => {
+  const [isChecked, setIsChecked] = useState(true);
+
+  const handleCheck = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const divSize = size === CHECKBOX.SIZE.DEFAULT ? "w-6 h-6" : "w-4 h-4";
+  const iconSize = size === CHECKBOX.SIZE.DEFAULT ? "16" : "12";
+
   return (
     <>
-      {size === CHECKBOX.SIZE.DEFAULT && status && (
-        <button className="w-6 h-6 rounded-sm bg-primary flex justify-center  items-center">
+      {isChecked && (
+        <div
+          className={`relative rounded-sm  flex justify-center  items-center bg-primary
+          ${
+            !disabled && "hover:bg-primary-shd8"
+          } focus:outline-none focus:ring-2 focus:ring-offset-primary-shd6 ${divSize} 
+          ${disabled && "bg-primary-shd7"}`}
+          onClick={handleCheck}
+        >
           <svg
             className="text-white"
-            width="16"
-            height="16"
+            width={iconSize}
+            height={iconSize}
             viewBox="0 0 16 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,35 +42,36 @@ export const Checkbox = ({ status, size }) => {
               fill="white"
             />
           </svg>
-        </button>
+          <input
+            onChange={(event) => setIsChecked(event.currentTarget.checked)}
+            disabled={disabled}
+            checked={isChecked}
+            type="checkbox"
+            className="opacity-0 absolute cursor-pointer w-full h-full"
+          />
+        </div>
       )}
-      {size === CHECKBOX.SIZE.DEFAULT && !status && (
-        <button className="w-6 h-6 border border-grey-shd4 rounded-sm flex justify-center items-center "></button>
-      )}
-      {size === CHECKBOX.SIZE.SMALL && status && (
-        <button className="w-4 h-4 rounded-sm bg-primary flex justify-center  items-center">
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.99998 7.79298L3.35348 6.14648L2.64648 6.85348L4.99998 9.20698L9.85348 4.35348L9.14648 3.64648L4.99998 7.79298Z"
-              fill="white"
-            />
-          </svg>
-        </button>
-      )}
-      {size === CHECKBOX.SIZE.SMALL && !status && (
-        <button className="w-4 h-4 border border-grey-shd4 rounded-sm flex justify-center items-center "></button>
+      {!isChecked && (
+        <div
+          className={`relative rounded-sm flex justify-center items-center border border-grey-shd4 focus:outline-none  focus:ring-2 focus:ring-offset-grey-shd2 ${
+            !disabled && "hover:border  hover:border-grey-shd1"
+          } ${divSize} ${disabled && "border-grey-shd6"}`}
+          onClick={handleCheck}
+        >
+          <input
+            onChange={(event) => setIsChecked(event.currentTarget.checked)}
+            disabled={disabled}
+            checked={isChecked}
+            type="checkbox"
+            className="opacity-0 absolute cursor-pointer w-full h-full"
+          />
+        </div>
       )}
     </>
   );
 };
 
 Checkbox.propTypes = {
-  status: PropTypes.bool,
+  disabled: PropTypes.bool,
   size: PropTypes.oneOf(["Default", "Small"]),
 };

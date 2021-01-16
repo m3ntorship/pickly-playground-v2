@@ -5,12 +5,6 @@ export default {
   title: "Eman/Atoms/Toggles",
   component: Toggle,
   argTypes: {
-    status: {
-      control: {
-        type: "radio",
-        options: [TOGGLE.STATUS.ON, TOGGLE.STATUS.OFF],
-      },
-    },
     size: {
       control: {
         type: "select",
@@ -24,6 +18,6 @@ const Template = (args) => <Toggle {...args} />;
 
 export const toggle = Template.bind({});
 toggle.args = {
-  status: TOGGLE.STATUS.ON,
+  disabled: false,
   size: TOGGLE.SIZE.DEFAULT,
 };

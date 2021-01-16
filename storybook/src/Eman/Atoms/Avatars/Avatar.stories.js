@@ -21,6 +21,11 @@ export default {
         ],
       },
     },
+    imgName: {
+      control: {
+        type: "text",
+      },
+    },
   },
 };
 
@@ -30,4 +35,5 @@ export const avater = Template.bind({});
 avater.args = {
   size: AVATER.SIZE.LARGE,
   type: AVATER.TYPE.FILLED,
+  imgName: "",
 };

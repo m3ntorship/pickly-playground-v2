@@ -16,6 +16,13 @@ export default {
         ],
       },
     },
+    letterIndex: {
+      control: {
+        type: "number",
+        min: 0,
+        max: 25,
+      },
+    },
   },
 };
 
@@ -26,4 +33,5 @@ choices.args = {
   label: "Label",
   type: INPUT.STATUS.DEFAULT,
   placeholder: "Enter Text",
+  letterIndex: 0,
 };

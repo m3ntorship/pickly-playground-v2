@@ -5,7 +5,7 @@ export default {
   title: "Eman/Atoms/Checkboxes",
   component: Checkbox,
   argTypes: {
-    status: {
+    disabled: {
       control: {
         type: "boolean",
       },
@@ -23,6 +23,6 @@ const Template = (args) => <Checkbox {...args} />;
 
 export const checkbox = Template.bind({});
 checkbox.args = {
-  status,
+  disabled: false,
   size: CHECKBOX.SIZE.DEFAULT,
 };

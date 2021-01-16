@@ -14,12 +14,12 @@ export const ImagePoll = () => {
         <div className="bg-white w-3/5 rounded-md">
           <div className="p-4">
             <div className="flex items-center mb-4">
-              <Avater type="Filled" size="Large" />
+              <Avater type="Filled" size="Large" imgName="" />
               <div className="flex items-center">
                 <Tab
                   icon="Image"
                   status="on"
-                  styles="Active"
+                  styles="Inactive"
                   content="Image Poll"
                 />
                 <Tab

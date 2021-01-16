@@ -13,14 +13,20 @@ export const DIVIDER = {
   },
 };
 
-export const Divider = ({ type, range }) => {
+export const Divider = ({ type, range, color = "" }) => {
   return (
     <>
       {type === DIVIDER.TYPE.HORIZONTAL && (
-        <div className={`h-0.5 bg-grey-shd6 w-${range}`}></div>
+        <div
+          className={`h-0.5 w-${range} ${color === "" && "bg-grey-shd6"}`}
+          style={{ backgroundColor: color }}
+        ></div>
       )}
       {type === DIVIDER.TYPE.VERTICAL && (
-        <div className={`w-0.5 bg-grey-shd6 h-${range}`}></div>
+        <div
+          className={`w-0.5 h-${range} ${color === "" && "bg-grey-shd6"}`}
+          style={{ backgroundColor: color }}
+        ></div>
       )}
     </>
   );
@@ -29,4 +35,5 @@ export const Divider = ({ type, range }) => {
 Divider.propTypes = {
   type: PropTypes.oneOf(["Horizontal", "Vertical"]),
   range: PropTypes.any,
+  color: PropTypes.color,
 };

@@ -5,12 +5,6 @@ export default {
   title: "Eman/Atoms/Radios",
   component: Radio,
   argTypes: {
-    status: {
-      control: {
-        type: "radio",
-        options: [RADIO.STATUS.ON, RADIO.STATUS.OFF],
-      },
-    },
     size: {
       control: {
         type: "select",
@@ -24,6 +18,6 @@ const Template = (args) => <Radio {...args} />;
 
 export const radio = Template.bind({});
 radio.args = {
-  status: RADIO.STATUS.ON,
   size: RADIO.SIZE.DEFAULT,
+  disabled: false,
 };

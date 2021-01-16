@@ -19,6 +19,11 @@ export default {
         step: DIVIDER.RANGE.STEP,
       },
     },
+    color: {
+      control: {
+        type: "color",
+      },
+    },
   },
 };
 

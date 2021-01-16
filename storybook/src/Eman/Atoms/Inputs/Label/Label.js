@@ -50,7 +50,7 @@ export const Label = ({ label, type, placeholder }) => {
           onChange={handleChange}
           onFocus={handleFocus}
           placeholder={placeholder}
-          className="focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+          className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
           disabled={type === INPUT.STATUS.DISABLED && "disabled"}
         />
         {type === INPUT.STATUS.ERROR && !value ? (
