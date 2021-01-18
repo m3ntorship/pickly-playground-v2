@@ -317,15 +317,15 @@ input:checked + .slider:before {
 }
 
 .atom .parent .child .form-control form .home-icon {
-  @apply absolute top-38 left-12;
+  @apply absolute top-38 left-12 opacity-50;
 }
 
-.atom .parent .child .form-control form .home-icon {
-  z-index: 999;
+.atom .parent .child .form-control form .form-input:hover ~ .home-icon {
+  @apply opacity-70;
 }
 
-.atom .parent .child .form-control form .home-icon path {
-  z-index: 1000;
+.atom .parent .child .form-control form .form-left-input:focus ~ .home-icon {
+  @apply opacity-100;
 }
 
 /************************************* Twfiek Section end ******************************/
