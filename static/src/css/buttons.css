@@ -34,22 +34,22 @@
 .btn--secondary--disabled {
   @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
-.tab-poll{
+.tab-poll {
   @apply group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-14 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out;
 }
-.tab-poll{
+.tab-poll {
   padding-right: 12px;
 }
-.checkmark-overlay{
+.checkmark-overlay {
   @apply h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-500 ease-in-out;
 }
 
 input:checked ~ .checkmark-overlay {
-  background-color: #7048E8;
+  background-color: #7048e8;
 }
 
 .checkmark-overlay:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -59,18 +59,17 @@ input:checked ~ .checkmark-overlay:after {
 }
 /* Style the indicator (dot/circle) */
 .checkmark-overlay:after {
-	top: 3px;
-	left: 3px;
-	width: 6px;
-	height: 6px;
-	border-radius: 999px;
-	background: white;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	-ms-border-radius: 999px;
-	-o-border-radius: 999px;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: white;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
 }
-
 
 /*************************************Safei Section End******************************/
 .radio__container {
@@ -240,4 +239,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.tab {
+  @apply flex justify-evenly items-center rounded-full w-6xl h-2xl bg-white ml-6;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-hover focus:ring-2 focus:ring-dark-btnFocus rounded-full text-white focus:outline-none ml-4 mt-4;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-grey-bg ring-1 ring-primary text-primary;
+}
+
+.btn-text {
+  @apply bg-none text-accent hover:text-accent-hover focus:underline focus:outline-none ml-4 mt-4;
 }

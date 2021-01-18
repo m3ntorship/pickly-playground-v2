@@ -1,13 +1,49 @@
 .banner {
 }
 
-#upload-container{
-    width: 704px;
+#upload-container {
+  width: 704px;
 }
-.tab-poll input:checked{
-    background-color: #FAFAFC;
+.tab-poll input:checked {
+  background-color: #fafafc;
 }
- .image-container{
-   width: 704px;
-   height: 708px;
+.image-container {
+  width: 704px;
+  height: 708px;
+}
+
+.atom {
+  @apply p-xl;
+}
+
+.header {
+  @apply text-8xl font-medium;
+}
+
+.title-header {
+  @apply w-1/5;
+}
+
+.title {
+  @apply text-6xl font-light;
+}
+
+.colors {
+  @apply w-12xl h-7xl rounded-md ml-m mt-m;
+}
+
+.shade {
+  @apply w-7xl h-5xl rounded-md ml-m mt-m;
+}
+
+.parent {
+  @apply flex;
+}
+
+.child {
+  @apply flex items-center flex-wrap w-4/5;
+}
+
+.radius {
+  @apply w-23xl h-23xl bg-white;
 }
