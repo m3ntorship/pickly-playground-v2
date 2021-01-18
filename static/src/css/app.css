@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import './typography.css';
+@import './buttonswithTW.css';
 @import './banner.css';
 @import './buttons.css';
-@import './buttonswithTW.css';
 @import 'tailwindcss/utilities';

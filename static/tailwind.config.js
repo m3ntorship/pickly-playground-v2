@@ -131,6 +131,7 @@ module.exports = {
         lv: '1.625rem',
         xl: '2rem',
         xxl: '2.5rem',
+        xxvl: '2.375rem',
         xvxl: '2.666rem',
         '3xl': '3rem',
         '4xl': '4rem',
@@ -157,6 +158,7 @@ module.exports = {
         '8xl': '8.8125rem',
         '4sxl': '4.1875rem',
         '18xl': '18.5rem',
+        '19xl': '18.75rem',
         '12xl': '11.75rem',
         '7xl': '7.75rem',
         '23xl': '23.125rem',
@@ -176,13 +178,19 @@ module.exports = {
         '7xl': '7.5rem',
         '5xl': '5.5rem',
         '23xl': '23.125rem',
-        '2xl': '2rem'
+        '2xl': '2rem',
+        '3xl': '2.5rem'
       },
       borderWidth: {
         5: '5px'
       },
       opacity: {
         24: '0.24'
+      },
+      inset: {
+        38: '2.275rem',
+        12: '0.75rem',
+        40: '2.5rem'
       }
     }
   },

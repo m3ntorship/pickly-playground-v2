@@ -12,15 +12,21 @@
   height: 708px;
 }
 
+/************************************* Twfiek Section start ******************************/
+
 .atom {
   @apply p-xl;
 }
 
-.header {
+.atom .header {
   @apply text-8xl font-medium;
 }
 
-.title-header {
+.atom .parent {
+  @apply flex;
+}
+
+.atom .parent .title-header {
   @apply w-1/5;
 }
 
@@ -28,22 +34,20 @@
   @apply text-6xl font-light;
 }
 
-.colors {
-  @apply w-12xl h-7xl rounded-md ml-m mt-m;
-}
-
-.shade {
-  @apply w-7xl h-5xl rounded-md ml-m mt-m;
-}
-
-.parent {
-  @apply flex;
-}
-
-.child {
+.atom .parent .child {
   @apply flex items-center flex-wrap w-4/5;
 }
 
-.radius {
+.atom .parent .child .colors {
+  @apply w-12xl h-7xl rounded-md ml-m mt-m;
+}
+
+.atom .parent .child .shade {
+  @apply w-7xl h-5xl rounded-md ml-m mt-m;
+}
+
+.atom .parent .child .radius {
   @apply w-23xl h-23xl bg-white;
 }
+
+/************************************* Twfiek Section end ******************************/

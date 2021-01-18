@@ -241,18 +241,91 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.tab {
+/************************************* Twfiek Section start ******************************/
+
+.atom .parent .child .tab {
   @apply flex justify-evenly items-center rounded-full w-6xl h-2xl bg-white ml-6;
 }
 
-.btn-primary {
+.atom .parent .child .btn-primary {
   @apply bg-primary hover:bg-primary-hover focus:ring-2 focus:ring-dark-btnFocus rounded-full text-white focus:outline-none ml-4 mt-4;
 }
 
-.btn-secondary {
+.atom .parent .child .btn-secondary {
   @apply bg-white hover:bg-grey-bg ring-1 ring-primary text-primary;
 }
 
-.btn-text {
+.atom .parent .child .btn-text {
   @apply bg-none text-accent hover:text-accent-hover focus:underline focus:outline-none ml-4 mt-4;
 }
+
+.atom .parent .child .form-control {
+  @apply flex mb-4 mr-10;
+}
+
+.atom .parent .child .form-control form {
+  @apply relative;
+}
+
+.atom .parent .child .form-control form .label {
+  @apply text-xs text-dark-grey font-light mb-xs block;
+}
+
+.atom .parent .child .form-control form .form-input {
+  @apply w-19xl h-3xl py-xsvv px-m text-sm text-grey-shd1 font-normal border-grey-shd5 border rounded-md hover:border-grey-shd2 focus:text-dark-grey focus:border-dark focus:outline-none;
+}
+
+.atom .parent .child .form-control form .input-icon {
+  @apply hidden;
+}
+
+.atom .parent .child .form-control form .form-input:focus + .input-icon {
+  @apply block absolute top-38 right-12;
+}
+
+.atom
+  .parent
+  .child
+  .form-control
+  form
+  .form-input:focus::-webkit-input-placeholder {
+  @apply text-dark;
+}
+
+.atom .parent .child .form-control form .form-error {
+  @apply border-error focus:border-error;
+}
+
+.atom .parent .child .form-control form .form-success {
+  @apply border-success focus:border-success;
+}
+
+.atom .parent .child .form-control form .form-disabled {
+  @apply text-grey-shd4 border-grey-shd7;
+}
+
+.atom .parent .child .form-control form .input-right-icon {
+  @apply absolute top-38 right-12;
+}
+
+.atom .parent .child .form-control form .form-input:focus + .icon-focus {
+  @apply absolute top-38 right-40;
+}
+
+.atom .parent .child .form-control form .form-left-input {
+  @apply pl-xxvl;
+}
+
+.atom .parent .child .form-control form .home-icon {
+  @apply absolute top-38 left-12;
+}
+
+.atom .parent .child .form-control form .home-icon {
+  z-index: 999;
+}
+
+.atom .parent .child .form-control form .home-icon path {
+  z-index: 1000;
+}
+
+/************************************* Twfiek Section end ******************************/
