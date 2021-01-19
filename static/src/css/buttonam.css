@@ -13,9 +13,7 @@
 .sm {
   @apply py-1.5 px-4 text-sm;
 }
-.disabled {
-  @apply bg-opacity-24;
-}
+
 .bttn:not(.disabled):hover {
   @apply bg-primary;
 }
@@ -35,4 +33,29 @@
 }
 .ico-r svg {
   @apply w-3 mr-3.5;
+}
+
+.bttn-ico {
+  @apply bg-primary-shd1 rounded-full  border-2 border-transparent;
+}
+
+.disabled {
+  @apply bg-opacity-24;
+}
+
+.bttn-ico:not(.disabled):hover {
+  @apply bg-primary;
+}
+.bttn-ico:not(.disabled):focus {
+  @apply bg-primary-shd1 border-2 border-primary;
+}
+
+.lg-ico svg {
+  @apply w-4 h-4 m-6;
+}
+.md-ico svg {
+  @apply w-3.5 h-3.5 m-3.5;
+}
+.sm-ico svg {
+  @apply w-3 h-3 m-2.5;
 }
