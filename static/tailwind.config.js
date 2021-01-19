@@ -117,6 +117,7 @@ module.exports = {
     },
     extend: {
       spacing: {
+        '4xs': '0.1875rem',
         '3xs': '.125rem',
         xxs: '.25rem',
         xxsv: '0.375rem',
@@ -166,7 +167,9 @@ module.exports = {
         '3xl': '3.625rem',
         '9xsl': '9.25.5rem',
         '33xl': '33.25rem',
-        '29xl': '29.5rem'
+        '29xl': '29.5rem',
+        '2xl': '2.625rem',
+        xl: '1.75rem'
       },
       height: {
         '61xl': '61.0625rem',
@@ -179,10 +182,13 @@ module.exports = {
         '5xl': '5.5rem',
         '23xl': '23.125rem',
         '2xl': '2rem',
-        '3xl': '2.5rem'
+        '3xl': '2.5rem',
+        xl: '1.5rem'
       },
       borderWidth: {
-        5: '5px'
+        5: '5px',
+        6: '6px',
+        7: '7px'
       },
       opacity: {
         24: '0.24'
