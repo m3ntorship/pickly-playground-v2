@@ -1,6 +1,9 @@
 .bttn {
   @apply bg-primary-shd1 text-white rounded-xl border-2 border-transparent;
 }
+.bttn svg {
+  fill: #fff;
+}
 .disabled {
   @apply opacity-25;
 }
@@ -39,6 +42,9 @@
 
 .bttn-ico {
   @apply bg-primary-shd1 rounded-full  border-2 border-transparent;
+}
+.bttn-ico svg {
+  fill: #fff;
 }
 
 .bttn-ico:not(.disabled):hover {
