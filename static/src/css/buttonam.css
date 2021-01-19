@@ -29,3 +29,10 @@
 .ico-l svg {
   @apply w-3 ml-3.5;
 }
+
+.ico-r {
+  @apply flex flex-row-reverse items-baseline;
+}
+.ico-r svg {
+  @apply w-3 mr-3.5;
+}
