@@ -23,17 +23,17 @@
   @apply bg-primary-shd1 border-2 border-primary;
 }
 
-.ico-l {
+.ico-r {
   @apply flex items-baseline;
 }
-.ico-l svg {
+.ico-r svg {
   @apply w-3 ml-3.5;
 }
 
-.ico-r {
+.ico-l {
   @apply flex flex-row-reverse items-baseline;
 }
-.ico-r svg {
+.ico-l svg {
   @apply w-3 mr-3.5;
 }
 
