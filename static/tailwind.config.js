@@ -85,6 +85,8 @@ module.exports = {
       full: '999px'
     },
     boxShadow: {
+      soft:
+        '0px 4px 12px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.04);',
       dark:
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
       heavy:
@@ -106,6 +108,16 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Roboto']
+    },
+    filter: { // defaults to {}
+      'none': 'none',
+      'grayscale': 'grayscale(1)',
+      'invert': 'invert(1)',
+      'sepia': 'sepia(1)',
+    },
+    backdropFilter: { // defaults to {}
+      'none': 'none',
+      'blur': 'blur(16px)',
     },
     extend: {
       spacing: {
@@ -160,10 +172,14 @@ module.exports = {
     }
   },
   variants: {
+    filter: ['responsive'], // defaults to ['responsive']
+    backdropFilter: ['responsive'], // defaults to ['responsive'],
     extend: {
       textDecoration: ['group-focus'],
      
     }
   },
-  plugins: []
+  plugins: [
+    require('tailwindcss-filters'),
+  ]
 };
