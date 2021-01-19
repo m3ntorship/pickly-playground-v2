@@ -1,7 +1,9 @@
 .bttn {
   @apply bg-primary-shd1 text-white rounded-xl border-2 border-transparent;
 }
-
+.disabled {
+  @apply opacity-25;
+}
 /* button Size */
 
 .lg {
@@ -37,10 +39,6 @@
 
 .bttn-ico {
   @apply bg-primary-shd1 rounded-full  border-2 border-transparent;
-}
-
-.disabled {
-  @apply opacity-25;
 }
 
 .bttn-ico:not(.disabled):hover {
@@ -110,4 +108,31 @@
 }
 .sm-ico svg {
   @apply w-3 h-3 m-2.5;
+}
+
+/* start Text */
+.txt-bttn {
+  @apply text-md font-bold text-accent-shd1;
+}
+.txt-bttn.lg {
+  @apply text-md;
+}
+.txt-bttn.md {
+  @apply text-base;
+}
+.txt-bttn.sm {
+  @apply text-sm;
+}
+
+.txt-bttn:not(.disabled):hover {
+  @apply text-accent;
+}
+.txt-bttn:not(.disabled):focus {
+  @apply text-accent;
+}
+.txt-bttn svg {
+  fill: #0ab9ff;
+}
+.txt-bttn:not(.disabled):hover svg {
+  fill: #00a8e8;
 }
