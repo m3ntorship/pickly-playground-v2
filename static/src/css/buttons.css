@@ -248,7 +248,7 @@ input:checked + .slider:before {
 }
 
 .atom .parent .child .btn-primary {
-  @apply bg-primary hover:bg-primary-hover focus:ring-2 focus:ring-dark-btnFocus rounded-full text-white focus:outline-none ml-4 mt-4;
+  @apply bg-primary hover:bg-primary-hover focus:ring-dark-btnFocus rounded-full text-white focus:outline-none ml-4 mt-4;
 }
 
 .atom .parent .child .btn-secondary {
@@ -326,6 +326,38 @@ input:checked + .slider:before {
 
 .atom .parent .child .form-control form .form-left-input:focus ~ .home-icon {
   @apply opacity-100;
+}
+
+.atom .parent .child .form-control form .no-label-icon {
+  @apply top-3;
+}
+
+.atom .parent .child .form-control form .form-input:focus + .no-label-icon {
+  @apply top-3;
+}
+
+.atom .parent .child .form-control form .prefix {
+  @apply font-normal text-sm text-grey;
+}
+
+.atom .parent .child .form-control form .devider {
+  @apply w-px h-4 bg-grey-shd6 ml-xl;
+}
+
+.atom .parent .child .form-control form .prefix-input {
+  @apply pl-3xl;
+}
+
+.atom .parent .child .form-control form .dropdown {
+  @apply ml-l;
+}
+
+.atom .parent .child .form-control form .dropdown-devider {
+  @apply ml-xvxl;
+}
+
+.atom .parent .child .form-control form .dropdown-input {
+  @apply pl-4xl;
 }
 
 /************************************* Twfiek Section end ******************************/
