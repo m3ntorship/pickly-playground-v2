@@ -22,3 +22,10 @@
 .bttn:not(.disabled):focus {
   @apply bg-primary-shd1 border-2 border-primary;
 }
+
+.ico-l {
+  @apply flex items-baseline;
+}
+.ico-l svg {
+  @apply w-3 ml-3.5;
+}
