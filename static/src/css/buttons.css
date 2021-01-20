@@ -251,8 +251,12 @@ input:checked + .slider:before {
   @apply bg-primary hover:bg-primary-hover focus:ring-dark-btnFocus rounded-full text-white focus:outline-none ml-4 mt-4;
 }
 
+.atom .parent .child .btn-primary:focus {
+  @apply border-2 border-dark-btnFocus;
+}
+
 .atom .parent .child .btn-secondary {
-  @apply bg-white hover:bg-grey-bg ring-1 ring-primary text-primary;
+  @apply bg-white hover:bg-grey-bg ring-primary text-primary;
 }
 
 .atom .parent .child .btn-text {
