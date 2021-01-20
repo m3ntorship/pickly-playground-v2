@@ -78,6 +78,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
+      xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
       lg: '1rem',
@@ -121,7 +122,7 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem',
         '3xxsl': '3.25rem',
-        'mvv':'29.5rem'
+        mvv: '29.5rem'
       },
 
       backgroundOpacity: {
@@ -136,33 +137,31 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem'
       },
-      width:{
-        '39xl':'39.5rem',
-        '37xl':'37.5rem',
-        '8xl':'8.8125rem',
-        '4sxl':'4.1875rem',
-        '18xl':'18.5rem',
-        '9xsl':'9.25.5rem',
-        '33xl':'33.25rem',
-        '29xl':'29.5rem',
-      
-
+      width: {
+        '39xl': '39.5rem',
+        '37xl': '37.5rem',
+        '8xl': '8.8125rem',
+        '4sxl': '4.1875rem',
+        '18xl': '18.5rem',
+        '9xsl': '9.25.5rem',
+        '33xl': '33.25rem',
+        '29xl': '29.5rem',
+        '13xxxl': '13.25rem'
       },
-      height:{
-        '61xl':'61.0625rem',
-        '21xl':'21.25rem',
-        '46xl':'46.8125rem',
-        '3sxxl':'3.25rem',
-        '50xxxl':'50rem',
-        '48xxxl':'48rem',
-
+      height: {
+        '61xl': '61.0625rem',
+        '21xl': '21.25rem',
+        '46xl': '46.8125rem',
+        '3sxxl': '3.25rem',
+        '50xxxl': '50rem',
+        '48xxxl': '48rem',
+        '19xxxl': '19.9375rem'
       }
     }
   },
   variants: {
     extend: {
-      textDecoration: ['group-focus'],
-     
+      textDecoration: ['group-focus']
     }
   },
   plugins: []
