@@ -34,22 +34,22 @@
 .btn--secondary--disabled {
   @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
-.tab-poll{
+.tab-poll {
   @apply group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-14 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out;
 }
-.tab-poll{
+.tab-poll {
   padding-right: 12px;
 }
-.checkmark-overlay{
+.checkmark-overlay {
   @apply h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-500 ease-in-out;
 }
 
 input:checked ~ .checkmark-overlay {
-  background-color: #7048E8;
+  background-color: #7048e8;
 }
 
 .checkmark-overlay:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -59,18 +59,17 @@ input:checked ~ .checkmark-overlay:after {
 }
 /* Style the indicator (dot/circle) */
 .checkmark-overlay:after {
-	top: 3px;
-	left: 3px;
-	width: 6px;
-	height: 6px;
-	border-radius: 999px;
-	background: white;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	-ms-border-radius: 999px;
-	-o-border-radius: 999px;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: white;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
 }
-
 
 /*************************************Safei Section End******************************/
 .radio__container {
@@ -241,3 +240,216 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/************************************* Twfiek Section start ******************************/
+
+.atom .parent .child .tab {
+  @apply flex justify-evenly items-center rounded-full w-6xl h-2xl bg-white ml-6;
+}
+
+.atom .parent .child .btn-primary {
+  @apply bg-primary hover:bg-primary-hover focus:ring-dark-btnFocus rounded-full text-white focus:outline-none ml-4 mt-4;
+}
+
+.atom .parent .child .btn-primary:focus {
+  @apply border-2 border-dark-btnFocus;
+}
+
+.atom .parent .child .btn-secondary {
+  @apply bg-white hover:bg-grey-bg ring-primary text-primary;
+}
+
+.atom .parent .child .btn-text {
+  @apply bg-none text-accent hover:text-accent-hover focus:underline focus:outline-none ml-4 mt-4;
+}
+
+.atom .parent .child .form-control {
+  @apply flex mb-4 mr-10;
+}
+
+.atom .parent .child .form-control form {
+  @apply relative;
+}
+
+.atom .parent .child .form-control form .label {
+  @apply text-xs text-dark-grey font-light mb-xs block;
+}
+
+.atom .parent .child .form-control form .form-input {
+  @apply w-19xl h-3xl py-xsvv px-m text-sm text-grey-shd1 font-normal border-grey-shd5 border rounded-md hover:border-grey-shd2 focus:text-dark-grey focus:border-dark focus:outline-none;
+}
+
+.atom .parent .child .form-control form .input-icon {
+  @apply hidden;
+}
+
+.atom .parent .child .form-control form .form-input:focus + .input-icon {
+  @apply block absolute top-38 right-12;
+}
+
+.atom
+  .parent
+  .child
+  .form-control
+  form
+  .form-input:focus::-webkit-input-placeholder {
+  @apply text-dark;
+}
+
+.atom .parent .child .form-control form .form-error {
+  @apply border-error focus:border-error;
+}
+
+.atom .parent .child .form-control form .form-success {
+  @apply border-success focus:border-success;
+}
+
+.atom .parent .child .form-control form .form-disabled {
+  @apply text-grey-shd4 border-grey-shd7;
+}
+
+.atom .parent .child .form-control form .input-right-icon {
+  @apply absolute top-38 right-12;
+}
+
+.atom .parent .child .form-control form .form-input:focus + .icon-focus {
+  @apply absolute top-38 right-40;
+}
+
+.atom .parent .child .form-control form .form-left-input {
+  @apply pl-xxvl;
+}
+
+.atom .parent .child .form-control form .home-icon {
+  @apply absolute top-38 left-12 opacity-50;
+}
+
+.atom .parent .child .form-control form .form-input:hover ~ .home-icon {
+  @apply opacity-70;
+}
+
+.atom .parent .child .form-control form .form-left-input:focus ~ .home-icon {
+  @apply opacity-100;
+}
+
+.atom .parent .child .form-control form .no-label-icon {
+  @apply top-3;
+}
+
+.atom .parent .child .form-control form .form-input:focus + .no-label-icon {
+  @apply top-3;
+}
+
+.atom .parent .child .form-control form .prefix {
+  @apply font-normal text-sm text-grey;
+}
+
+.atom .parent .child .form-control form .devider {
+  @apply w-px h-4 bg-grey-shd6 ml-xl;
+}
+
+.atom .parent .child .form-control form .prefix-input {
+  @apply pl-3xl;
+}
+
+.atom .parent .child .form-control form .dropdown {
+  @apply ml-l;
+}
+
+.atom .parent .child .form-control form .dropdown-devider {
+  @apply ml-xvxl;
+}
+
+.atom .parent .child .form-control form .dropdown-input {
+  @apply pl-4xl;
+}
+
+.parent .child .toggle-box .toggler {
+  @apply w-2xl h-xl rounded-full bg-grey-shd4 ml-6 mt-6 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-100 ease-out;
+}
+
+.parent .child .toggle-box .toggler .circle {
+  @apply bg-white w-4 h-4 rounded-full transition-all duration-500 ease-in-out;
+}
+
+.parent .child .toggle-box .checkbox {
+  @apply w-0 h-0 opacity-0 absolute;
+}
+
+.parent .child .toggle-box .checkbox:checked + .toggler .circle {
+  @apply bg-primary transform translate-x-4;
+}
+
+.parent .child .toggle-box .checkbox:checked + .toggler {
+  @apply bg-primary-shd7 border-2 border-primary-shd5;
+}
+
+.parent .child .toggle-box .checkbox:checked + .toggler:hover {
+  @apply bg-primary-shd6;
+}
+
+.parent .child .toggle-box .toggler-small {
+  @apply w-xl h-4 px-4xs;
+}
+
+.parent .child .toggle-box .toggler-small .circle-small {
+  @apply w-2.5 h-2.5;
+}
+
+.parent .child .toggle-box .checkbox:checked + .toggler-small .circle-small {
+  @apply translate-x-2.5;
+}
+
+.parent .child .checkbox-cat {
+  @apply relative;
+}
+
+.parent .child .checkbox-cat .checked {
+  @apply w-0 h-0 opacity-0 absolute;
+}
+
+.parent .child .checkbox-cat .checkmark {
+  @apply ml-6 mb-6 cursor-pointer bg-white w-6 h-6 border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-500 ease-out;
+}
+
+.parent .child .checkbox-cat .checked:checked + .checkmark {
+  @apply bg-primary;
+}
+
+.parent .child .checkbox-cat .checked:checked + .checkmark:hover {
+  @apply bg-primary-hover;
+}
+
+.parent .child .checkbox-cat .checkmark-small {
+  @apply w-4 h-4;
+}
+
+.parent .child .radio-cat {
+  @apply relative;
+}
+
+.parent .child .radio-cat .radio {
+  @apply w-0 h-0 opacity-0 absolute;
+}
+
+.parent .child .radio-cat .radio-box {
+  @apply ml-6 mt-6 cursor-pointer rounded-full bg-white w-6 h-6 border border-grey-shd4 hover:border-grey-shd1 transition-all duration-500 ease-out;
+}
+
+.parent .child .radio-cat .radio:checked + .radio-box {
+  @apply border-primary border-7;
+}
+
+.parent .child .radio-cat .radio:checked + .radio-box:hover {
+  @apply border-primary-hover;
+}
+
+.parent .child .radio-cat .radio-small {
+  @apply w-4 h-4;
+}
+
+.parent .child .radio-cat .radio:checked + .radio-small {
+  @apply border-5;
+}
+
+/************************************* Twfiek Section end ******************************/
