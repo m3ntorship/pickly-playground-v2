@@ -2547,7 +2547,7 @@
             <h3 class="text-md text-dark-grey">Default size</h3>
             <label class="toggle-box">
               <input type="checkbox" class="checkbox" />
-              <div class="toggler">
+              <div class="toggler ml-6">
                 <div class="circle"></div>
               </div>
             </label>
@@ -2556,7 +2556,7 @@
             <h3 class="text-md text-dark-grey">Small size</h3>
             <label class="toggle-box">
               <input type="checkbox" class="checkbox" />
-              <div class="toggler toggler-small">
+              <div class="toggler toggler-small ml-6">
                 <div class="circle circle-small"></div>
               </div>
             </label>
@@ -2631,6 +2631,744 @@
       </div>
     </section>
 
+    <section>
+      <div class="atom molecules">
+        <h2 class="header">Misc</h2>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Error</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex flex-col items-center w-80 mb-10">
+              <svg
+                class="mb-xxl"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M39.8432 6.66666C21.5498 6.66666 6.6665 21.62 6.6665 40C6.6665 58.38 21.6198 73.3333 39.9998 73.3333C58.3798 73.3333 73.3332 58.38 73.3332 40C73.3332 21.62 58.3098 6.66666 39.8432 6.66666ZM39.9998 66.6667C25.2965 66.6667 13.3332 54.7033 13.3332 40C13.3332 25.2967 25.2232 13.3333 39.8432 13.3333C54.6365 13.3333 66.6665 25.2967 66.6665 40C66.6665 54.7033 54.7032 66.6667 39.9998 66.6667Z"
+                  fill="#FE544A"
+                />
+                <path
+                  d="M36.6665 23.3333H43.3332V46.6667H36.6665V23.3333ZM36.6665 50H43.3332V56.6667H36.6665V50Z"
+                  fill="#FE544A"
+                />
+              </svg>
+              <h1 class="mb-xs text-lg font-bold text-error">
+                Image couldn’t be uploaded!
+              </h1>
+              <span class="text-md font-normal text-error"
+                >Max size is 2 MB</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Success</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex flex-col items-center w-80 mb-10">
+              <svg
+                class="mb-xxl"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M33.3336 51.9533L22.3569 40.9767L17.6436 45.69L33.3336 61.38L65.6902 29.0233L60.9769 24.31L33.3336 51.9533Z"
+                  fill="#07B255"
+                />
+              </svg>
+
+              <h1 class="mb-xs text-lg font-bold text-dark-grey">
+                Congratulations!
+              </h1>
+              <span class="text-md font-normal text-grey">Subtext</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="atom molecules">
+        <h2 class="header">Post Edit</h2>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Image Upload</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex flex-col items-center mb-10">
+              <input type="file" name="file" id="file" class="inputfile" />
+              <label for="file"
+                ><svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.16683 3.33333H11.8335V8H13.1668V3.33333C13.1668 2.598 12.5688 2 11.8335 2H3.16683C2.4315 2 1.8335 2.598 1.8335 3.33333V11.3333C1.8335 12.0687 2.4315 12.6667 3.16683 12.6667H8.50016V11.3333H3.16683V3.33333Z"
+                    fill="#00A8E8"
+                  />
+                  <path
+                    d="M5.8335 7.33333L3.8335 10H11.1668L8.50016 6L6.50016 8.66667L5.8335 7.33333Z"
+                    fill="#00A8E8"
+                  />
+                  <path
+                    d="M13.1668 9.33333H11.8335V11.3333H9.8335V12.6667H11.8335V14.6667H13.1668V12.6667H15.1668V11.3333H13.1668V9.33333Z"
+                    fill="#00A8E8"
+                  />
+                </svg>
+                Upload one or multiple images</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Privacy</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-center mb-10">
+              <label class="toggle-box">
+                <input type="checkbox" class="checkbox" />
+                <div class="toggler toggler-small">
+                  <div class="circle circle-small"></div>
+                </div>
+              </label>
+              <p class="ml-xs text-xs text-dark-grey font-normal">
+                Hide my identity<span class="ml-mv">Privacy:</span>
+                <span class="ml-xs text-sm font-medium">Public</span>
+              </p>
+              <svg
+                class="ml-xxs"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.862 6.19534L7.99998 9.05734L5.13798 6.19534L4.19531 7.13801L7.99998 10.9427L11.8046 7.13801L10.862 6.19534Z"
+                  fill="#5B6366"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Uploading Images 1</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex flex-col mb-10 rounded-md relative">
+              <img src="./img/image.png" alt="fashion" />
+              <div class="relative mt-xxs">
+                <input
+                  class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-full rounded-b-md focus:outline-none"
+                  type="text"
+                  placeholder="Type caption (optional)"
+                  class=""
+                />
+                <svg
+                  class="absolute top-2 left-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                    fill="#F2F9FF"
+                  />
+                  <path
+                    d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                    fill="#8D9A9E"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Uploading Images 2</h3>
+          </div>
+          <div class="child">
+            <div
+              class="misc-box flex flex-col mb-10 rounded-md relative overflow-hidden"
+            >
+              <div class="relative overflow-hidden">
+                <img src="./img/image.png" alt="fashion" class="bg-blur" />
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-primary-shd7 opacity-90"
+                ></div>
+                <div
+                  class="bg-white w-56 rounded-xs p-xxs absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                >
+                  <div class="bg-primary w-40 h-1 rounded-xs"></div>
+                </div>
+              </div>
+              <div class="relative mt-xxs">
+                <input
+                  class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-full rounded-b-md focus:outline-none"
+                  type="text"
+                  placeholder="Type caption (optional)"
+                  class=""
+                />
+                <svg
+                  class="absolute top-2 left-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                    fill="#F2F9FF"
+                  />
+                  <path
+                    d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                    fill="#8D9A9E"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Uploading Images 3</h3>
+          </div>
+          <div class="child">
+            <div
+              class="misc-box flex flex-col mb-10 rounded-md relative overflow-hidden"
+            >
+              <div class="relative overflow-hidden">
+                <img src="./img/image.png" alt="fashion" class="bg-blur" />
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-white opacity-90"
+                ></div>
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+                >
+                  <svg
+                    class="mb-xxl"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M39.8432 6.66666C21.5498 6.66666 6.6665 21.62 6.6665 40C6.6665 58.38 21.6198 73.3333 39.9998 73.3333C58.3798 73.3333 73.3332 58.38 73.3332 40C73.3332 21.62 58.3098 6.66666 39.8432 6.66666ZM39.9998 66.6667C25.2965 66.6667 13.3332 54.7033 13.3332 40C13.3332 25.2967 25.2232 13.3333 39.8432 13.3333C54.6365 13.3333 66.6665 25.2967 66.6665 40C66.6665 54.7033 54.7032 66.6667 39.9998 66.6667Z"
+                      fill="#FE544A"
+                    />
+                    <path
+                      d="M36.6665 23.3333H43.3332V46.6667H36.6665V23.3333ZM36.6665 50H43.3332V56.6667H36.6665V50Z"
+                      fill="#FE544A"
+                    />
+                  </svg>
+                  <h1 class="mb-xs text-lg font-bold text-error">
+                    Image couldn’t be uploaded!
+                  </h1>
+                  <span class="text-md font-normal text-error"
+                    >Max size is 2 MB</span
+                  >
+                </div>
+              </div>
+              <div class="relative mt-xxs">
+                <input
+                  class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-full rounded-b-md focus:outline-none"
+                  type="text"
+                  placeholder="Type caption (optional)"
+                  class=""
+                />
+                <svg
+                  class="absolute top-2 left-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                    fill="#F2F9FF"
+                  />
+                  <path
+                    d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                    fill="#8D9A9E"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Text - Default</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-center mb-10 rounded-md">
+              <svg
+                class="mr-s"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E" />
+              </svg>
+              <div class="relative mt-xxs">
+                <input
+                  class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-41xl rounded-md focus:outline-none"
+                  type="text"
+                  placeholder="Type caption (optional)"
+                  class=""
+                />
+                <svg
+                  class="absolute top-2 left-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                    fill="#F2F9FF"
+                  />
+                  <path
+                    d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                    fill="#8D9A9E"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Text - With Delete</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-center mb-10 rounded-md">
+              <svg
+                class="mr-s"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E" />
+              </svg>
+
+              <div class="relative mt-xxs">
+                <input
+                  class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-39xl rounded-md focus:outline-none"
+                  type="text"
+                  placeholder="Type caption (optional)"
+                  class=""
+                />
+                <svg
+                  class="absolute top-2 left-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                    fill="#F2F9FF"
+                  />
+                  <path
+                    d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                    fill="#8D9A9E"
+                  />
+                </svg>
+              </div>
+              <svg
+                class="ml-s"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.6665 7.33325H11.3332V8.66659H4.6665V7.33325Z"
+                  fill="#FE544A"
+                />
+                <path
+                  d="M8.00016 1.33325C4.32416 1.33325 1.3335 4.32392 1.3335 7.99992C1.3335 11.6759 4.32416 14.6666 8.00016 14.6666C11.6762 14.6666 14.6668 11.6759 14.6668 7.99992C14.6668 4.32392 11.6762 1.33325 8.00016 1.33325ZM8.00016 13.3333C5.0595 13.3333 2.66683 10.9406 2.66683 7.99992C2.66683 5.05925 5.0595 2.66659 8.00016 2.66659C10.9408 2.66659 13.3335 5.05925 13.3335 7.99992C13.3335 10.9406 10.9408 13.3333 8.00016 13.3333Z"
+                  fill="#FE544A"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Text - Default</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-center mb-10 rounded-md">
+              <svg
+                class="mr-s"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                  fill="#00A8E8"
+                />
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+                  fill="#00A8E8"
+                />
+              </svg>
+              <div class="relative mt-xxs">
+                <input
+                  class="border border-accent py-xsvv px-m text-sm font-normal text-accent w-35xl rounded-md focus:outline-none"
+                  type="text"
+                  placeholder="Add option"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Option Group - Default</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex flex-col bg-grey-bg p-m mb-10 rounded-md">
+              <div class="flex items-center justify-between mb-m">
+                <h3 class="font-normal text-sm text-dark-grey">Group 1</h3>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.99984 6.6665C7.2665 6.6665 6.6665 7.2665 6.6665 7.99984C6.6665 8.73317 7.2665 9.33317 7.99984 9.33317C8.73317 9.33317 9.33317 8.73317 9.33317 7.99984C9.33317 7.2665 8.73317 6.6665 7.99984 6.6665ZM7.99984 2.6665C7.2665 2.6665 6.6665 3.2665 6.6665 3.99984C6.6665 4.73317 7.2665 5.33317 7.99984 5.33317C8.73317 5.33317 9.33317 4.73317 9.33317 3.99984C9.33317 3.2665 8.73317 2.6665 7.99984 2.6665ZM7.99984 10.6665C7.2665 10.6665 6.6665 11.2665 6.6665 11.9998C6.6665 12.7332 7.2665 13.3332 7.99984 13.3332C8.73317 13.3332 9.33317 12.7332 9.33317 11.9998C9.33317 11.2665 8.73317 10.6665 7.99984 10.6665Z"
+                    fill="#5B6366"
+                  />
+                </svg>
+              </div>
+              <div class="mb-xs flex items-center">
+                <svg
+                  class="mr-s"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E" />
+                </svg>
+                <div class="relative mt-xxs">
+                  <input
+                    class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-33xl rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="Option 1"
+                    class=""
+                  />
+                  <svg
+                    class="absolute top-2 left-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                      fill="#F2F9FF"
+                    />
+                    <path
+                      d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                      fill="#8D9A9E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mb-xs flex items-center">
+                <svg
+                  class="mr-s"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E" />
+                </svg>
+                <div class="relative mt-xxs">
+                  <input
+                    class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-33xl rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="Option 2"
+                    class=""
+                  />
+                  <svg
+                    class="absolute top-2 left-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                      fill="#F2F9FF"
+                    />
+                    <path
+                      d="M9.29395 17V7.04688H12.5479C13.6279 7.04688 14.4391 7.27018 14.9814 7.7168C15.5283 8.16341 15.8018 8.82422 15.8018 9.69922C15.8018 10.1641 15.6696 10.5765 15.4053 10.9365C15.141 11.292 14.7809 11.5677 14.3252 11.7637C14.863 11.9141 15.2868 12.2012 15.5967 12.625C15.9111 13.0443 16.0684 13.5456 16.0684 14.1289C16.0684 15.0221 15.779 15.724 15.2002 16.2344C14.6214 16.7448 13.8034 17 12.7461 17H9.29395ZM10.6064 12.3447V15.9268H12.7734C13.3841 15.9268 13.8649 15.7695 14.2158 15.4551C14.5713 15.1361 14.749 14.6986 14.749 14.1426C14.749 12.944 14.0973 12.3447 12.7939 12.3447H10.6064ZM10.6064 11.292H12.5889C13.1631 11.292 13.6211 11.1484 13.9629 10.8613C14.3092 10.5742 14.4824 10.1846 14.4824 9.69238C14.4824 9.14551 14.3229 8.74902 14.0039 8.50293C13.6849 8.25228 13.1995 8.12695 12.5479 8.12695H10.6064V11.292Z"
+                      fill="#8D9A9E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center mb-s">
+                <svg
+                  class="mr-s"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                    fill="#00A8E8"
+                  />
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+                    fill="#00A8E8"
+                  />
+                </svg>
+
+                <div class="relative mt-xxs">
+                  <input
+                    class="border border-accent py-xsvv px-m text-sm font-normal text-accent w-33xl rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="Add option"
+                    class=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Option Group - Add</h3>
+          </div>
+          <div class="child">
+            <div
+              class="misc-box flex w-37xl items-center bg-grey-bg p-m mb-10 rounded-md"
+            >
+              <svg
+                class="mr-xxs"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6668 7.3335H8.66683V3.3335H7.3335V7.3335H3.3335V8.66683H7.3335V12.6668H8.66683V8.66683H12.6668V7.3335Z"
+                  fill="#5B6366"
+                />
+              </svg>
+              <h3 class="font-medium text-sm text-dark-grey">
+                Add Option Group
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Option Group - Edit Name</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex flex-col bg-grey-bg p-m mb-10 rounded-md">
+              <div class="flex items-center justify-between mb-m">
+                <h3 class="font-normal text-sm text-dark bg-accent-shd7">
+                  Typing a new group name here|
+                </h3>
+                <div class="flex">
+                  <svg
+                    class="mr-xs"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8Z"
+                      fill="#FFE9E8"
+                    />
+                    <path
+                      d="M9.86293 5.48633L7.97716 7.37166L6.09182 5.48633L5.46338 6.11477L7.34871 8.00011L5.46338 9.88544L6.09182 10.5139L7.97716 8.62855L9.86293 10.5139L10.4914 9.88544L8.60605 8.00011L10.4914 6.11477L9.86293 5.48633Z"
+                      fill="#FE544A"
+                    />
+                  </svg>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8Z"
+                      fill="#D8FDE9"
+                    />
+                    <path
+                      d="M7.11104 9.59349L5.64749 8.12994L5.01904 8.75838L7.11104 10.8504L11.4253 6.53616L10.7968 5.90771L7.11104 9.59349Z"
+                      fill="#07B255"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mb-xs flex items-center">
+                <svg
+                  class="mr-s"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E" />
+                </svg>
+                <div class="relative mt-xxs">
+                  <input
+                    class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-33xl rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="Option 1"
+                    class=""
+                  />
+                  <svg
+                    class="absolute top-2 left-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                      fill="#F2F9FF"
+                    />
+                    <path
+                      d="M14.085 14.4023H9.91504L8.97852 17H7.625L11.4258 7.04688H12.5742L16.3818 17H15.0352L14.085 14.4023ZM10.3115 13.3223H13.6953L12 8.66699L10.3115 13.3223Z"
+                      fill="#8D9A9E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mb-xs flex items-center">
+                <svg
+                  class="mr-s"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 9H4V11H20V9ZM4 15H20V13H4V15Z" fill="#8D9A9E" />
+                </svg>
+                <div class="relative mt-xxs">
+                  <input
+                    class="border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-33xl rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="Option 2"
+                    class=""
+                  />
+                  <svg
+                    class="absolute top-2 left-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z"
+                      fill="#F2F9FF"
+                    />
+                    <path
+                      d="M9.29395 17V7.04688H12.5479C13.6279 7.04688 14.4391 7.27018 14.9814 7.7168C15.5283 8.16341 15.8018 8.82422 15.8018 9.69922C15.8018 10.1641 15.6696 10.5765 15.4053 10.9365C15.141 11.292 14.7809 11.5677 14.3252 11.7637C14.863 11.9141 15.2868 12.2012 15.5967 12.625C15.9111 13.0443 16.0684 13.5456 16.0684 14.1289C16.0684 15.0221 15.779 15.724 15.2002 16.2344C14.6214 16.7448 13.8034 17 12.7461 17H9.29395ZM10.6064 12.3447V15.9268H12.7734C13.3841 15.9268 13.8649 15.7695 14.2158 15.4551C14.5713 15.1361 14.749 14.6986 14.749 14.1426C14.749 12.944 14.0973 12.3447 12.7939 12.3447H10.6064ZM10.6064 11.292H12.5889C13.1631 11.292 13.6211 11.1484 13.9629 10.8613C14.3092 10.5742 14.4824 10.1846 14.4824 9.69238C14.4824 9.14551 14.3229 8.74902 14.0039 8.50293C13.6849 8.25228 13.1995 8.12695 12.5479 8.12695H10.6064V11.292Z"
+                      fill="#8D9A9E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center mb-s">
+                <svg
+                  class="mr-s"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                    fill="#00A8E8"
+                  />
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+                    fill="#00A8E8"
+                  />
+                </svg>
+
+                <div class="relative mt-xxs">
+                  <input
+                    class="border border-accent py-xsvv px-m text-sm font-normal text-accent w-33xl rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="Add option"
+                    class=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!------------------------------ end (Ahmed Twfiek) ------------------------------>
   </body>
 </html>

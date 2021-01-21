@@ -365,7 +365,7 @@ input:checked + .slider:before {
 }
 
 .parent .child .toggle-box .toggler {
-  @apply w-2xl h-xl rounded-full bg-grey-shd4 ml-6 mt-6 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-100 ease-out;
+  @apply w-2xl h-xl rounded-full bg-grey-shd4 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-100 ease-out;
 }
 
 .parent .child .toggle-box .toggler .circle {

@@ -82,6 +82,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
+      xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
       lg: '1rem',
@@ -154,6 +155,8 @@ module.exports = {
         '5xl': '8rem'
       },
       width: {
+        '44xl': '44rem',
+        '41xl': '41.25rem',
         '39xl': '39.5rem',
         '37xl': '37.5rem',
         '8xl': '8.8125rem',
@@ -167,6 +170,7 @@ module.exports = {
         '3xl': '3.625rem',
         '9xsl': '9.25.5rem',
         '33xl': '33.25rem',
+        '35xl': '35.25rem',
         '29xl': '29.5rem',
         '2xl': '2.625rem',
         xl: '1.75rem'
