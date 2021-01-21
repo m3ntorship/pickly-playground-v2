@@ -1,144 +1,42 @@
-.bttn {
-  @apply bg-primary-shd1 text-white rounded-xl border-2 border-transparent;
+.btn-primary-large {
+  @apply box-border bg-primary-shd1 text-white rounded-xl border-2 border-transparent py-3.5 px-8 text-md font-bold;
 }
-.bttn svg {
-  fill: #fff;
+.btn-primary-med {
+  @apply box-border bg-primary-shd1 text-white rounded-xl border-2 border-transparent py-2 px-6 text-base font-medium;
 }
-.disabled {
-  @apply opacity-25;
+.btn-primary-small {
+  @apply box-border bg-primary-shd1 text-white rounded-xl border-2 border-transparent py-1.5 px-4 text-sm font-medium;
 }
-/* button Size */
-
-.lg {
-  @apply py-3.5 px-8 text-md;
-}
-.md {
-  @apply py-2 px-6 text-base;
-}
-.sm {
-  @apply py-1.5 px-4 text-sm;
-}
-
-.bttn:not(.disabled):hover {
-  @apply bg-primary;
-}
-.bttn:not(.disabled):focus {
-  @apply bg-primary-shd1 border-2 border-primary;
-}
-
-.ico-r {
-  @apply flex items-baseline;
-}
-.ico-r svg {
-  @apply w-3 ml-3.5;
-}
-
-.ico-l {
-  @apply flex flex-row-reverse items-baseline;
-}
-.ico-l svg {
-  @apply w-3 mr-3.5;
-}
-
-.bttn-ico {
+.round-btn {
   @apply bg-primary-shd1 rounded-full  border-2 border-transparent;
 }
-.bttn-ico svg {
+.round-btn svg {
   fill: #fff;
 }
-
-.bttn-ico:not(.disabled):hover {
-  @apply bg-primary;
+.btn-secoundry-large {
+  @apply text-primary-shd1 rounded-xl border-2 border-primary-shd1 py-3.5 px-8 text-md font-bold;
 }
-.bttn-ico:not(.disabled):focus {
-  @apply bg-primary-shd1 border-2 border-primary;
+.btn-secoundry-med {
+  @apply text-primary-shd1 rounded-xl border-2 border-primary-shd1 py-2 px-6 text-base font-medium;
 }
-
-.lg-ico svg {
-  @apply w-4 h-4 m-6;
+.btn-secoundry-small {
+  @apply text-primary-shd1 rounded-xl border-2 border-primary-shd1 py-1.5 px-4 text-sm font-medium;
 }
-.md-ico svg {
-  @apply w-3.5 h-3.5 m-3.5;
-}
-.sm-ico svg {
-  @apply w-3 h-3 m-2.5;
-}
-
-/* start secoundry button */
-
-.secoundry-bttn {
-  @apply text-primary-shd1 rounded-xl border-2 border-primary-shd1;
-}
-.secoundry-bttn svg {
-  fill: #8360eb;
-}
-.secoundry-bttn:not(.disabled):hover {
-  @apply text-primary  border-primary;
-}
-.secoundry-bttn:not(.disabled):hover svg {
-  fill: #7048e8;
-}
-.secoundry-bttn:not(.disabled):focus {
-  @apply text-primary border-primary;
-}
-
-.secoundry-ico {
+.round-btn-secoundry {
   @apply border-primary-shd1 rounded-full  border-2;
 }
-.secoundry-ico svg {
-  fill: #8360eb;
+.txt-btn-large {
+  @apply text-md font-bold text-accent-shd1  py-3.5 px-8;
 }
-.secoundry-ico:not(.disabled):hover svg {
-  fill: #7048e8;
+.txt-btn-med {
+  @apply text-base font-bold text-accent-shd1  py-3.5 px-8;
 }
-.secoundry-ico:not(.disabled):focus {
-  @apply text-primary border-primary;
+.txt-btn-samll {
+  @apply text-sm font-bold text-accent-shd1  py-3.5 px-8;
 }
-
-.disabled {
-  @apply opacity-25;
+.vote1-percent .progress {
+  stroke-dashoffset: calc(175.84 - (175.84 / 100 * 75));
 }
-
-.secoundry-ico:not(.disabled):hover {
-  @apply border-primary;
-}
-.secoundry-ico:not(.disabled):focus {
-  @apply border-primary;
-}
-
-.lg-ico svg {
-  @apply w-4 h-4 m-6;
-}
-.md-ico svg {
-  @apply w-3.5 h-3.5 m-3.5;
-}
-.sm-ico svg {
-  @apply w-3 h-3 m-2.5;
-}
-
-/* start Text */
-.txt-bttn {
-  @apply text-md font-bold text-accent-shd1;
-}
-.txt-bttn.lg {
-  @apply text-md;
-}
-.txt-bttn.md {
-  @apply text-base;
-}
-.txt-bttn.sm {
-  @apply text-sm;
-}
-
-.txt-bttn:not(.disabled):hover {
-  @apply text-accent;
-}
-.txt-bttn:not(.disabled):focus {
-  @apply text-accent;
-}
-.txt-bttn svg {
-  fill: #0ab9ff;
-}
-.txt-bttn:not(.disabled):hover svg {
-  fill: #00a8e8;
+.vote2-percent .progress {
+  stroke-dashoffset: calc(175.84 - (175.84 / 100 * 25));
 }
