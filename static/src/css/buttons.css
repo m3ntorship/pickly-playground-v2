@@ -160,7 +160,8 @@ input:checked ~ .checkmark-overlay:after {
 }
 
 /* Radio buttons*/
-input[type='radio']:checked {
+
+.atom input[type='radio']:checked {
   background-color: #7048e8;
 }
 

@@ -190,6 +190,7 @@ module.exports = {
         xl: '1.5rem'
       },
       borderWidth: {
+
         5: '5px',
         6: '6px',
         7: '7px'
@@ -200,7 +201,8 @@ module.exports = {
       inset: {
         12: '0.75rem',
         38: '2.275rem',
-        40: '2.5rem'
+        40: '2.5rem',
+        '14.5': '3.75rem'
       }
     }
   },
