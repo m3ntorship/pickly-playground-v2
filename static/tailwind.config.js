@@ -177,6 +177,7 @@ module.exports = {
         xs: '0.0625rem'
       },
       height: {
+        '44xl': '44rem',
         '61xl': '61.0625rem',
         '21xl': '21.25rem',
         '46xl': '46.8125rem',
