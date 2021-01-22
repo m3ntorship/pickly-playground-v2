@@ -9,16 +9,16 @@
     <div class="px-5 bg-grey-shd7">
       <!-- Colors -->
       <div class="flex flex-col">
-        <h1 class="text-4xl md:text-8xl font-medium mb-4">Colors :</h1>
-        <div class="flex flex-col md:flex-row justify-start my-4">
+        <h1 class="text-hero-large-bold mb-4">Colors :</h1>
+        <div class="flex flex-initial flex-col md:flex-row justify-start my-4">
           <p class="text-title w-64">Primary</p>
           <div class="bg-primary rounded-md mx-l h-5xl w-44"></div>
         </div>
-        <div class="flex flex-col md:flex-row justify-start my-4">
+        <div class="flex flex-initial flex-col md:flex-row justify-start my-4">
           <p class="text-title w-64">Accent</p>
           <div class="bg-accent rounded-md mx-l h-5xl w-44"></div>
         </div>
-        <div class="flex flex-col md:flex-row justify-center md:justify-start my-4">
+        <div class="flex flex-initial flex-col md:flex-row justify-center md:justify-start my-4">
           <p class="text-title w-64">Semantic</p>
           <div class="flex flex-col md:flex-row gap-2">
             <div class="bg-warning rounded-md mx-l h-5xl w-44"></div>
@@ -26,9 +26,9 @@
             <div class="bg-error rounded-md mx-l h-5xl w-44"></div>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-center md:justify-start my-4">
+        <div class="flex flex-initial flex-col md:flex-row justify-center md:justify-start my-4">
           <p class="text-title w-64">Neutrals</p>
-          <div class="flex flex-col md:flex-row gap-2">
+          <div class="flex flex-col md:flex-1 gap-2">
             <div class="bg-dark rounded-md mx-l h-5xl w-44"></div>
             <div class="bg-dark-grey rounded-md mx-l h-5xl w-44"></div>
             <div class="bg-grey rounded-md mx-l h-5xl w-44"></div>
@@ -36,23 +36,23 @@
             <div class="bg-grey-bg2 rounded-md mx-l h-5xl w-44"></div>
             <div class="bg-white rounded-md mx-l h-5xl w-44"></div>
           </div>
-        </div>
-        <div class="flex flex-col md:flex-row justify-center md:justify-start my-4">
-          <p class="text-title w-64">Shades</p>
-          <div class="flex flex-col md:flex-row gap-2">
-            <div class="bg-primary-shd1 rounded-md mx-l h-5xl w-44"></div>
-            <div class="bg-primary-shd2 rounded-md mx-l h-5xl w-44"></div>
-            <div class="bg-primary-shd3 rounded-md mx-l h-5xl w-44"></div>
-            <div class="bg-primary-shd3 rounded-md mx-l h-5xl w-44"></div>
-            <div class="bg-primary-shd5 rounded-md mx-l h-5xl w-44"></div>
-            <div class="bg-primary-shd6 rounded-md mx-l h-5xl w-44"></div>
-            <div class="bg-primary-shd7 rounded-md mx-l h-5xl w-44"></div>
+          <p class="text-title w-64 flex block">Shades</p>
+          <div class="flex flex-1 flex-col md:flex-row justify-center md:justify-start my-4">
+            <div class="flex flex-col gap-2 md:flex-1">
+              <div class="bg-primary-shd1 rounded-md mx-l h-5xl w-44"></div>
+              <div class="bg-primary-shd2 rounded-md mx-l h-5xl w-44"></div>
+              <div class="bg-primary-shd3 rounded-md mx-l h-5xl w-44"></div>
+              <div class="bg-primary-shd3 rounded-md mx-l h-5xl w-44"></div>
+              <div class="bg-primary-shd5 rounded-md mx-l h-5xl w-44"></div>
+              <div class="bg-primary-shd6 rounded-md mx-l h-5xl w-44"></div>
+              <div class="bg-primary-shd7 rounded-md mx-l h-5xl w-44"></div>
+            </div>
           </div>
         </div>
       </div>
       <!-- Typography -->
       <div class="flex flex-col">
-        <h1 class="text-4xl md:text-8xl font-medium mb-4">Typography :</h1>
+        <h1 class="text-hero-large-bold mb-4">Typography :</h1>
         <h1 class="text-2xl mb-10">For desktop & Mobile</h1>
         <p class="text-hero-large">
           hero large :Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -99,7 +99,7 @@
     </div>
     <!-- Icons -->
       <div class="flex flex-col">
-          <h1 class="text-4xl md:text-8xl font-medium mb-4">Icons :</h1>
+          <h1 class="text-hero-large-bold mb-4">Icons :</h1>
           <h1 class="text-2xl mb-10">Outlined</h1>
           <div class="flex flex-row gap-5 mb-10">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@
       </div>
       <!-- Styles -->
       <div class="flex flex-col">
-        <h1 class="text-4xl md:text-8xl font-medium mb-4">Styles :</h1>
+        <h1 class="text-hero-large-bold mb-4">Styles :</h1>
         <p class="text-title w-64 capitalize mb-16">border radius</p>
         <div class="flex flex-col md:flex-row gap-36 mb-36">
           <div class="rounded-lg bg-white w-80 h-80 p-12"></div>
@@ -150,24 +150,211 @@
       </div>
       <!-- Buttons -->
       <div class="flex flex-col">
-        <h1 class="text-4xl md:text-8xl font-medium mb-4">Buttons :</h1>
+        <h1 class="text-hero-large-bold mb-4">Buttons :</h1>
         <div class="flex flex-row gap-16">
-          <button class="btn--primary py-3 px-8 text-md">
+          <button class="btn--primary py-3.5 px-8 text-md">
             Large Btn !
           </button>
-          <button class="btn--primary--disabled py-3 px-8 text-md">
-            Large !
+          <button class="btn--primary--disabled py-3.5 px-8 text-md">
+            Large Btn !
           </button>
-          <button class="btn--primary py-3 px-8 text-md gap-4">
+          <button class="btn--primary py-3.5 px-8 text-md gap-4">
             <span>Click Me</span> <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10.293 0.292999L5.99997 4.586L1.70697 0.292999L0.292969 1.707L5.99997 7.414L11.707 1.707L10.293 0.292999Z" fill="white"/>
               </svg>
           </button>
         </div>
         <div class="flex flex-row gap-16">
-          <button class="btn--primary py-2 px-4 text-base">
+          <button class="btn--primary py-3.5 px-8 text-md gap-4">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.293 0.292999L5.99997 4.586L1.70697 0.292999L0.292969 1.707L5.99997 7.414L11.707 1.707L10.293 0.292999Z" fill="white"/>
+              </svg>
+            <span>Click Me</span> 
+          </button>
+          <button class="btn--primary py-2.5 px-6 text-base">
             Medium Btn !
           </button>
+          <button class="btn--primary py-1.5 px-4 text-sm">
+            Small Btn !
+          </button>
+        </div>
+      </div>
+      <!-- Buttons with icons -->
+      <div class="flex flex-col">
+        <h1 class="text-hero-large-bold mb-4">Buttons with icons :</h1>
+        <div class="flex flex-row gap-16">
+          <button class="btn--primary rounded-full text-md w-14 h-14">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.724 0.390625L7.99996 6.11463L2.27596 0.390625L0.390625 2.27596L7.99996 9.88529L15.6093 2.27596L13.724 0.390625Z" fill="white"/>
+              </svg>
+          </button>
+          <button class="btn--primary rounded-full text-base w-10 h-10">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.293 0.292969L5.99997 4.58597L1.70697 0.292969L0.292969 1.70697L5.99997 7.41397L11.707 1.70697L10.293 0.292969Z" fill="white"/>
+              </svg>              
+          </button>
+          <button class="btn--primary rounded-full text-sm w-8 h-8">
+            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.86198 0.195312L3.99998 3.05731L1.13798 0.195312L0.195312 1.13798L3.99998 4.94265L7.80465 1.13798L6.86198 0.195312Z" fill="white"/>
+              </svg>              
+          </button>
+        </div>
+      </div>
+      <!-- Sliders -->
+      <div class="flex flex-col">
+        <h1 class="text-hero-large-bold mb-4">Sliders :</h1>
+        <div class="flex flex-row gap-10">
+          <p class="text-title">Complete</p>
+          <div class="h-3  w-52 rounded-xsm overflow-hidden bg-opacity-90">
+            <div class="bg-success w-full h-1/4"></div>
+          </div>
+          <p class="text-title">Progress</p>
+          <div class="h-3  w-52 rounded-xsm overflow-hidden bg-opacity-90">
+            <div class="bg-primary w-40 h-1/4"></div>
+          </div>
+          <div class="h-3 w-52 rounded-xsm overflow-hidden bg-opacity-90">
+            <div class="bg-primary w-1 h-1"></div>
+          </div>
+        </div>
+        <h1 class="text-2xl md:text-4xl font-medium mb-4">Vote meter :</h1>
+        <div class="flex flex-row gap-44">
+          <div class=" bg-white rounded-xsm overflow-hidden">
+            <div class="bg-primary w-2 h-80 p-1"></div>
+          </div>
+          <div class="bg-white rounded-xsm overflow-hidden">
+            <div class="bg-primary-shd5 w-2 h-80 p-1"></div>
+          </div>
+          <div class="bg-white rounded-xsm overflow-hidden">
+            <div class="bg-error w-2 h-80 p-1"></div>
+          </div>
+          
+          <div class="loader"></div>
+        </div>
+      </div>
+      <!-- Avatars -->
+      <div class="flex flex-col gap-16 pb-24">
+        <h1 class="text-hero-large-bold mb-4">Avatars :</h1>
+        <div class="flex flex-row gap-10">
+          <h1 class="text-lg text-grey w-16"> large</h1>
+          <div class="w-16">
+            <img src="./img/large-avatar.png" class="avatar" alt="avatar">
+          </div>
+          <div class="w-16">
+            <img src="./img/large-anan.png" class="avatar" alt="anonymous">
+          </div>
+          <div class="w-16">
+            <img src="./img/large-notfilled.png" class="avatar" alt="notfilled">
+          </div>
+        </div>
+        <div class="flex flex-row gap-10">
+          <h1 class="text-lg text-grey w-16">Medium</h1>
+          <div class="w-16">
+            <img src="./img/large-avatar.png" class="avatar-md" alt="avatar">
+          </div>
+          <div class="w-16">
+            <img src="./img/large-anan.png" class="avatar-md" alt="anonymous">
+          </div>
+          <div class="w-16">
+            <img src="./img/large-notfilled.png" class="avatar-md" alt="notfilled">
+          </div>
+        </div>
+        <div class="flex flex-row gap-10">
+          <h1 class="text-lg text-grey w-16">Small</h1>
+          <div class="w-16">
+            <img src="./img/large-avatar.png" class="avatar-sm" alt="avatar">
+          </div>
+          <div class="w-16">
+            <img src="./img/large-anan.png" class="avatar-sm" alt="anonymous">
+          </div>
+          <div class="w-16">
+            <img src="./img/large-notfilled.png" class="avatar-sm" alt="notfilled">
+          </div>
+        </div>
+      </div>
+      <!-- Forms -->
+      <div class="flex flex-col">
+        <h1 class="text-hero-large-bold mb-4">Form :</h1>
+        <div class="flex flex-col gap-16">
+          <div class="flex flex-col md:flex-row gap-16">
+            <div class="w-80 h-10 flex-col justify-start">
+              <label for="text" class="w-7 h-7 text-grey static text-xs">Default</label>
+              <div class="input-container">
+                <input type="text" placeholder="Enter text" class="input-field"/>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="w-80 h-10 flex-col justify-start">
+                <label for="text" class="w-7 h-7 text-grey static text-xs">focus</label>
+                <div class="input-container-focus">
+                  <input type="text" placeholder="Enter text" class="input-field"/>
+                  <svg class="input-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00016 0.333313C3.32416 0.333313 0.333496 3.32398 0.333496 6.99998C0.333496 10.676 3.32416 13.6666 7.00016 13.6666C10.6762 13.6666 13.6668 10.676 13.6668 6.99998C13.6668 3.32398 10.6762 0.333313 7.00016 0.333313ZM9.80483 8.86198L8.86216 9.80465L7.00016 7.94265L5.13816 9.80465L4.1955 8.86198L6.0575 6.99998L4.1955 5.13798L5.13816 4.19531L7.00016 6.05731L8.86216 4.19531L9.80483 5.13798L7.94283 6.99998L9.80483 8.86198Z" fill="#8D9A9E"/>
+                    </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-16">
+            <div class="flex flex-col">
+              <div class="w-80 h-10 flex-col justify-start">
+                <label for="text" class="w-7 h-7 text-grey static text-xs">Error</label>
+                <div class="input-container-error">
+                  <input class="input-field" type="text" placeholder="Enter text">
+                  <svg class="input-icon" width="14" height="14" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.333496 0.666626H1.66683V5.33329H0.333496V0.666626ZM0.333496 5.99996H1.66683V7.33329H0.333496V5.99996Z" fill="#FE544A"/>
+                    </svg>                
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="w-80 h-10 flex-col justify-start">
+                <label for="text" class="w-7 h-7 text-grey static text-xs">Success</label>
+                <div class="input-container-success">
+                  <input class="input-field" type="text" placeholder="Enter text">
+                  <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.66681 6.39061L1.47148 4.19527L0.528809 5.13794L3.66681 8.27594L10.1381 1.8046L9.19547 0.861938L3.66681 6.39061Z" fill="#07B255"/>
+                    </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-start align-middle gap-32">
+
+              <label class="switchBtn align-middle">
+                <input type="checkbox">
+                <span class="round"></span>
+              </label>
+
+              <label class="switchBtn align-middle">
+                <input type="checkbox">
+                <span class="round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-2">
+            <label class="checkContainer"> Option1
+              <input type="checkbox" checked>
+              <span class="checkspan"></span>
+            </label>
+
+            <label class="container pl-8"> One
+              <input type="radio" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container pl-8"> Male
+              <input type="radio" name="gender">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container pl-8"> Female
+              <input type="radio" name="gender">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container pl-8"> two
+              <input type="radio" disabled>
+              <span class="checkmark bg-primary-shd07"></span>
+            </label>
+          </div>
         </div>
       </div>
     </div>

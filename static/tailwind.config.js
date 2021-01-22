@@ -78,6 +78,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
+      xsm:'0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
       lg: '1rem',
@@ -109,7 +110,7 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto']
     },
-    filter: { // defaults to {}
+    /*filter: { // defaults to {}
       'none': 'none',
       'grayscale': 'grayscale(1)',
       'invert': 'invert(1)',
@@ -118,7 +119,7 @@ module.exports = {
     backdropFilter: { // defaults to {}
       'none': 'none',
       'blur': 'blur(16px)',
-    },
+    },*/
     extend: {
       spacing: {
         '3xs': '.125rem',
@@ -133,6 +134,7 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem',
         '3xxsl': '3.25rem',
+        '4xxl' : '2.625rem',
         'mvv':'29.5rem'
       },
 
@@ -172,14 +174,11 @@ module.exports = {
     }
   },
   variants: {
-    filter: ['responsive'], // defaults to ['responsive']
-    backdropFilter: ['responsive'], // defaults to ['responsive'],
     extend: {
       textDecoration: ['group-focus'],
      
     }
   },
   plugins: [
-    require('tailwindcss-filters'),
   ]
 };
