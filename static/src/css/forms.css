@@ -174,3 +174,12 @@
   width: 9px;
   height: 9px;
 }
+.btn-primary-icon{
+  @apply text-md bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect font-bold;
+}
+.btn--primary-md{
+  @apply bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect py-xs px-l text-base font-medium;
+}
+.btn--primary-sm{
+  @apply bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect py-1.5 px-m text-sm font-medium;
+}
