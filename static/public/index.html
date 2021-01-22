@@ -2642,7 +2642,11 @@
               alt="filled avatar"
               class="ml-4 mt-4"
             />
-            <img src="./img/large-anan.png" alt="anon avatar" class="ml-4 mt-4" />
+            <img
+              src="./img/large-anan.png"
+              alt="anon avatar"
+              class="ml-4 mt-4"
+            />
             <img
               src="./img/large-notfilled.png"
               alt="not filled avatar"
@@ -2695,7 +2699,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="atom">
         <h2 class="header">Sliders</h2>
         <div class="parent">
@@ -2722,7 +2726,7 @@
             <div class="ml-4 mt-4 w-13xxxl h-1 bg-success rounded-xs"></div>
           </div>
         </div>
-  
+
         <div class="parent">
           <div class="title-header">
             <h3 class="title">Vote Meter 1</h3>
@@ -2795,6 +2799,99 @@
     </section>
 
     <section>
+      <div class="atom molecules">
+        <h2 class="header">Voting Stats</h2>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Winner</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-start mb-10">
+              <p class="mr-sv">🌟 75%</p>
+              <div class="w-2 h-19xxxl bg-primary rounded-full"></div>
+            </div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Runner</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-start mb-10">
+              <p class="mr-sv">20%</p>
+              <div class="w-2 h-19xxxl bg-primary-shd6 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Loser</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box flex items-start mb-10">
+              <p class="mr-sv">25%</p>
+              <div class="w-2 h-19xxxl bg-error rounded-full"></div>
+            </div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">Yes</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box relative mb-10">
+              <svg
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="36" cy="36" r="29" fill="white" />
+                <path
+                  d="M72 36C72 43.1201 69.8886 50.0804 65.9329 56.0005C61.9772 61.9207 56.3547 66.5349 49.7766 69.2597C43.1985 71.9844 35.9601 72.6973 28.9767 71.3083C21.9934 69.9192 15.5788 66.4905 10.5442 61.4558C5.50947 56.4212 2.0808 50.0066 0.69173 43.0233C-0.697338 36.0399 0.0155821 28.8015 2.74034 22.2234C5.46509 15.6453 10.0793 10.0228 15.9995 6.06709C21.9196 2.11136 28.8799 -8.49067e-08 36 0V7.2C30.3039 7.2 24.7357 8.88909 19.9996 12.0537C15.2634 15.2183 11.5721 19.7162 9.39227 24.9787C7.21246 30.2412 6.64213 36.0319 7.75338 41.6186C8.86464 47.2053 11.6076 52.3369 15.6353 56.3647C19.6631 60.3924 24.7947 63.1354 30.3814 64.2466C35.9681 65.3579 41.7588 64.7875 47.0213 62.6077C52.2838 60.4279 56.7817 56.7366 59.9463 52.0004C63.1109 47.2643 64.8 41.6961 64.8 36H72Z"
+                  fill="#7048E8"
+                />
+              </svg>
+              <div
+                class="flex flex-col items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <span>👍</span>
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="title-header">
+            <h3 class="title text-lg">No</h3>
+          </div>
+          <div class="child">
+            <div class="misc-box relative mb-10">
+              <svg
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M72 36C72 40.7276 71.0688 45.4089 69.2597 49.7766C67.4505 54.1443 64.7988 58.1129 61.4558 61.4558C58.1129 64.7988 54.1443 67.4505 49.7766 69.2597C45.4089 71.0688 40.7276 72 36 72V64.8C39.7821 64.8 43.5271 64.0551 47.0213 62.6077C50.5155 61.1604 53.6903 59.039 56.3647 56.3647C59.039 53.6903 61.1604 50.5155 62.6077 47.0213C64.0551 43.5271 64.8 39.7821 64.8 36H72Z"
+                  fill="#FE544A"
+                />
+                <circle cx="36" cy="36" r="29" fill="white" />
+              </svg>
+              <div
+                class="flex flex-col items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <span>👎</span>
+                <span>25%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="atom molecules">
         <h2 class="header">Misc</h2>
         <div class="parent">
