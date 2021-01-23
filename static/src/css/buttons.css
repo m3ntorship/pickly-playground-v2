@@ -452,4 +452,8 @@ input:checked + .slider:before {
   @apply border-5;
 }
 
+#burger-toggler:focus + .nav-links {
+  @apply h-full w-full transition-all duration-500 ease-out;
+}
+
 /************************************* Twfiek Section end ******************************/
