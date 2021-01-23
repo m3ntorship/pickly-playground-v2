@@ -452,4 +452,11 @@ input:checked + .slider:before {
   @apply border-5;
 }
 
+/**************************** Will Delete Soon ****************************/
+.molecules .misc-box .radio-box.radio-tab,
+.molecules .misc-box .toggler.toggle-org {
+  @apply mt-0 ml-0;
+}
+/**************************** Will Delete Soon ****************************/
+
 /************************************* Twfiek Section end ******************************/
