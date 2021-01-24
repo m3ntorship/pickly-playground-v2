@@ -168,6 +168,7 @@ module.exports = {
         '12xl': '11.75rem',
         '7xl': '7.75rem',
         '23xl': '23.125rem',
+        '22xl': '22.5rem',
         '21xl': '21.5rem',
         '6xl': '6.75rem',
         '3xl': '3.625rem',
