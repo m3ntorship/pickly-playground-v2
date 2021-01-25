@@ -365,7 +365,7 @@ input:checked + .slider:before {
 }
 
 .parent .child .toggle-box .toggler {
-  @apply w-2xl h-xl rounded-full bg-grey-shd4 ml-6 mt-6 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-100 ease-out;
+  @apply w-2xl h-xl rounded-full bg-grey-shd4 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-100 ease-out;
 }
 
 .parent .child .toggle-box .toggler .circle {
@@ -450,6 +450,14 @@ input:checked + .slider:before {
 
 .parent .child .radio-cat .radio:checked + .radio-small {
   @apply border-5;
+}
+
+#burger-toggler:focus + .nav-links {
+  @apply h-full w-full transition-all duration-500 ease-out;
+}
+
+.molecules .misc-box .radio-box.radio-tab {
+  @apply mt-0 ml-0;
 }
 
 /************************************* Twfiek Section end ******************************/
