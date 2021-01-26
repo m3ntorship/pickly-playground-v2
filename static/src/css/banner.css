@@ -54,14 +54,4 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/**************************** Will Delete Soon ****************************/
-.molecules .parent .child .inputfile {
-  @apply opacity-0 overflow-hidden absolute;
-}
-
-.molecules .parent .child .inputfile + label {
-  @apply bg-grey-shd7 border border-dashed rounded-md border-accent cursor-pointer hover:text-accent text-accent text-sm font-medium md:w-full h-14 flex items-center justify-center;
-}
-/**************************** Will Delete Soon ****************************/
-
 /************************************* Twfiek Section end ******************************/
