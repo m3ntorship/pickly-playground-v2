@@ -61,7 +61,11 @@
 }
 
 .molecules .parent .child .inputfile + label {
-  @apply bg-grey-shd7 border border-dashed rounded-md border-accent cursor-pointer hover:text-accent text-accent text-sm font-medium w-44xl h-14 flex items-center justify-center;
+  @apply bg-grey-shd7 border border-dashed rounded-md border-accent cursor-pointer hover:text-accent text-accent text-sm font-medium w-full h-14 flex items-center justify-center;
+}
+
+.molecules .parent .child .inputfile.upload-image + label {
+  @apply w-44xl;
 }
 
 .molecules .parent .child img.bg-blur {
