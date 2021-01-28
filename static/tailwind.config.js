@@ -82,6 +82,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
+      xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
       lg: '1rem',
@@ -154,6 +155,8 @@ module.exports = {
         '5xl': '8rem'
       },
       width: {
+        '44xl': '44rem',
+        '41xl': '41.25rem',
         '39xl': '39.5rem',
         '37xl': '37.5rem',
         '8xl': '8.8125rem',
@@ -163,6 +166,7 @@ module.exports = {
         '33xl': '33.25rem',
         '29xl': '29.5rem',
         '3.6xl': '3.625rem',
+        '13xxxl': '13.25rem',
         '19xl': '18.75rem',
         '12xl': '11.75rem',
         '7xl': '7.75rem',
@@ -170,21 +174,28 @@ module.exports = {
         '6xl': '6.75rem',
         '3xl': '3.625rem',
         '9xsl': '9.25.5rem',
+        '30xl': '30rem',
         '33xl': '33.25rem',
+        '35xl': '35.25rem',
         '29xl': '29.5rem',
+        '28xl': '28.5rem',
         '2xl': '2.625rem',
-        xl: '1.75rem'
+        xl: '1.75rem',
+        xs: '0.0625rem'
       },
       height: {
+        '44xl': '44rem',
         '61xl': '61.0625rem',
         '21xl': '21.25rem',
         '46xl': '46.8125rem',
         '3sxxl': '3.25rem',
         '50xxxl': '50rem',
         '48xxxl': '48rem',
+        '19xxxl': '19.9375rem',
         '7xl': '7.5rem',
         '5xl': '5.5rem',
         '23xl': '23.125rem',
+        '33xl': '33rem',
         '2xl': '2rem',
         '3xl': '2.5rem',
         xl: '1.5rem'
