@@ -11,4 +11,3 @@ export default defaultExport;
 const Template = (args) => <TabGroup {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
