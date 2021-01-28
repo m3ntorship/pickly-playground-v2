@@ -35,13 +35,13 @@
   @apply border-2 border-grey-shd2 bg-white rounded-full text-grey-shd2 font-bold outline-none flex items-center justify-center content-center cursor-not-allowed;
 }
 .tab-poll {
-  @apply group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-14 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-500 ease-in-out;
+  @apply group text-sm relative flex items-center justify-around px-3.5 py-1.5 h-14 border border-grey border-opacity-0 bg-grey-shd7  hover:bg-white hover:border-opacity-100  rounded-full focus:outline-none transition duration-200 ease-in-out;
 }
 .tab-poll {
   padding-right: 12px;
 }
 .checkmark-overlay {
-  @apply h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-500 ease-in-out;
+  @apply h-4 w-4 rounded-full border border-primary  bg-white text-transparent absolute left-0 top-1 mr-2 hover:bg-grey-shd4 transition duration-200 ease-in-out;
 }
 
 input:checked ~ .checkmark-overlay {
@@ -365,7 +365,7 @@ input:checked + .slider:before {
 }
 
 .parent .child .toggle-box .toggler {
-  @apply w-2xl h-xl rounded-full bg-grey-shd4 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-100 ease-out;
+  @apply w-2xl h-xl rounded-full bg-grey-shd4 relative flex items-center px-1 cursor-pointer hover:bg-grey-shd3 transition duration-200 ease-out;
 }
 
 .parent .child .toggle-box .toggler .circle {
@@ -409,7 +409,7 @@ input:checked + .slider:before {
 }
 
 .parent .child .checkbox-cat .checkmark {
-  @apply ml-6 mb-6 cursor-pointer bg-white w-6 h-6 border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-500 ease-out;
+  @apply ml-6 mb-6 cursor-pointer bg-white w-6 h-6 border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-200 ease-out;
 }
 
 .parent .child .checkbox-cat .checked:checked + .checkmark {
@@ -433,7 +433,7 @@ input:checked + .slider:before {
 }
 
 .parent .child .radio-cat .radio-box {
-  @apply ml-6 mt-6 cursor-pointer rounded-full bg-white w-6 h-6 border border-grey-shd4 hover:border-grey-shd1 transition-all duration-500 ease-out;
+  @apply ml-6 mt-6 cursor-pointer rounded-full bg-white w-6 h-6 border border-grey-shd4 hover:border-grey-shd1 transition-all duration-200 ease-out;
 }
 
 .parent .child .radio-cat .radio:checked + .radio-box {
@@ -453,7 +453,7 @@ input:checked + .slider:before {
 }
 
 #burger-toggler:focus + .nav-links {
-  @apply h-full w-full transition-all duration-500 ease-out;
+  @apply h-full w-full transition-all duration-200 ease-out;
 }
 
 .molecules .misc-box .radio-box.radio-tab {
