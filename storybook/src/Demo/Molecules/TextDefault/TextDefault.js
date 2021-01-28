@@ -11,21 +11,24 @@ const TextDefault = () => {
     return caps;
   })();
   const addOptionHandler = () => {
-    let id = addOption.length + 1;
+    const numbers = "123456789";
+    const randId = Math.floor(Math.random() * numbers);
     //alpha: alpha[id - 1]
-    setAddOption([...addOption, { id: id }]);
+    setAddOption([...addOption, { id: randId }]);
   };
   const removeOptionHandler = (e) => {
-    setAddOption(addOption.filter((item) => item.id != e.target.id));
+    setAddOption(
+      addOption.filter((item) => item.id.toString() !== e.target.id)
+    );
   };
   return (
-    <div className="flex flex-col w-4/12">
+    <div className="flex flex-col w-21xl md:w-80">
       <div className="flex flex-col w-full">
         {addOption.map((item, index) => {
           const letter = letters[index];
           return (
             <OptionInput
-              key={index}
+              key={item.id}
               id={item.id}
               alpha={letter}
               click={removeOptionHandler}

@@ -2,7 +2,7 @@ import React from "react";
 import TextDefault from "./TextDefault";
 
 const defaultExport = {
-  title: "Twfiek/Atoms/TextDefault",
+  title: "Twfiek/Molecules/TextDefault",
   component: TextDefault,
 };
 
