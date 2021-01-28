@@ -40,6 +40,7 @@ const FormInput = (props) => {
         />
         <Input
           leftIcon={leftIcon}
+          rightIcon={rightIcon}
           prefix={prefix}
           prefixDrop={prefixDrop}
           variant={variant}
@@ -51,6 +52,7 @@ const FormInput = (props) => {
           variant={variant}
           focus={focus}
           rightIcon={rightIcon}
+          leftIcon={leftIcon}
           withLabel={withLabel}
         />
         <SideIcons

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Variants = ({ variant, focus, rightIcon, withLabel }) => {
+const Variants = ({ variant, focus, rightIcon, leftIcon, withLabel }) => {
   return (
     <>
       {variant === "error" ? (
@@ -8,7 +8,7 @@ const Variants = ({ variant, focus, rightIcon, withLabel }) => {
           className={`${
             focus
               ? `block absolute ${withLabel ? "top-10" : "top-4"} ${
-                  rightIcon ? "right-10" : "right-3"
+                  rightIcon ? (!leftIcon ? "right-10" : "right-3") : "right-3"
                 }`
               : "hidden"
           }`}
@@ -32,7 +32,7 @@ const Variants = ({ variant, focus, rightIcon, withLabel }) => {
           className={`${
             focus
               ? `block absolute ${withLabel ? "top-10" : "top-4"} ${
-                  rightIcon ? "right-10" : "right-3"
+                  rightIcon ? (!leftIcon ? "right-10" : "right-3") : "right-3"
                 }`
               : "hidden"
           }`}
@@ -52,7 +52,7 @@ const Variants = ({ variant, focus, rightIcon, withLabel }) => {
           className={`${
             focus
               ? `block absolute ${withLabel ? "top-10" : "top-4"} ${
-                  rightIcon ? "right-10" : "right-3"
+                  rightIcon ? (!leftIcon ? "right-10" : "right-3") : "right-3"
                 }`
               : "hidden"
           }`}
