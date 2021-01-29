@@ -43,7 +43,8 @@
 
 /* Tabs */
 
-.tabs .with-icon input::before {
+.tabs .with-icon input::before,
+.post-edit .with-icon input::before {
   content: '';
   display: block;
   width: 13px;
@@ -52,7 +53,8 @@
   border-radius: 10px;
 }
 
-.tabs .with-icon input:checked::after {
+.tabs .with-icon input:checked::after,
+.post-edit .with-icon input:checked::after {
   content: '';
   display: block;
   width: 13px;
@@ -91,7 +93,8 @@
 }
 
 /* Toggels */
-.toggles span:before {
+.toggles span:before,
+.privacy span:before {
   position: absolute;
   content: '';
   height: 16px;
@@ -102,7 +105,8 @@
   transition: 0.4s;
   border-radius: 100px;
 }
-.toggles span.small:before {
+.toggles span.small:before,
+.privacy span.small:before {
   position: absolute;
   content: '';
   height: 10px;
@@ -114,22 +118,31 @@
   border-radius: 100px;
 }
 
-.toggles input:checked + span {
+.toggles input:checked + span,
+.privacy input:checked + span {
   background-color: #ede8fc;
 }
-.toggles input:checked:focus + span {
+.toggles input:checked:focus + span,
+.privacy input:checked:focus + span {
   border: 1px solid #cabbf7;
 }
 
-.toggles input:focus + span {
+.toggles input:focus + span,
+.privacy input:focus + span {
   border: 1px solid #b6cdd6;
 }
 
-.toggles input:checked + span:before {
+.toggles input:checked + span:before,
+.privacy input:checked + span:before {
   background-color: #7048e8;
   transform: translateX(17px);
 }
-.toggles input:checked + span.small:before {
+.toggles input:checked + span.small:before,
+.privacy input:checked + span.small:before {
   background-color: #7048e8;
   transform: translateX(9px);
+}
+
+.onprogress-upload img {
+  filter: blur(5px);
 }

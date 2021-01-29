@@ -96,6 +96,9 @@ module.exports = {
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
       heavy:
         '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 8px 12px rgba(0, 0, 0, 0.08);',
+      heavy:
+        '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 8px 12px rgba(0, 0, 0, 0.08);',
+      heart: '0px 0px 0px 5px rgba(112,72,232,0.35)',
       none: 'none'
     },
     fontSize: {
@@ -211,6 +214,7 @@ module.exports = {
       },
       inset: {
         12: '0.75rem',
+        '12l': '3rem',
         38: '2.275rem',
         40: '2.5rem',
         '14.5': '3.75rem'
@@ -220,6 +224,8 @@ module.exports = {
   variants: {
     extend: {
       textDecoration: ['group-focus'],
+      width: ['hover'],
+      height: ['hover']
 
     }
   },
