@@ -1,6 +1,83 @@
 *{
   @apply box-border;
 }
+.primaryBTN:focus{
+  border: 2px solid #5034A6;
+}
+.secondaryBTN{
+  @apply flex items-center justify-center bg-white text-primary outline-none;
+  border:1px solid #7048E8;
+}
+.secondaryBTN:hover{
+  @apply bg-grey-bg;
+}
+.secondaryBTN:focus{
+  @apply outline-none;
+  border: 2px solid #5034A6;
+}
+.TxtBTN{
+  @apply flex items-center justify-center text-accent outline-none;
+}
+.TxtBTN:hover{
+  @apply text-accent-hover;
+}
+.TxtBTN:focus{
+  @apply underline outline-none;
+}
+/*************** Inputs *************/
+.form--row{
+  @apply relative;
+}
+.form--row label{
+  @apply capitalize text-dark-grey font-light text-xs block mb-m;
+}
+.form--row .form--input{
+  @apply text-grey-shd1 font-normal text-sm px-m py-xsv w-18xl rounded-md border border-accent-shd7;
+}
+.form--input-left{
+  @apply text-grey-shd1 font-normal text-sm pl-xxl pr-m py-xsv w-18xl rounded-md border border-accent-shd7;
+}
+.form--row .form--input:hover , .form--input-left:hover{
+  @apply border border-grey-shd1;
+}
+.form--row .form--input:focus , .form--input-left:focus{
+  @apply border-dark outline-none;
+}
+.form--row .input--error{
+  @apply border-error hover:border-error focus:border-error;
+}
+.form--row .input--success{
+  @apply border-success hover:border-success focus:border-success;
+}
+.form--row .input--disabled{
+  @apply text-grey-shd3 pointer-events-none border-grey-shd4 cursor-not-allowed hover:border-grey-shd4 focus:border-grey-shd4;
+}
+.form--row .form--icon{
+  @apply absolute right-m opacity-0;
+  top:2.75rem;
+}
+.form--icon-right + .form--icon{
+  @apply right-xl ;
+}
+.form--row .form--input:focus ~ .form--icon{
+  @apply opacity-100;
+}
+.form--prefix{
+  @apply text-grey text-sm absolute left-xs flex flex-row items-center gap-xs;
+  top:2.6rem;
+}
+.prefix-dropdown+ input{
+  padding-left:3.5rem;
+}
+.form--input-left:focus ~ .form--icon{
+  @apply opacity-100;
+}
+.form--icon-left{
+  @apply absolute top-xvxl left-m;
+}
+.form--icon-right{
+  @apply absolute top-3xl right-m;
+}
 .backdrop-blur{
   filter: blur(16px);
 }
@@ -112,11 +189,11 @@
 }
 /* Create a custom checkbox */
 .checkspan {
-  @apply absolute top-0 left-0 h-6 w-6 bg-primary-shd7;
+  @apply absolute top-0 left-0 h-6 w-6 bg-primary-shd7 rounded-sm;
 }
 /* On mouse-over, add a grey background color */
 .checkContainer:hover input ~ .checkspan {
-  @apply border border-primary;
+  @apply border border-grey-shd1;
 }
 /* When the checkbox is checked, add a blue background */
 .checkContainer input:checked ~ .checkspan {
@@ -138,36 +215,32 @@
   top: 28.39%;
   border-width: 0 3px 3px 0;
 }
+
 /* Create a custom radio button */
 .checkmark {
-  height: 25px;
-  width: 25px;
-  @apply bg-white rounded-full absolute top-0 left-0;
+  height: 16px;
+  width: 16px;
+  @apply bg-white rounded-full absolute top-1 left-0;
 }
-
 .container:hover input ~ .checkmark {
   @apply bg-white;
 }
-
 .container input:checked ~ .checkmark {
   @apply bg-primary
 }
-
 .checkmark:after {
   content: "";
   @apply absolute hidden;
 }
-
 .container input:checked ~ .checkmark:after {
   @apply block;
 }
-
 .container .checkmark:after {
   @apply bg-white rounded-full;
-  top: 8px;
-  left: 7px;
-  width: 9px;
-  height: 9px;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
 }
 .btn-primary-icon{
   @apply text-md bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect font-bold;
@@ -198,7 +271,7 @@
 	z-index: -1;
 }
 .inputfile + label {
-  @apply bg-grey-shd7 text-accent flex justify-center items-center py-5 px-60 text-sm font-medium;
+  @apply bg-grey-shd7 text-accent flex justify-center items-center text-sm font-medium;
 }
 
 .inputfile:focus + label,
@@ -308,20 +381,27 @@
 }
 /* The slider */
 .slider {
-  @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-primary-shd7 transition duration-500;
+  @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-grey-shd4 transition duration-500 border-2 border-transparent;
 }
 .slider:before {
   content: "";
-  @apply absolute w-4 h-4 left-xxs bottom-xxs bg-white transition duration-500;
+  @apply absolute w-4 h-4 left-xxs bg-white transition duration-500;
+  top:0.2rem;
 }
-
-input:checked + .slider {
-  @apply bg-primary;
+.slider:hover {
+  @apply border-2 border-primary-shd5;
+}
+.switch-disabled .slider{
+  @apply bg-grey-shd6;
+}
+.switch-disabled .slider:hover{
+  @apply border border-transparent pointer-events-none;
 }
 input:focus + .slider {
-  @apply shadow-soft;
+  @apply shadow-soft bg-grey-shd3;
 }
 input:checked + .slider:before {
+  @apply bg-primary;
   -webkit-transform: translateX(17px);
   -ms-transform: translateX(17px);
   transform: translateX(17px);
@@ -332,4 +412,7 @@ input:checked + .slider:before {
 }
 .slider.round:before {
   @apply rounded-full;
+}
+.txtBtn:focus span{
+  @apply underline;
 }
