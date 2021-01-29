@@ -10,6 +10,6 @@ module.exports = merge(common, {
     contentBase: path.join(__dirname, '../public'),
     open: true,
     compress: true,
-    port: 5500
+    port: 3300
   }
 });
