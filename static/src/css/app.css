@@ -2,9 +2,7 @@
 @import 'tailwindcss/components';
 @import './typography.css';
 @import './buttonswithTW.css';
-@import './banner.css';
 @import './buttons.css';
 @import 'tailwindcss/utilities';
-@import './custom.css';
-
-
+@import './buttonswithTW.css';
+@import './banner.css';

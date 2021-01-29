@@ -51,3 +51,424 @@
 }
 
 /************************************* Twfiek Section end ******************************/
+
+/****************** Custom CSS by Aya.O ****************/
+*{
+  @apply box-border;
+}
+.primaryBTN:focus{
+  border: 2px solid #5034A6;
+}
+.secondaryBTN{
+  @apply flex items-center justify-center bg-white text-primary outline-none;
+  border:1px solid #7048E8;
+}
+.secondaryBTN:hover{
+  @apply bg-grey-bg;
+}
+.secondaryBTN:focus{
+  @apply outline-none;
+  border: 2px solid #5034A6;
+}
+.TxtBTN{
+  @apply flex items-center justify-center text-accent outline-none;
+}
+.TxtBTN:hover{
+  @apply text-accent-hover;
+}
+.TxtBTN:focus{
+  @apply underline outline-none;
+}
+/*************** Inputs *************/
+.form--row{
+  @apply relative;
+}
+.form--row label{
+  @apply capitalize text-dark-grey font-light text-xs block mb-m;
+}
+.form--row .form--input{
+  @apply text-grey-shd1 font-normal text-sm px-m py-xsv w-18xl rounded-md border border-accent-shd7;
+}
+.form--input-left{
+  @apply text-grey-shd1 font-normal text-sm pl-xxl pr-m py-xsv w-18xl rounded-md border border-accent-shd7;
+}
+.form--row .form--input:hover , .form--input-left:hover{
+  @apply border border-grey-shd1;
+}
+.form--row .form--input:focus , .form--input-left:focus{
+  @apply border-dark outline-none;
+}
+.form--row .input--error{
+  @apply border-error hover:border-error focus:border-error;
+}
+.form--row .input--success{
+  @apply border-success hover:border-success focus:border-success;
+}
+.form--row .input--disabled{
+  @apply text-grey-shd3 pointer-events-none border-grey-shd4 cursor-not-allowed hover:border-grey-shd4 focus:border-grey-shd4;
+}
+.form--row .form--icon{
+  @apply absolute right-m opacity-0;
+  top:2.75rem;
+}
+.form--icon-right + .form--icon{
+  @apply right-xl ;
+}
+.form--row .form--input:focus ~ .form--icon{
+  @apply opacity-100;
+}
+.form--prefix{
+  @apply text-grey text-sm absolute left-xs flex flex-row items-center gap-xs;
+  top:2.6rem;
+}
+.prefix-dropdown+ input{
+  padding-left:3.5rem;
+}
+.form--input-left:focus ~ .form--icon{
+  @apply opacity-100;
+}
+.form--icon-left{
+  @apply absolute top-xvxl left-m;
+}
+.form--icon-right{
+  @apply absolute top-3xl right-m;
+}
+.backdrop-blur{
+  filter: blur(16px);
+}
+.input-container{
+    @apply flex mb-5 align-middle items-center rounded-md border border-grey-shd5 border-opacity-100 bg-white px-4;
+}
+.input-container-focus{
+    @apply flex mb-5 align-middle items-center rounded-md border border-dark border-opacity-100 bg-white px-4;
+}
+.input-container-error{
+    @apply flex mb-5 align-middle items-center rounded-md border border-error border-opacity-100 bg-white px-4;
+}
+.input-container-success{
+    @apply flex mb-5 align-middle items-center rounded-md border border-success border-opacity-100 bg-white px-4;
+}
+.input-field {
+    @apply text-sm outline-none focus:outline-none w-80 h-10;
+}
+.input-icon{
+    @apply min-w-0 align-middle justify-center;
+}
+.input-check{
+    @apply rounded-sm w-6 h-6 border border-grey-shd4;
+}
+.input-check:checked .input-check{
+    @apply rounded-sm w-6 h-6 border border-primary bg-primary;
+}
+.input-check-checked{
+    @apply rounded-sm w-6 h-6 border border-primary bg-primary;
+}
+.switchBtn{
+    @apply relative inline-block rounded-xl h-6 w-4xxl align-middle;
+}
+.switchBtn input{
+    @apply opacity-0 w-0 h-0;
+}
+.round{
+    @apply absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-grey-shd4 transition duration-300 rounded-xl inline-block;
+}
+.round:before{
+    @apply absolute cursor-pointer w-4 h-4 left-1 top-1 bg-white transition duration-300 rounded-full;
+    content: "";
+}
+.switchBtn input:checked + .round {
+    @apply bg-primary-shd7;
+}
+.switchBtn input:checked + .round:before {
+    @apply bg-primary;
+}
+.switchBtn input:checked + .round:before {
+    @apply transform translate-x-4;
+}
+.switchBtn:hover , .switchBtn:focus{
+    @apply border-2 border-primary-shd5;
+}
+.switchBtn-sm{
+    @apply h-4 w-7;
+}
+.round-sm:before{
+    @apply w-2.5 h-2.5 top-3xs left-3xs;
+}
+.loader{
+    @apply border-r-8 border-b-8 border-error w-14 h-14 rounded-br-full;
+   /* border-radius: 0 0 3.5rem 0;*/
+}
+.loader-x{
+    @apply border-r-8 border-b-8 border-primary w-14 h-14 rounded-tl-full rounded-b-full;
+}
+/********* avatar ************/
+.avatar{
+    @apply w-14 h-14 rounded-xl;
+}
+.avatar-md{
+    @apply w-10 h-10 rounded-xl;
+}
+.avatar-sm{
+    @apply w-8 h-8 rounded-xl;
+}
+/******* custom radio *********/
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+ /* margin-bottom: 12px;*/
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkContainer {
+  @apply block relative pl-8 mb-4 cursor-pointer text-lg select-none;
+}
+
+/* Hide the browser's default checkbox */
+.checkContainer input {
+  @apply absolute opacity-0 cursor-pointer h-0 w-0;
+}
+/* Create a custom checkbox */
+.checkspan {
+  @apply absolute top-0 left-0 h-6 w-6 bg-primary-shd7 rounded-sm;
+}
+/* On mouse-over, add a grey background color */
+.checkContainer:hover input ~ .checkspan {
+  @apply border border-grey-shd1;
+}
+/* When the checkbox is checked, add a blue background */
+.checkContainer input:checked ~ .checkspan {
+  @apply bg-primary;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkspan:after {
+  content: "";
+  @apply absolute hidden;
+}
+/* Show the checkmark when checked */
+.checkContainer input:checked ~ .checkspan:after {
+  @apply block;
+}
+/* Style the checkmark/indicator */
+.checkContainer .checkspan:after {
+  @apply w-1 h-3 border border-white transform rotate-45;
+  left: 43.05%;
+  top: 28.39%;
+  border-width: 0 3px 3px 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  height: 16px;
+  width: 16px;
+  @apply bg-white rounded-full absolute top-1 left-0;
+}
+.container:hover input ~ .checkmark {
+  @apply bg-white;
+}
+.container input:checked ~ .checkmark {
+  @apply bg-primary
+}
+.checkmark:after {
+  content: "";
+  @apply absolute hidden;
+}
+.container input:checked ~ .checkmark:after {
+  @apply block;
+}
+.container .checkmark:after {
+  @apply bg-white rounded-full;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+}
+.btn-primary-icon{
+  @apply text-md bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect font-bold;
+}
+.btn--primary-md{
+  @apply bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect py-xs px-l text-base font-medium;
+}
+.btn--primary-sm{
+  @apply bg-primary flex items-center justify-center content-center focus:outline-none text-white rounded-full hoverEffect py-1.5 px-m text-sm font-medium;
+}
+
+.arc{
+  @apply border-8 border-primary rounded-full relative;
+  width:4.5rem;
+  height:4.5rem;
+}
+.arc-after{
+   @apply bg-white absolute w-8 h-8;
+    right: -9px;
+    top: -9px;
+}
+
+/******** image input file ********/
+.inputfile {
+  @apply hidden absolute overflow-hidden;
+	width: 0.1px;
+	height: 0.1px;
+	z-index: -1;
+}
+.inputfile + label {
+  @apply bg-grey-shd7 text-accent flex justify-center items-center text-sm font-medium;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  @apply cursor-pointer;
+}
+.tab-group{
+  @apply bg-grey-bg;
+}
+.logo{
+  font-size: 18px;
+  @apply font-bold;
+}
+/*********** navigation ***********/
+.nav{
+  @apply float-right;
+}
+.logo{
+  @apply float-left w-auto;
+}
+.nav a{
+  @apply no-underline;
+}
+.nav li{
+  @apply list-none	;
+}
+.nav ul{
+  @apply flex;
+}
+.nav li a{
+  @apply mr-l flex items-center justify-center h-6 w-6 rounded-full bg-grey-shd7;
+}
+.nav li a:hover path{
+  fill:#7048E8;
+}
+#menuToggle {
+  @apply hidden;
+}
+.menu-icon {
+  @apply hidden;
+}
+
+@media screen and (max-width: 475px) {
+  #menuToggle{
+    @apply h-6 w-6 rounded-full bg-grey-shd7;
+  }
+  .menu{
+    @apply relative;
+  }
+  .nav{
+    width: min-content;
+  }
+  .menu ul {
+    @apply block overflow-hidden max-h-0 transition duration-75 mt-l;
+  }
+  .menu ul a {
+    @apply justify-center mt-l;
+  }
+  .menu-icon {
+    @apply absolute flex justify-center items-center top-0 h-6 w-6 rounded-full bg-grey-shd7 cursor-pointer;
+
+  }
+  #menuToggle:checked ~ ul {
+      max-height: 350px;
+  }
+}
+/********** voting meters *******/
+.circle-container {
+  @apply relative z-0;
+  width: 72px; height:72px;
+}
+.fill-circle {
+  @apply absolute	z-10 bg-white rounded-full;
+  margin:7px 0px 0px 7px;width: 58px; height:58px;
+}
+.quarter {
+  @apply w-1/2 h-1/2;
+}
+.top-left {
+  border-top-left-radius: 80px;
+  @apply float-left 
+}
+.top-right {
+  border-top-right-radius: 80px;
+  @apply float-right ;
+}
+.bottom-left {
+  border-bottom-left-radius: 80px;
+  @apply float-left ;
+}
+.bottom-right {
+  border-bottom-right-radius: 80px;
+  @apply float-right ;
+}
+.dot {
+  @apply absolute z-10;
+  margin:15px 0 0 21px;
+}
+/* The switch - the box around the slider */
+.switch {
+  @apply relative inline-block h-6 ;
+  width:2.625rem;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  @apply opacity-0 h-0 w-0;
+}
+/* The slider */
+.slider {
+  @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-grey-shd4 transition duration-500 border-2 border-transparent;
+}
+.slider:before {
+  content: "";
+  @apply absolute w-4 h-4 left-xxs bg-white transition duration-500;
+  top:0.2rem;
+}
+.slider:hover {
+  @apply border-2 border-primary-shd5;
+}
+.switch-disabled .slider{
+  @apply bg-grey-shd6;
+}
+.switch-disabled .slider:hover{
+  @apply border border-transparent pointer-events-none;
+}
+input:focus + .slider {
+  @apply shadow-soft bg-grey-shd3;
+}
+input:checked + .slider:before {
+  @apply bg-primary;
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+/* Rounded sliders */
+.slider.round {
+  @apply rounded-xl;
+}
+.slider.round:before {
+  @apply rounded-full;
+}
+.txtBtn:focus span{
+  @apply underline;
+}
+/****************** end Custom CSS ********************/
