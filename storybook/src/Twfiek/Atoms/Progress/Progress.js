@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Progress = (props) => {
   const { progress, row = false, disabled = false } = props;
-  let completeClass = progress < 100 ? "primary" : "success";
+  let completeClass = progress < 50 ? "error" : progress < 100 ? "primary" : "success";
   return (
     <div
       className={`bg-${completeClass} ${row ? "h-1" : "w-2"} rounded-full ${
