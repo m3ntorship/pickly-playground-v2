@@ -1,3 +1,4 @@
+
 .banner {
 }
 
@@ -52,7 +53,7 @@
 
 /************************************* Twfiek Section end ******************************/
 
-/****************** Custom CSS by Aya.O ****************/
+/********************** Start of Aya.O Custom Style Section *************/
 *{
   @apply box-border;
 }
@@ -393,6 +394,7 @@
       max-height: 350px;
   }
 }
+
 /********** voting meters *******/
 .circle-container {
   @apply relative z-0;
@@ -424,6 +426,34 @@
 .dot {
   @apply absolute z-10;
   margin:15px 0 0 21px;
+}
+
+.circle-container-sm{
+  @apply relative z-0;
+  width:56px; height:56px;
+}
+.circle-container-sm .dot{
+  margin:8px 0 0 15px;
+}
+.fill-circle-sm{
+  @apply absolute	z-10 bg-white rounded-full;
+  margin:5.44px 0px 0px 5.44px;width: 45.11px; height:45.11px;
+}
+.top-left-sm {
+  border-top-left-radius: 62px;
+  @apply float-left ;
+}
+.top-right-sm {
+  border-top-right-radius: 62px;
+  @apply float-right ;
+}
+.bottom-left-sm {
+  border-bottom-left-radius: 62px;
+  @apply float-left ;
+}
+.bottom-right-sm {
+  border-bottom-right-radius: 62px;
+  @apply float-right ;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -471,4 +501,5 @@ input:checked + .slider:before {
 .txtBtn:focus span{
   @apply underline;
 }
-/****************** end Custom CSS ********************/
+
+/********************** End of Aya.O Custom Style Section *************/
