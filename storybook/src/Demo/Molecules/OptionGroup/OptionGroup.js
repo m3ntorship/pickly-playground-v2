@@ -8,14 +8,11 @@ const OptionGroup = () => {
     const numbers = "123456789";
     const randId = Math.floor(Math.random() * numbers);
     setAddOptionGroup([...addOptionGroup, { id: randId }]);
-    console.log(addOptionGroup);
   };
-  console.log(addOptionGroup);
   const removeOptionGroupHandler = (e) => {
     setAddOptionGroup(
       addOptionGroup.filter((box) => box.id.toString() !== e.target.id)
     );
-    console.log(addOptionGroup);
   };
   return (
     <div className="flex flex-col w-96">
