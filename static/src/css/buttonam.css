@@ -34,6 +34,7 @@
 .txt-btn-samll {
   @apply text-sm font-bold text-accent-shd1  py-3.5 px-8;
 }
+/* sliders */
 .vote1-percent .progress {
   stroke-dashoffset: calc(175.84 - (175.84 / 100 * 75));
 }
