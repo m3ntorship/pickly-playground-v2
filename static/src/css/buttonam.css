@@ -1,3 +1,6 @@
+* {
+  outline: none !important;
+}
 .btn-primary-large {
   @apply box-border bg-primary-shd1 text-white rounded-xl border-2 border-transparent py-3.5 px-8 text-md font-bold;
 }
@@ -10,9 +13,7 @@
 .round-btn {
   @apply bg-primary-shd1 rounded-full  border-2 border-transparent;
 }
-.round-btn svg {
-  fill: #fff;
-}
+
 .btn-secoundry-large {
   @apply text-primary-shd1 rounded-xl border-2 border-primary-shd1 py-3.5 px-8 text-md font-bold;
 }
@@ -23,7 +24,7 @@
   @apply text-primary-shd1 rounded-xl border-2 border-primary-shd1 py-1.5 px-4 text-sm font-medium;
 }
 .round-btn-secoundry {
-  @apply border-primary-shd1 rounded-full  border-2;
+  @apply text-primary-shd1 border-primary-shd1 rounded-full  border-2;
 }
 .txt-btn-large {
   @apply text-md font-bold text-accent-shd1  py-3.5 px-8;
