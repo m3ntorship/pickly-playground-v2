@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import TabGroup from "../../TabGroup/TabGroup";
 import filled from "../../../../img/large-avatar.png";
 import Toggle from "../../Toggle/Toggle";
@@ -6,9 +6,6 @@ import { tabGroupData } from "../../TabGroup/data";
 
 const PostType = ({ active }) => {
   const [data, setData] = useState(tabGroupData());
-  useEffect(() => {
-    console.log("should rerender");
-  }, [data]);
   return (
     <div
       className={`flex flex-col z-10 absolute left-1/2 transform -translate-x-2/4 ${

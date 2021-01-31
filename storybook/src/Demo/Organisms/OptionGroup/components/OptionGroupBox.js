@@ -8,7 +8,7 @@ const OptionGroupBox = ({ click, id }) => {
     <div className="misc-box flex flex-col bg-grey-bg p-m mb-xs rounded-md">
       <div className="flex items-center justify-between mb-m">
         <input
-          className={`font-normal text-sm text-dark placeholder-dark focus:outline-none bg-accent-shd7 ${
+          className={`font-normal text-sm text-dark placeholder-dark w-1/2 focus:outline-none bg-accent-shd7 ${
             inputChecked ? "hidden" : "inline-block"
           }`}
           type="text"
