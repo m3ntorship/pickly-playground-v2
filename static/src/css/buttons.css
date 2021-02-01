@@ -1,3 +1,7 @@
+.atom input[type='radio']:checked {
+  background-color: #7048e8;
+}
+
 .hoverEffect {
   border: 3px solid transparent;
 }
@@ -160,7 +164,7 @@ input:checked ~ .checkmark-overlay:after {
 }
 
 /* Radio buttons*/
-input[type='radio']:checked {
+.atom input[type='radio']:checked {
   background-color: #7048e8;
 }
 
@@ -448,5 +452,13 @@ input:checked + .slider:before {
 
 .parent .child .radio-cat .radio:checked + .radio-small {
   @apply border-5;
+}
+
+#burger-toggler:focus + .nav-links {
+  @apply h-full w-full transition-all duration-200 ease-out;
+}
+
+.molecules .misc-box .radio-box.radio-tab {
+  @apply mt-0 ml-0;
 }
 
