@@ -51,6 +51,32 @@
   @apply w-23xl h-23xl bg-white;
 }
 
+.molecules .parent .child .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  z-index: 1;
+}
+
+.molecules .parent .child .inputfile {
+  @apply opacity-0 overflow-hidden absolute;
+}
+
+.molecules .parent .child .inputfile + label {
+  @apply bg-grey-shd7 border border-dashed rounded-md border-accent cursor-pointer hover:text-accent text-accent text-sm font-medium w-full h-14 flex items-center justify-center;
+}
+
+.molecules .parent .child .inputfile.upload-image + label {
+  @apply w-44xl;
+}
+
+.molecules .parent .child img.bg-blur {
+  filter: blur(0.4rem);
+}
+
+.organisms .parent .child .misc-box.grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 /************************************* Twfiek Section end ******************************/
 
 /********************** Start of Aya.O Custom Style Section *************/
