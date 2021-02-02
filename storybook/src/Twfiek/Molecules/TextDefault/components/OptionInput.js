@@ -1,6 +1,6 @@
 import React from "react";
 
-const OptionInput = ({ id, alpha, click, index, addOption }) => {
+const OptionInput = ({ id, alpha, click, index, addOption, changed }) => {
   return (
     <div className="mb-xs flex items-center w-full">
       <svg
@@ -19,6 +19,7 @@ const OptionInput = ({ id, alpha, click, index, addOption }) => {
           type="text"
           placeholder={`Option ${index + 1}`}
           id={id}
+          onChange={changed}
         />
         <div className="bg-grey-shd7 py-0.5 px-xs rounded-sm absolute top-2 left-2">
           <h3 className="text-sm text-grey font-normal leading-snug">
