@@ -179,6 +179,8 @@ module.exports = {
         '18xl': '18.5rem',
         '9xsl': '9.25.5rem',
         '33xl': '33.25rem',
+        '29xl': '29.5rem',
+        '3.6xl': '3.625rem',
         '13xxxl': '13.25rem',
         '19xl': '18.75rem',
         '12xl': '11.75rem',
@@ -219,6 +221,7 @@ module.exports = {
         xl: '1.5rem'
       },
       borderWidth: {
+
         5: '5px',
         6: '6px',
         7: '7px'
@@ -229,13 +232,15 @@ module.exports = {
       inset: {
         12: '0.75rem',
         38: '2.275rem',
-        40: '2.5rem'
+        40: '2.5rem',
+        '14.5': '3.75rem'
       }
     }
   },
   variants: {
     extend: {
-      textDecoration: ['group-focus']
+      textDecoration: ['group-focus'],
+
     }
   },
   plugins: [
