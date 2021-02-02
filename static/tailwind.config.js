@@ -222,5 +222,7 @@ module.exports = {
       textDecoration: ['group-focus']
     }
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/custom-forms')
+  ]
 };
