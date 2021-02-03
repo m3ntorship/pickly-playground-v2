@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   purge: ['./src/*.html'],
   darkMode: false, // or 'media' or 'class'
@@ -163,7 +164,7 @@ module.exports = {
         '8xl': '8.8125rem',
         '4sxl': '4.1875rem',
         '18xl': '18.5rem',
-        '9xsl': '9.25.5rem',
+        '9xsl': '9.25rem',
         '33xl': '33.25rem',
         '13xxxl': '13.25rem',
         '19xl': '18.75rem',
@@ -174,9 +175,7 @@ module.exports = {
         '21xl': '21.5rem',
         '6xl': '6.75rem',
         '3xl': '3.625rem',
-        '9xsl': '9.25.5rem',
         '30xl': '30rem',
-        '33xl': '33.25rem',
         '35xl': '35.25rem',
         '29xl': '29.5rem',
         '28xl': '28.5rem',
@@ -222,7 +221,5 @@ module.exports = {
       textDecoration: ['group-focus']
     }
   },
-  plugins: [
-    require('@tailwindcss/custom-forms')
-  ]
+  plugins: []
 };
