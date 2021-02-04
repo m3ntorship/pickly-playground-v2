@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ImagePost from "./ImagePost";
 
 const ImagePoll = () => {
-  const imgs = [{ id: 1 }, { id: 2 }];
+  const [files, setFIles] = useState([]);
+  const changeHandler = (e) => {
+    setFIles([...e.target.files]);
+  };
   const letters = (() => {
     const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
     return caps;
@@ -11,9 +14,9 @@ const ImagePoll = () => {
   return (
     <>
       <StyledGridBox className="grid gap-x-2 gap-y-4 mb-m rounded-md relative">
-        {imgs.map((img, index) => {
+        {files.map((file, index) => {
           const letter = letters[index];
-          return <ImagePost key={img.id} alpha={letter} />;
+          return <ImagePost key={index} alpha={letter} file={file} />;
         })}
       </StyledGridBox>
       <StyledInputFile>
@@ -22,6 +25,8 @@ const ImagePoll = () => {
           name="file"
           id="file"
           className="opacity-0 overflow-hidden absolute"
+          multiple
+          onChange={changeHandler}
         />
         <label
           htmlFor="file"

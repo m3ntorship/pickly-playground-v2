@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress Component should render disabled horizontal and purple slider when progress is less than 100 1`] = `
+<div
+  className="bg-primary h-1 rounded-full opacity-25"
+  style={
+    Object {
+      "width": "90%",
+    }
+  }
+/>
+`;
+
+exports[`Progress Component should render horizontal green slider when progress is 100 1`] = `
+<div
+  className="bg-success h-1 rounded-full "
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Progress Component should render vertical green slider when progress is 100 1`] = `
+<div
+  className="bg-success w-2 rounded-full "
+  style={
+    Object {
+      "height": "300px",
+    }
+  }
+/>
+`;
+
+exports[`Progress Component should render vertical purple slider when progress is less than 100 1`] = `
+<div
+  className="bg-primary w-2 rounded-full "
+  style={
+    Object {
+      "height": "297px",
+    }
+  }
+/>
+`;
+
+exports[`Progress Component should render vertical red slider when progress is less than 50 1`] = `
+<div
+  className="bg-error w-2 rounded-full "
+  style={
+    Object {
+      "height": "147px",
+    }
+  }
+/>
+`;
