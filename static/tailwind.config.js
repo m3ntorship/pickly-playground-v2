@@ -82,6 +82,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
+      xsm: '0.125rem',
       xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
@@ -116,6 +117,16 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto']
     },
+    /*filter: { // defaults to {}
+      'none': 'none',
+      'grayscale': 'grayscale(1)',
+      'invert': 'invert(1)',
+      'sepia': 'sepia(1)',
+    },
+    backdropFilter: { // defaults to {}
+      'none': 'none',
+      'blur': 'blur(16px)',
+    },*/
     extend: {
       spacing: {
         '4xs': '0.1875rem',
@@ -128,6 +139,8 @@ module.exports = {
         s: '.75rem',
         sv: '0.875rem',
         m: '1rem',
+        ml: '1.125rem',
+        ll: '1.25rem',
         mv: '1.125rem',
         l: '1.5rem',
         lv: '1.625rem',
@@ -139,6 +152,7 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem',
         '3xxsl': '3.25rem',
+        '4xxl': '2.625rem',
         mvv: '29.5rem'
       },
 
@@ -165,6 +179,8 @@ module.exports = {
         '18xl': '18.5rem',
         '9xsl': '9.25.5rem',
         '33xl': '33.25rem',
+        '29xl': '29.5rem',
+        '3.6xl': '3.625rem',
         '13xxxl': '13.25rem',
         '19xl': '18.75rem',
         '12xl': '11.75rem',
@@ -173,12 +189,10 @@ module.exports = {
         '22xl': '22.5rem',
         '21xl': '21.5rem',
         '6xl': '6.75rem',
+        '4xl': '4.5rem',
         '3xl': '3.625rem',
-        '9xsl': '9.25.5rem',
         '30xl': '30rem',
-        '33xl': '33.25rem',
         '35xl': '35.25rem',
-        '29xl': '29.5rem',
         '28xl': '28.5rem',
         '2xl': '2.625rem',
         xl: '1.75rem',
@@ -198,6 +212,7 @@ module.exports = {
         '5xl': '5.5rem',
         '23xl': '23.125rem',
         '33xl': '33rem',
+        '6xl': '6.75rem',
         '2xl': '2rem',
         '3xl': '2.5rem',
         xl: '1.5rem'
@@ -213,7 +228,8 @@ module.exports = {
       inset: {
         12: '0.75rem',
         38: '2.275rem',
-        40: '2.5rem'
+        40: '2.5rem',
+        14.5: '3.75rem'
       }
     }
   },
