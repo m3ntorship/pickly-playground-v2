@@ -4730,6 +4730,8 @@
 
   <!-- Mostafa's  Section -->
   <!-- Primary Buttons -->
+  <!-- Mostafa's  Section -->
+  <!-- Primary Buttons -->
   <section class="py-20">
     <h2 class="font-sans text-lg text-center mb-8 font-bold bg-primary text-white">Mostafa's Primary Buttons</h2>
     <!-- Primary Text Buttons with Icons -->
@@ -5723,7 +5725,8 @@
       class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 pl-12 mt-16 border-2 border-dashed border-primary mx-10 px-16 py-10">
       <div class="flex items-center justify-between bg-grey-bg rounded-full pr-3.5 pl-3 py-1.5 w-28">
         <div>
-          <input type="radio" name="checked" class="form-radio checked:text-primary border-solid border-2 border-grey-shd5 cursor-pointer" />
+          <input type="radio" name="checked" id="1"
+            class="form-radio checked:text-primary border-solid border-2 border-grey-shd5 cursor-pointer" />
         </div>
         <div>
           <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5735,12 +5738,12 @@
               fill="#5B6366" />
           </svg>
         </div>
-        <h4>Label</h4>
+        <label for="1">Label</label>
       </div>
 
       <div class="flex items-center justify-between bg-grey-shd6 rounded-full pr-3.5 pl-3 py-1.5 w-28">
         <div>
-          <input type="radio" name="checked" checked
+          <input type="radio" name="checked" checked id="2"
             class="form-radio text-primary border-solid border-2 border-grey-shd3 cursor-pointer" />
         </div>
         <div>
@@ -5753,12 +5756,13 @@
               fill="#5B6366" />
           </svg>
         </div>
-        <h4>Label</h4>
+        <label for="2">Label</label>
       </div>
 
-      <div class="flex items-center justify-between border-2 border-solid border-grey rounded-full pr-3.5 pl-3 py-1.5 w-28">
+      <div
+        class="flex items-center justify-between border-2 border-solid border-grey rounded-full pr-3.5 pl-3 py-1.5 w-28">
         <div>
-          <input type="radio" name="checked"
+          <input type="radio" name="checked" id="3"
             class="form-radio border-solid border-2 border-grey-shd3 checked:border-transparent checked:text-primary cursor-pointer" />
         </div>
         <div>
@@ -5771,12 +5775,12 @@
               fill="#5B6366" />
           </svg>
         </div>
-        <h4>Label</h4>
+        <label for="3">Label</label>
       </div>
 
       <div class="flex items-center justify-between bg-grey-shd6 opacity-40 rounded-full pr-3.5 pl-3 py-1.5 w-28">
         <div>
-          <input type="radio" name="checked" class="bg-primary border-transparent cursor-pointer" />
+          <input type="radio" name="checked" disabled class="bg-primary border-transparent cursor-not-allowed" />
         </div>
         <div>
           <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5788,7 +5792,7 @@
               fill="#5B6366" />
           </svg>
         </div>
-        <h4>Label</h4>
+        <label>Label</label>
       </div>
 
 
@@ -5800,7 +5804,8 @@
         <h4>Label</h4>
       </div>
 
-      <div class="flex items-center justify-between border-2 border-solid border-grey rounded-full pr-3.5 pl-3 py-1.5 w-16">
+      <div
+        class="flex items-center justify-between border-2 border-solid border-grey rounded-full pr-3.5 pl-3 py-1.5 w-16">
         <h4>Label</h4>
       </div>
 
@@ -5811,8 +5816,84 @@
 
 
 
+    <!-- Avatars -->
+    <h1 class="text-2xl font-extrabold text-center mt-16 bg-accent text-white">Avatars</h1>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 pl-12 mt-16 border-2 border-dashed border-accent mx-10 my-10 px-16 py-10">
 
-    
+      <div>
+        <h4 class="mb-4 text-lg uppercase text-grey">Filled</h4>
+        <div class="w-14 h-14">
+          <img src="./assets/imgs/avatar-1.png" />
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-md uppercase text-grey">Filled</h4>
+        <div class="w-10 h-10">
+          <img src="./assets/imgs/avatar-1.png" />
+        </div>
+      </div>
+
+
+      <div>
+        <h4 class="mb-4 text-sm uppercase text-grey">Filled</h4>
+        <div class="w-8 h-8">
+          <img src="./assets/imgs/avatar-1.png" />
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-lg uppercase text-grey">Anonymous</h4>
+        <div class="w-14 h-14">
+          <img src="./assets/imgs/avatar anonymous.svg" />
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-md uppercase text-grey">Anonymous</h4>
+        <div class="w-10 h-10">
+          <img src="./assets/imgs/avatar anonymous.svg" />
+        </div>
+      </div>
+
+
+      <div>
+        <h4 class="mb-4 text-sm uppercase text-grey">Anonymous</h4>
+        <div class="w-8 h-8">
+          <img src="./assets/imgs/avatar anonymous.svg" />
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-lg uppercase text-grey">Not filled</h4>
+        <div class="w-14 h-14">
+          <img src="./img/large-notfilled.png" />
+        </div>
+      </div>
+
+      <div>
+        <h4 class="mb-4 text-md uppercase text-grey">not filled</h4>
+        <div class="w-10 h-10">
+          <img src="./img/large-notfilled.png" />
+        </div>
+      </div>
+
+
+      <div>
+        <h4 class="mb-4 text-sm uppercase text-grey">Not filled</h4>
+        <div class="w-8 h-8">
+          <img src="./img/large-notfilled.png" />
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
   </section>
 </body>
 
