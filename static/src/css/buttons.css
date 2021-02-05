@@ -1,3 +1,7 @@
+.atom input[type='radio']:checked {
+  background-color: #7048e8;
+}
+
 .hoverEffect {
   border: 3px solid transparent;
 }
@@ -160,7 +164,7 @@ input:checked ~ .checkmark-overlay:after {
 }
 
 /* Radio buttons*/
-input[type='radio']:checked {
+.atom input[type='radio']:checked {
   background-color: #7048e8;
 }
 
@@ -240,8 +244,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-/************************************* Twfiek Section start ******************************/
 
 .atom .parent .child .tab {
   @apply flex justify-evenly items-center rounded-full w-6xl h-2xl bg-white ml-6;
@@ -461,3 +463,4 @@ input:checked + .slider:before {
 }
 
 /************************************* Twfiek Section end ******************************/
+
