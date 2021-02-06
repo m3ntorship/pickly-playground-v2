@@ -19,6 +19,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx --ext .js src/",
+    "lint:css": "stylelint src/**/*.css",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },

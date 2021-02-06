@@ -1,5 +1,6 @@
 module.exports = {
   extends: "stylelint-config-standard",
+  ignoreFiles: ["src/css/tailwind.css"],
   rules: {
     "at-rule-empty-line-before": "never",
     "declaration-empty-line-before": "never",
