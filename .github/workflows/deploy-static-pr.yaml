@@ -1,4 +1,4 @@
-name: firebase deployment (pr)
+name: firebase deployment static (pr)
 
 on:
   pull_request:
@@ -16,8 +16,18 @@ jobs:
   firebase_deploy_pr:
     runs-on: ubuntu-latest
     steps:
+      
+      #get/checkout code base
       - uses: actions/checkout@v2
-
+      
+      # install dep and build files
+      - name: install dependencies and build
+        run: |
+          yarn
+          yarn install-static
+          yarn build-static
+      
+      #deploy
       - name: GitHub Action for Firebase
         uses: w9jds/firebase-action@v1.3.0
         env:
