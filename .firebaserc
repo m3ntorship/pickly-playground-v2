@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "m3-pickly-pg2"
+  },
+  "targets": {
+    "m3-pickly-pg2": {
+      "hosting": {
+        "nilegfx": [
+          "m3-pkpg-nilegfx"
+        ],
+        "atwfk": [
+          "m3-pkpg-atwfk"
+        ]
+      }
+    }
+  }
+}
