@@ -588,15 +588,19 @@ input:checked + .slider:before {
 }
 
 .voteBTN > svg:nth-child(odd) {
-  display: inline;
+  @apply inline;
 }
 .voteBTN > svg:nth-child(even) {
-  display: none;
+  @apply hidden;
 }
 .voteBTN:hover > svg:nth-child(odd) {
-  display: none;
+  @apply hidden;
 }
 .voteBTN:hover > svg:nth-child(even) {
-  display: inline;
+  @apply inline;
+}
+.dislike {
+  transform: rotateY(180deg);
+  @apply inline-block;
 }
 /********************** End of Aya.O Custom Style Section *************/
