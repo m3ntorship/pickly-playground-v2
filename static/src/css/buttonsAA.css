@@ -1,0 +1,42 @@
+.button-primary {
+  @apply box-border text-white bg-primary-shd1 hover:bg-primary-hover rounded-full border-2 border-transparent focus:border-primary-hover;
+}
+
+.button-secondary {
+  @apply box-border text-primary-shd1 rounded-full border-2 border-primary-shd1 focus:border-primary hover:bg-grey-bg;
+}
+
+.form-text-input {
+  @apply placeholder-grey-shd1 w-19xl box-border text-sm px-4 py-2.5 border-grey-shd5 border rounded-md text-dark;
+}
+
+.checkbox:checked {
+  @apply bg-primary;
+}
+
+.checkbox:checked:hover {
+  @apply border-primary-shd6;
+}
+
+.checkbox:checked + svg {
+  @apply bg-primary block;
+}
+
+.toggle:checked {
+  @apply bg-primary-shd7;
+}
+
+.toggle:checked:hover,
+.toggle-small:checked:hover {
+  @apply bg-grey-shd3;
+}
+
+.toggle:checked + label {
+  @apply bg-primary;
+  left: 1.375rem;
+}
+
+.toggle-small:checked + label {
+  @apply bg-primary;
+  left: 0.9375rem;
+}
