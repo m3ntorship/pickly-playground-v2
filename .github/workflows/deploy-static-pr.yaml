@@ -23,14 +23,19 @@ jobs:
       # install dep and build files
       - name: install dependencies and build
         run: |
-          yarn
           yarn install-static
           yarn build-static
       
       #deploy
       - name: GitHub Action for Firebase
-        uses: w9jds/firebase-action@v1.3.0
+        uses: w9jds/firebase-action@v2.0.0
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         with:
           args: deploy --only hosting:$(echo '${{github.event.pull_request.user.login}}' | tr '[:upper:]' '[:lower:]' )
+      - name: comment PR
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: "this PR deployed [here](https://m3-pkpg-${{github.event.pull_request.user.login}}.web.app)"
