@@ -1,6 +1,15 @@
 {
   "hosting": [
     {
+      "target": "nilegfx-sb",
+      "public": "storybook/storybook-static",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
       "target": "nilegfx",
       "public": "static/dist",
       "ignore": [
