@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   env: {
-    browser: true
+    browser: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
