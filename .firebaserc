@@ -1,0 +1,29 @@
+{
+  "projects": {
+    "default": "m3-pickly-pg2"
+  },
+  "targets": {
+    "m3-pickly-pg2": {
+      "hosting": {
+        "nilegfx": [
+          "m3-pkpg-nilegfx2"
+        ],
+        "atwfk": [
+          "m3-pkpg-atwfk"
+        ],
+        "ayaosama05": [
+          "m3-pkpg-ayaosama05"
+        ],
+        "moustafa-mohammed": [
+          "m3-pkpg-moustafa-mohammed"
+        ],
+        "aymanmorsy": [
+          "m3-pkpg-aymanmorsy"
+        ],
+        "live": [
+          "m3-pkpg-live"
+        ]
+      }
+    }
+  }
+}

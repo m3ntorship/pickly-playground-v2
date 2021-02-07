@@ -7,8 +7,8 @@
     "dev": "webpack  serve --watch --config webpack/webpack.dev.js",
     "build": "NODE_ENV=production webpack --config webpack/webpack.prod.js",
     "pretty": "prettier --write --config .prettierrc src/**/*.{js,css,html}",
-    "lint": "eslint --ext .jsx --ext .js src/",
-    "lint:css": "stylelint src/**/*.css"
+    "lint": "eslint --fix src/",
+    "lint:css": "stylelint --fix *.css"
   },
   "author": "",
   "license": "ISC",
@@ -41,20 +41,5 @@
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
     "webpack-merge": "^5.7.3"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json}": [
-      "prettier --write",
-      "eslint --fix src/",
-      "git add"
-    ],
-    "*.{jsx,js}": "eslint --cache --fix",
-    "*.css": "stylelint",
-    "*.{js,css,md}": "prettier --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
