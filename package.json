@@ -1,0 +1,11 @@
+{
+  "name": "pickly-playground-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:m3ntorship/pickly-playground-v2.git",
+  "author": "Ahmed Ayoub <great.nile@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "yargs": "^16.2.0"
+  }
+}
