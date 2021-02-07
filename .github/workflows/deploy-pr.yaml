@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: |
           echo 'nile & tawfik'
-          echo ${{github.event}}
+          echo '${{toJSON(github.event.pull_request.user.login)}}'
 
   firebase_deploy_pr:
     if: false
