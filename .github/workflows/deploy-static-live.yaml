@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 jobs:
-  firebase_deploy_pr:
+  firebase_deploy_live:
     runs-on: ubuntu-latest
     steps:
       
@@ -24,4 +24,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         with:
-          args: deploy --only hosting:live | tr '[:upper:]' '[:lower:]' )
+          args: deploy --only hosting:live
