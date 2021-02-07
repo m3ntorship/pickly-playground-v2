@@ -5,12 +5,13 @@ on:
     branches: [master]
 
 jobs:
-  test: 
+  test:
     runs-on: ubuntu-latest
     steps:
       - run: |
           echo 'nile & tawfik'
           echo '${{toJSON(github.event.pull_request.user.login)}}'
+          echo '${{toJSON(github.event)}}'
 
   firebase_deploy_pr:
     if: false
