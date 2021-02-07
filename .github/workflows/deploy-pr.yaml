@@ -1,0 +1,26 @@
+name: firebase deployment (pr)
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  test: 
+    runs-on: ubuntu-latest
+     steps:
+      - run: |
+          echo 'nile & tawfik'
+          echo ${{github.event}}
+
+  firebase_deploy_pr:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: GitHub Action for Firebase
+        uses: w9jds/firebase-action@v1.3.0
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        with:
+          args: deploy --only hosting:$(echo $GITHUB_ACTOR | tr '[:upper:]' '[:lower:]' )
