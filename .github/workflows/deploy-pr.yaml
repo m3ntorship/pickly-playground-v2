@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 jobs:
-  test:
+  test:    
     runs-on: ubuntu-latest
     steps:
       - run: |
@@ -14,7 +14,6 @@ jobs:
           echo '${{toJSON(github.event)}}'
 
   firebase_deploy_pr:
-    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,4 +23,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         with:
-          args: deploy --only hosting:$(echo $GITHUB_ACTOR | tr '[:upper:]' '[:lower:]' )
+          args: deploy --only hosting:$(echo '${{github.event.pull_request.user.login}}' | tr '[:upper:]' '[:lower:]' )
