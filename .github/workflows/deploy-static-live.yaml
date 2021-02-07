@@ -1,0 +1,27 @@
+name: firebase deployment static (live)
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  firebase_deploy_pr:
+    runs-on: ubuntu-latest
+    steps:
+      
+      #get/checkout code base
+      - uses: actions/checkout@v2
+      
+      # install dep and build files
+      - name: install dependencies and build
+        run: |
+          yarn install-static
+          yarn build-static
+      
+      #deploy
+      - name: GitHub Action for Firebase
+        uses: w9jds/firebase-action@v2.0.0
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        with:
+          args: deploy --only hosting:live | tr '[:upper:]' '[:lower:]' )

@@ -19,6 +19,9 @@
         ],
         "aymanmorsy": [
           "m3-pkpg-aymanmorsy"
+        ],
+        "live": [
+          "m3-pkpg-live"
         ]
       }
     }
