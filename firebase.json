@@ -19,15 +19,6 @@
       ]
     },
     {
-      "target": "ayoub",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
       "target": "ayaosama05",
       "public": "static/dist",
       "ignore": [
@@ -64,34 +55,7 @@
       ]
     },
     {
-      "target": "abdalla-elmahdy",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "abdelrhmanali29",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
       "target": "abdomgdy",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "abudzohair",
       "public": "static/dist",
       "ignore": [
         "firebase.json",
@@ -118,15 +82,6 @@
       ]
     },
     {
-      "target": "alaasaedy",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
       "target": "ali-khamis",
       "public": "static/dist",
       "ignore": [
@@ -137,15 +92,6 @@
     },
     {
       "target": "dvmhmdsd",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "elhaw",
       "public": "static/dist",
       "ignore": [
         "firebase.json",
@@ -236,42 +182,6 @@
     },
     {
       "target": "amroakmal",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "kderbalah",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "malngaawy",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "mina-adibe",
-      "public": "static/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "momenheshamahmed",
       "public": "static/dist",
       "ignore": [
         "firebase.json",

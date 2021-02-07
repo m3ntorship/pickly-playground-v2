@@ -23,17 +23,8 @@
         "live": [
           "m3-pkpg-live"
         ],
-        "abdalla-elmahdy": [
-          "m3-pkpg-abdalla-elmahdy"
-        ],
-        "abdelrhmanali29": [
-          "m3-pkpg-abdelrhmanali29"
-        ],
         "abdomgdy": [
           "m3-pkpg-abdomgdy"
-        ],
-        "abudzohair": [
-          "m3-pkpg-abudzohair"
         ],
         "ahmedelsayad11": [
           "m3-pkpg-ahmedelsayad11"
@@ -41,17 +32,11 @@
         "ahmedelshaf3i": [
           "m3-pkpg-ahmedelshaf3i"
         ],
-        "alaasaedy": [
-          "m3-pkpg-alaasaedy"
-        ],
         "ali-khamis": [
           "m3-pkpg-ali-khamis"
         ],
         "dvmhmdsd": [
           "m3-pkpg-dvmhmdsd"
-        ],
-        "elhaw": [
-          "m3-pkpg-elhaw"
         ],
         "emanfouad": [
           "m3-pkpg-emanfouad"
@@ -82,18 +67,6 @@
         ],
         "amroakmal": [
           "m3-pkpg-amroakmal"
-        ],
-        "kderbalah": [
-          "m3-pkpg-kderbalah"
-        ],
-        "malngaawy": [
-          "m3-pkpg-malngaawy"
-        ],
-        "mina-adibe": [
-          "m3-pkpg-mina-adibe"
-        ],
-        "momenheshamahmed": [
-          "m3-pkpg-momenheshamahmed"
         ]
       }
     }
