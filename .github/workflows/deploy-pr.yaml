@@ -7,7 +7,7 @@ on:
 jobs:
   test: 
     runs-on: ubuntu-latest
-     steps:
+    steps:
       - run: |
           echo 'nile & tawfik'
           echo ${{github.event}}
