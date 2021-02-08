@@ -9,3 +9,5 @@ const defaultExport = {
 export default defaultExport;
 
 const Template = (args) => <PostEdit {...args} />;
+
+export const Default = Template.bind({});
