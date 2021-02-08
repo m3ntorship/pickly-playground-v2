@@ -1,8 +1,35 @@
 {
+  "name": "pickly-playground-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:m3ntorship/pickly-playground-v2.git",
+  "author": "Ahmed Ayoub <great.nile@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install-static": "yarn --cwd static",
+    "build-static": "yarn --cwd static build"
+  },
   "dependencies": {
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "tailwind-styled-components": "^1.0.7"
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "yargs": "^16.2.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "yarn --cwd static pretty",
+      "yarn --cwd static lint",
+      "git add"
+    ],
+    
+    "*.css": "yarn --cwd static lint:css"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn --cwd static lint-staged",
+      "pre-push": "yarn --cwd static build"
+    }
   }
 }

@@ -12,7 +12,8 @@ const HtmlWebpackPlugins = glob.sync('public/*.html').map(
   htmlFile =>
     new _HtmlWebpackPlugin({
       template: htmlFile,
-      filename: path.basename(htmlFile)
+      filename: path.basename(htmlFile),
+      minify: false //TODO: fix/lint html files
     })
 );
 module.exports = {
