@@ -35,7 +35,7 @@ const TextDefault = () => {
     );
   };
   return (
-    <div className="flex flex-col w-21xl md:w-80">
+    <div className="flex flex-col">
       <div className="flex flex-col w-full">
         {addOption.map((item, index) => {
           const letter = letters[index];

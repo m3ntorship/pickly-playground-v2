@@ -15,7 +15,7 @@ const OptionGroup = () => {
     );
   };
   return (
-    <div className="flex flex-col w-96">
+    <div className="flex flex-col">
       {addOptionGroup.map((box) => (
         <OptionGroupBox
           key={box.id}

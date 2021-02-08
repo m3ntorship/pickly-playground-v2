@@ -20,7 +20,6 @@
       "yarn --cwd static lint",
       "git add"
     ],
-    
     "*.css": "yarn --cwd static lint:css"
   },
   "husky": {

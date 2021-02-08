@@ -82,7 +82,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
-      xsm:'0.125rem',
+      xsm: '0.125rem',
       xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
@@ -139,8 +139,8 @@ module.exports = {
         s: '.75rem',
         sv: '0.875rem',
         m: '1rem',
-        'ml':'1.125rem',
-        'll':'1.25rem',
+        ml: '1.125rem',
+        ll: '1.25rem',
         mv: '1.125rem',
         l: '1.5rem',
         lv: '1.625rem',
@@ -152,8 +152,8 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem',
         '3xxsl': '3.25rem',
-        '4xxl' : '2.625rem',
-        'mvv':'29.5rem',
+        '4xxl': '2.625rem',
+        mvv: '29.5rem'
       },
 
       backgroundOpacity: {
@@ -189,13 +189,10 @@ module.exports = {
         '22xl': '22.5rem',
         '21xl': '21.5rem',
         '6xl': '6.75rem',
-        '4xl' : '4.5rem',
+        '4xl': '4.5rem',
         '3xl': '3.625rem',
-        '9xsl': '9.25.5rem',
         '30xl': '30rem',
-        '33xl': '33.25rem',
         '35xl': '35.25rem',
-        '29xl': '29.5rem',
         '28xl': '28.5rem',
         '2xl': '2.625rem',
         xl: '1.75rem',
@@ -221,7 +218,6 @@ module.exports = {
         xl: '1.5rem'
       },
       borderWidth: {
-
         5: '5px',
         6: '6px',
         7: '7px'
@@ -233,17 +229,14 @@ module.exports = {
         12: '0.75rem',
         38: '2.275rem',
         40: '2.5rem',
-        '14.5': '3.75rem'
+        14.5: '3.75rem'
       }
     }
   },
   variants: {
     extend: {
-      textDecoration: ['group-focus'],
-
+      textDecoration: ['group-focus']
     }
   },
-  plugins: [
-  ]
-}
-;
+  plugins: []
+};
