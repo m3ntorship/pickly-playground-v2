@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/*.html'],
+  purge: ['./public/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -82,6 +82,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
+      xsm:'0.125rem',
       xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
@@ -120,6 +121,16 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto']
     },
+    /*filter: { // defaults to {}
+      'none': 'none',
+      'grayscale': 'grayscale(1)',
+      'invert': 'invert(1)',
+      'sepia': 'sepia(1)',
+    },
+    backdropFilter: { // defaults to {}
+      'none': 'none',
+      'blur': 'blur(16px)',
+    },*/
     extend: {
       spacing: {
         '4xs': '0.1875rem',
@@ -132,6 +143,8 @@ module.exports = {
         s: '.75rem',
         sv: '0.875rem',
         m: '1rem',
+        'ml':'1.125rem',
+        'll':'1.25rem',
         mv: '1.125rem',
         l: '1.5rem',
         lv: '1.625rem',
@@ -143,7 +156,8 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem',
         '3xxsl': '3.25rem',
-        'mvv': '29.5rem'
+        '4xxl' : '2.625rem',
+        'mvv':'29.5rem',
       },
 
       backgroundOpacity: {
@@ -163,6 +177,7 @@ module.exports = {
         '41xl': '41.25rem',
         '39xl': '39.5rem',
         '37xl': '37.5rem',
+        '34xl': '34rem',
         '8xl': '8.8125rem',
         '4sxl': '4.1875rem',
         '18xl': '18.5rem',
@@ -176,7 +191,10 @@ module.exports = {
         '12xl': '11.75rem',
         '7xl': '7.75rem',
         '23xl': '23.125rem',
+        '22xl': '22.5rem',
+        '21xl': '21.5rem',
         '6xl': '6.75rem',
+        '4xl' : '4.5rem',
         '3xl': '3.625rem',
         '9xsl': '9.25.5rem',
         '30xl': '30rem',
@@ -193,6 +211,7 @@ module.exports = {
         '61xl': '61.0625rem',
         '21xl': '21.25rem',
         '46xl': '46.8125rem',
+        '31xl': '31.25rem',
         '3sxxl': '3.25rem',
         '50xxxl': '50rem',
         '48xxxl': '48rem',
@@ -203,6 +222,7 @@ module.exports = {
         '33xl': '33rem',
         '3.6xl': '3.625rem',
         '3.7xl': '3.7rem',
+        '6xl': '6.75rem',
         '2xl': '2rem',
         '3xl': '2.5rem',
         xl: '1.5rem'
@@ -233,5 +253,7 @@ module.exports = {
 
     }
   },
-  plugins: []
-};
+  plugins: [
+  ]
+}
+;

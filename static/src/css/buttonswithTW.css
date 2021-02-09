@@ -1,10 +1,11 @@
-body{
+body {
   background-color: white;
 }
 
 .btn {
   @apply bg-primary justify-center align-middle  rounded-xl text-white  p-1 cursor-pointer ml-3 font-sans;
 }
+
 .btn-disabled {
   @apply bg-primary  justify-center align-middle rounded-xl text-white  p-1 cursor-default opacity-25 ml-3;
 }
@@ -45,7 +46,7 @@ body{
   border-radius: 50%;
 }
 
-/*working With Checkbox*/
+/* working With Checkbox */
 
 .container {
   @apply block relative  cursor-pointer select-none;
@@ -72,19 +73,19 @@ body{
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.checkmark::after {
   content: '';
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark::after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.container .checkmark::after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -94,7 +95,7 @@ body{
   transform: rotate(45deg);
 }
 
-/**********************Radio Button***************************************************************************************/
+/**********************  Radio Button  ***************************************************************************************/
 .container2 {
   @apply block relative  cursor-pointer select-none;
 }
@@ -108,6 +109,7 @@ body{
 .checkmark2 {
   @apply absolute top-0 left-0 h-4 w-4 rounded-xl bg-primary;
 }
+
 /* On mouse-over, add a grey background color */
 .container2:hover input ~ .checkmark2 {
   @apply bg-grey-shd6;
@@ -119,19 +121,19 @@ body{
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark2:after {
+.checkmark2::after {
   content: '';
   position: absolute;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container2 input:checked ~ .checkmark2:after {
+.container2 input:checked ~ .checkmark2::after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.container2 .checkmark2:after {
+.container2 .checkmark2::after {
   top: 9px;
   left: 9px;
   width: 8px;
@@ -152,8 +154,10 @@ body{
   border-radius: 50%;
 }
 
-/********************************************************************* Toggle*****************************************/
-/**************************************************************************************************************/
+/********************************************************************* Toggle *****************************************/
+
+/*************************************************************************************************************   */
+
 /* The switch - the box around the slider */
 .switch {
   @apply relative inline-flex w-7 h-4;
@@ -170,7 +174,7 @@ body{
   transition: 0.2s;
 }
 
-.slider:before {
+.slider::before {
   @apply absolute;
   content: '';
   height: 10px;
@@ -189,7 +193,7 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   transform: translateX(12px);
 }
 
@@ -198,7 +202,7 @@ input:checked + .slider:before {
   @apply rounded-xl;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
 }
 
