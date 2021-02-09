@@ -188,6 +188,15 @@
         "**/.*",
         "**/node_modules/**"
       ]
+    },
+    {
+      "target": "ahmedadel999",
+      "public": "static/dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
     }
   ]
 }
