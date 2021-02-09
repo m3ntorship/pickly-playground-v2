@@ -48,6 +48,7 @@
       "yarn lint",
       "git add"
     ],
+    
     "*.css": "yarn lint:css"
   },
   "husky": {
