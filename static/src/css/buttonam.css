@@ -45,11 +45,8 @@
 .txt-btn-samll {
   @apply text-sm font-bold text-accent-shd1  py-3.5 px-8;
 }
-<<<<<<< HEAD
 /* sliders */
-=======
 
->>>>>>> fb25924bf62ea7e97c688a9f6a9cc84ed0d92e51
 .vote1-percent .progress {
   stroke-dashoffset: calc(175.84 - (175.84 / 100 * 75));
 }
@@ -112,12 +109,8 @@
 }
 
 /* Toggels */
-<<<<<<< HEAD
 .toggles span:before,
 .privacy span:before {
-=======
-.toggles span::before {
->>>>>>> fb25924bf62ea7e97c688a9f6a9cc84ed0d92e51
   position: absolute;
   content: '';
   height: 16px;
@@ -128,13 +121,8 @@
   transition: 0.4s;
   border-radius: 100px;
 }
-<<<<<<< HEAD
 .toggles span.small:before,
 .privacy span.small:before {
-=======
-
-.toggles span.small::before {
->>>>>>> fb25924bf62ea7e97c688a9f6a9cc84ed0d92e51
   position: absolute;
   content: '';
   height: 10px;
@@ -150,13 +138,8 @@
 .privacy input:checked + span {
   background-color: #ede8fc;
 }
-<<<<<<< HEAD
 .toggles input:checked:focus + span,
 .privacy input:checked:focus + span {
-=======
-
-.toggles input:checked:focus + span {
->>>>>>> fb25924bf62ea7e97c688a9f6a9cc84ed0d92e51
   border: 1px solid #cabbf7;
 }
 
@@ -165,7 +148,6 @@
   border: 1px solid #b6cdd6;
 }
 
-<<<<<<< HEAD
 .toggles input:checked + span:before,
 .privacy input:checked + span:before {
   background-color: #7048e8;
@@ -173,14 +155,6 @@
 }
 .toggles input:checked + span.small:before,
 .privacy input:checked + span.small:before {
-=======
-.toggles input:checked + span::before {
-  background-color: #7048e8;
-  transform: translateX(17px);
-}
-
-.toggles input:checked + span.small::before {
->>>>>>> fb25924bf62ea7e97c688a9f6a9cc84ed0d92e51
   background-color: #7048e8;
   transform: translateX(9px);
 }
