@@ -41,5 +41,19 @@
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
     "webpack-merge": "^5.7.3"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "yarn --cwd static pretty",
+      "yarn --cwd static lint",
+      "git add"
+    ],
+    "*.css": "yarn --cwd static lint:css"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn --cwd static lint-staged",
+      "pre-push": "yarn --cwd static build"
+    }
   }
 }
