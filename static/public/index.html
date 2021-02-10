@@ -7909,11 +7909,12 @@
         <h1 class="font-extrabold text-2xl text-center bg-primary text-white">Tab Group</h1>
         <div
           class="grid grid-cols-1 md:grid-cols-3 gap-4 pl-12 mt-16 border-2 border-dashed border-primary mx-10 my-10 px-16 py-10">
-          <div
-            class="flex items-center justify-between border-solid border border-grey rounded-full pr-3.5 pl-3 py-1.5 w-36">
-            <div>
-              <input type="radio" name="checked" id="imagePoll"
-                class="form-radio checked:text-primary border-solid border-2 border-grey-shd5 cursor-pointer" />
+
+          <label
+            class="flex items-center justify-between border-solid border border-grey rounded-full pr-3.5 pl-3 py-1.5 w-36 cursor-pointer">
+            <div class="flex items-center justify-center">
+              <input type="radio" name="poll" id="imagePoll" class="appearance-none primary__radio" checked />
+              <span class="inline-block w-4 h-4 inline-block rounded-full border border-grey-shd4 border-solid"></span>
             </div>
             <div>
               <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7925,14 +7926,15 @@
                   fill="#5B6366" />
               </svg>
             </div>
-            <label for="imagePoll" class="font-medium text-sm text-dark-grey">Image Poll</label>
-          </div>
+            <label for="imagePoll" class="font-medium text-sm text-dark-grey cursor-pointer">Image Poll</label>
+          </label>
 
 
-          <div class="flex items-center justify-between bg-grey-bg rounded-full pr-3.5 pl-3 py-1.5 w-32">
-            <div>
-              <input type="radio" name="checked" id="textPoll"
-                class="form-radio checked:text-primary border-solid border-2 border-grey-shd5 cursor-pointer" />
+          <label
+            class="flex items-center justify-between bg-grey-bg rounded-full pr-3.5 pl-3 py-1.5 w-32 cursor-pointer">
+            <div class="flex items-center justify-center">
+              <input type="radio" name="poll" id="textPoll" class="appearance-none primary__radio" />
+              <span class="inline-block w-4 h-4 inline-block rounded-full border border-grey-shd4 border-solid"></span>
             </div>
             <div>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7941,13 +7943,13 @@
                   fill="#5B6366" />
               </svg>
             </div>
-            <label for="textPoll" class="font-sm text-sm text-dark-grey">Text Poll</label>
-          </div>
+            <label for="textPoll" class="font-sm text-sm text-dark-grey cursor-pointer">Text Poll</label>
+          </label>
 
-          <div class="flex items-center justify-between bg-grey-bg rounded-full pr-3.5 pl-3 py-1.5 w-48">
-            <div>
-              <input type="radio" name="checked" id="pollType"
-                class="form-radio checked:text-primary border-solid border-2 border-grey-shd5 cursor-pointer" />
+          <label class="flex items-center justify-between bg-grey-bg rounded-full pr-3.5 pl-3 py-1.5 w-48">
+            <div class="flex items-center justify-center cursor-pointer">
+              <input type="radio" name="poll" id="pollType" class="appearance-none primary__radio" />
+              <span class="inline-block w-4 h-4 inline-block rounded-full border border-grey-shd4 border-solid"></span>
             </div>
             <div>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7959,8 +7961,8 @@
                   fill="#5B6366" />
               </svg>
             </div>
-            <label for="pollType" class="font-sm text-sm text-dark-grey">One more poll type</label>
-          </div>
+            <label for="pollType" class="font-sm text-sm text-dark-grey cursor-pointer">One more poll type</label>
+          </label>
 
 
         </div>
@@ -8702,8 +8704,8 @@
                 <li>
                   <a href="#">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="#8D9A9E"/>
-                      </svg>                      
+                      <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="#8D9A9E" />
+                    </svg>
                   </a>
                 </li>
               </ul>
