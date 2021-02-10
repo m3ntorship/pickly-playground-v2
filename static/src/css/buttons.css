@@ -457,3 +457,9 @@ input:checked + .slider::before {
 }
 
 /************************************* Twfiek Section end ******************************/
+/* Start of Mostafa */
+.primary__radio:checked + span {
+  box-sizing: border-box;
+  border-color: #7048E8;
+  border-width: 4px;
+}
