@@ -11255,7 +11255,7 @@
  
 <!-- Start of Atoms Mostafa -->
   <!-- Primary Buttons -->
-  <section class="py-20">
+  <section class="py-20 bg-white">
     <h2 class="font-sans text-lg text-center mb-8 font-bold bg-primary text-white">Mostafa's Primary Buttons</h2>
     <!-- Primary Text Buttons with Icons -->
     <div class="flex flex-col justify-evenly items-center mx-auto mb-4 md:flex-row">
@@ -11305,7 +11305,7 @@
 
       <!-- pimary icon button hover -->
       <button class="p-0 h-14 w-14 focus:outline-none mb-4">
-        <svg class="bg-primary-shd1 rounded-full hover:bg-primary" width="56" height="56" viewBox="0 0 56 56"
+        <svg class="bg-primary-shd1 rounded-full hover:bg-primary-hover" width="56" height="56" viewBox="0 0 56 56"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z"
@@ -11389,11 +11389,11 @@
     <!-- Secondary Icon Buttons -->
     <div class="flex flex-col justify-evenly items-center mx-auto mb-4 md:flex-row">
       <!-- Secondary hover icon button -->
-      <button class="btn-secondary rounded-full p-0 h-14 w-14 mb-4">
+      <button class="btn-secondary rounded-full p-0 h-14 w-14 mb-4 hover:bg-grey-bg">
         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z"
-            fill="#FAFAFC" />
+            fill="" />
           <path d="M33.724 24.3906L28 30.1146L22.276 24.3906L20.3906 26.276L28 33.8853L35.6093 26.276L33.724 24.3906Z"
             fill="#7048E8" />
           <path
@@ -11403,17 +11403,10 @@
       </button>
 
       <!-- Secondary  focus icon button -->
-      <button class="btn--secondary p-0 h-14 w-14 mb-4">
-        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z"
-            fill="white" />
-          <path d="M33.724 24.3906L28 30.1146L22.276 24.3906L20.3906 26.276L28 33.8853L35.6093 26.276L33.724 24.3906Z"
-            fill="#7048E8" />
-          <path
-            d="M28 54C13.6406 54 2 42.3594 2 28H-2C-2 44.5685 11.4315 58 28 58V54ZM54 28C54 42.3594 42.3594 54 28 54V58C44.5685 58 58 44.5685 58 28H54ZM28 2C42.3594 2 54 13.6406 54 28H58C58 11.4315 44.5685 -2 28 -2V2ZM28 -2C11.4315 -2 -2 11.4315 -2 28H2C2 13.6406 13.6406 2 28 2V-2Z"
-            fill="#5034A6" />
-        </svg>
+      <button class="btn--secondary p-0 h-14 w-14 mb-4 border focus:border-dark-btnFocus focus:border-2">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.724 12.3906L16 18.1146L10.276 12.3906L8.39062 14.276L16 21.8853L23.6093 14.276L21.724 12.3906Z" fill="#7048E8"/>
+          </svg>          
       </button>
 
       <!-- Secondary disabled icon button -->
@@ -11488,7 +11481,7 @@
           hover</label>
 
         <div
-          class="w-80 px-2 py-2 border-2 border-solid rounded-md border-grey-shd5 hover:border-grey-shd3 relative text-white focus-within:text-grey">
+          class="w-80 px-2 py-2 border-2 border-solid rounded-md border-grey-shd5 hover:border-grey-shd3 relative text-white focus-within:text-grey bg-white">
           <input type="text" id="hover-one"
             class="w-full text-dark placeholder-grey-shd5 focus:outline-none focus:placeholder-grey"
             placeholder="Enter text">
@@ -11510,7 +11503,7 @@
           Error</label>
 
         <div
-          class="w-80 px-2 py-2 border-2 border-solid rounded-md border-error-shd5 hover:border-error-shd3 relative text-white focus-within:text-error">
+          class="w-80 px-2 py-2 border-2 border-solid rounded-md border-error-shd5 hover:border-error-shd3 relative text-white focus-within:text-error bg-white">
           <input type="text" id="error-one"
             class="w-full text-grey placeholder-grey-shd5 focus:outline-none focus:placeholder-grey"
             placeholder="Enter text">
@@ -11533,7 +11526,7 @@
           Success</label>
 
         <div
-          class="w-80 px-2 py-2 border-2 border-solid rounded-md border-success-shd5 hover:border-success-shd3 relative text-white focus-within:text-success">
+          class="w-80 px-2 py-2 border-2 border-solid rounded-md border-success-shd5 hover:border-success-shd3 relative text-white focus-within:text-success bg-white">
           <input type="text" id="success-one"
             class="w-full text-grey placeholder-grey-shd5 focus:outline-none focus:placeholder-grey"
             placeholder="Enter text">
@@ -11552,8 +11545,8 @@
         <label class="inline-block mb-2 bg-grey-shd7 px-2 py-2 rounded-md cursor-not-allowed">Label
           Disabled</label>
         <div class="w-80 px-2 py-2 border-2 border-solid rounded-md border-grey-shd7 relative">
-          <input type="text" class="w-full focus:outline-none placeholder-grey-shd7 cursor-not-allowed"
-            placeholder="Enter text">
+          <input type="text" class="w-full focus:outline-none placeholder-grey-shd7 cursor-not-allowed bg-white"
+            placeholder="Enter text" disabled>
         </div>
       </div>
 
@@ -11655,8 +11648,8 @@
         <label class="inline-block mb-2 bg-grey-shd7 px-2 py-2 rounded-md cursor-not-allowed">Label
           Disabled</label>
         <div class="w-80 px-2 py-2 border-2 border-solid rounded-md border-grey-shd7 relative disabled">
-          <input type="text" class="focus:outline-none placeholder-grey-shd7 cursor-not-allowed"
-            placeholder="Enter text">
+          <input type="text" class="focus:outline-none placeholder-grey-shd7 cursor-not-allowed bg-white"
+            placeholder="Enter text" disabled>
 
           <div class="absolute inset-y-0 right-0 mx-2 flex items-center">
             <svg class="ml-3 cursor-not-allowed" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -11778,8 +11771,8 @@
             </svg>
           </div>
           <input type="text"
-            class="w-11/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-8"
-            placeholder="Enter text">
+            class="w-11/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-8 bg-white"
+            placeholder="Enter text" disabled>
         </div>
       </div>
     </div>
@@ -11897,8 +11890,8 @@
             </svg>
           </div>
           <input type="text"
-            class="w-10/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-11"
-            placeholder="Enter text">
+            class="w-10/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-11 bg-white"
+            placeholder="Enter text" disabled>
         </div>
       </div>
     </div>
@@ -12028,8 +12021,8 @@
             </svg>
           </div>
           <input type="text"
-            class="w-10/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-16"
-            placeholder="Enter text">
+            class="w-10/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-16 bg-white"
+            placeholder="Enter text" disabled>
         </div>
       </div>
     </div>
@@ -12151,8 +12144,8 @@
             </svg>
           </div>
           <input type="text"
-            class="w-11/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-8"
-            placeholder="Enter text">
+            class="w-11/12 cursor-not-allowed placeholder-grey-shd5 focus:outline-none focus:placeholder-grey ml-8 bg-white"
+            placeholder="Enter text" disabled>
         </div>
       </div>
     </div>
