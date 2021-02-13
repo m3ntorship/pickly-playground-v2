@@ -147,10 +147,10 @@
 }
 /*general event */
 .btnToggele:checked:hover{ 
-    @apply bg-grey-shd6 ;
+    @apply bg-primary-shd6 ;
 }
 .btnToggele:checked:focus{ 
-    @apply bg-grey-shd7 ;
+    @apply bg-primary-shd7 ;
 }
 /* ********************************toggels default size************************************** */
 /* size */
@@ -165,7 +165,7 @@
     @apply bg-primary transform translate-x-mv ;
 }
 .toggeleDefSize:checked{
-    @apply bg-grey-shd7 border-2 border-grey-shd5;
+    @apply bg-primary-shd7 border-2 border-primary-shd5;
 }
 /* ********************************toggels small size************************************** */
 /* size */
@@ -180,7 +180,7 @@
     @apply bg-primary transform translate-x-s ;
 }
 .toggeleSmSize:checked{
-    @apply bg-grey-shd7 border border-grey-shd5;
+    @apply bg-primary-shd7 border border-primary-shd5;
 }
 
 
