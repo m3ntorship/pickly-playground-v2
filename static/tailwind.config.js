@@ -97,6 +97,10 @@ module.exports = {
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
       heavy:
         '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 8px 12px rgba(0, 0, 0, 0.08);',
+      heavy:
+        '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 8px 12px rgba(0, 0, 0, 0.08);',
+      heart: '0px 0px 0px 5px rgba(112,72,232,0.35)',
+      error: '0px 0px 0px 5px rgba(254, 84, 74, 0.3)',
       none: 'none'
     },
     fontSize: {
@@ -181,6 +185,7 @@ module.exports = {
         '33xl': '33.25rem',
         '29xl': '29.5rem',
         '3.6xl': '3.625rem',
+        '3.7xl': '3.7rem',
         '13xxxl': '13.25rem',
         '15xxxl': '15.9375rem',
         '19xl': '18.75rem',
@@ -220,6 +225,8 @@ module.exports = {
         '23xl': '23.125rem',
         '24xl': '24.75rem',
         '33xl': '33rem',
+        '3.6xl': '3.625rem',
+        '3.7xl': '3.7rem',
         '6xl': '6.75rem',
         '2xl': '2rem',
         '3xl': '2.5rem',
@@ -236,6 +243,7 @@ module.exports = {
       },
       inset: {
         12: '0.75rem',
+        '12l': '3rem',
         38: '2.275rem',
         40: '2.5rem',
         '14.5': '3.75rem'
@@ -245,6 +253,8 @@ module.exports = {
   variants: {
     extend: {
       textDecoration: ['group-focus'],
+      width: ['hover'],
+      height: ['hover']
 
     }
   },
