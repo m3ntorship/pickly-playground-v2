@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./public/*.html'],
+  purge: ['./src/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -186,6 +186,7 @@ module.exports = {
         '29xl': '29.5rem',
         '3.6xl': '3.625rem',
         '13xxxl': '13.25rem',
+        '15xxxl': '15.9375rem',
         '19xl': '18.75rem',
         '12xl': '11.75rem',
         '7xl': '7.75rem',
@@ -198,6 +199,7 @@ module.exports = {
         '9xsl': '9.25.5rem',
         '30xl': '30rem',
         '33xl': '33.25rem',
+        '32xl': '32.625rem',
         '35xl': '35.25rem',
         '29xl': '29.5rem',
         '28xl': '28.5rem',
@@ -217,9 +219,12 @@ module.exports = {
         '19xxxl': '19.9375rem',
         '7xl': '7.5rem',
         '5xl': '5.5rem',
+        '18xl': '18.5rem',
+        '22xl': '22.375rem',
         '23xl': '23.125rem',
         '3.6xl': '3.625rem',
         '3.7xl': '3.7rem',
+        '24xl': '24.75rem',
         '33xl': '33rem',
         '6xl': '6.75rem',
         '2xl': '2rem',
