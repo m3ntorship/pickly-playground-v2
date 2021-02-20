@@ -213,7 +213,6 @@ module.exports = {
         '21xl': '21.25rem',
         '46xl': '46.8125rem',
         '31xl': '31.25rem',
-        '31xl': '31.25rem',
         '3sxxl': '3.25rem',
         '50xxxl': '50rem',
         '48xxxl': '48rem',
