@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production webpack --config webpack/webpack.prod.js",
     "pretty": "prettier --write --config .prettierrc src/**/*.{js,css,html}",
     "lint": "eslint --fix src/",
-    "lint:css": "stylelint --fix *.css"
+    "lint:css": "stylelint --fix src/css/*.css"
   },
   "author": "",
   "license": "ISC",
@@ -49,7 +49,7 @@
       "git add"
     ],
     
-    "*.css": "yarn lint:css"
+    "src/css/.*css": "yarn lint:css"
   },
   "husky": {
     "hooks": {
