@@ -1,0 +1,343 @@
+.btnPrimary{
+    @apply outline-none bg-primary text-white font-sans  ;
+}
+.btnPrimary:hover{
+    @apply  bg-primary-hover;
+}
+.btnPrimary:focus{
+    @apply  outline-none border-2 border-dark-btnFocus  bg-primary;
+}
+
+
+
+
+.btnSecondary{
+    @apply outline-none bg-white text-primary border border-primary font-sans ;
+}
+
+.btnSecondary:hover{
+    @apply  bg-grey-bg ;
+}
+.btnSecondary:focus{
+    @apply  outline-none border-2 border-dark-btnFocus bg-white;
+}
+
+
+
+
+
+
+
+
+
+
+.btnLarge{
+  @apply  py-sv px-xl rounded-xl text-md font-bold;
+}
+.btnMedium
+{
+    @apply  py-xsv px-l rounded-xl text-base font-medium;
+}
+.btnSmall
+{
+    @apply  py-xxsv px-m rounded-xl text-sm font-medium;
+}
+.btnIcon
+{
+
+}
+/* .btnIconLarg{
+    height: "0.445rem";
+    width: "0.713125rem"
+}
+.btnIconMedium{
+    height: "0.296875rem";
+    width: "0.475625rem"
+}
+.btnIconSmall{
+    height: "0.296875rem";
+    width: "0.475625rem"
+} */
+
+.btnDisabled{
+    @apply pointer-events-none opacity-25;
+}
+
+/********************************************** tabs **************************************/
+.tabLabel
+{
+  @apply  py-xxsv pr-sv pl-s border-2 border-transparent  rounded-xl flex items-center justify-between;
+}
+.tabCyrcleIcon
+{
+ @apply   rounded-full  w-4 h-4  bg-white border  border-grey-shd4;
+}
+.tabLabel:hover{
+    @apply bg-grey-shd6;
+}
+.tabLabel:focus-within{
+    @apply bg-white outline-none  border-dark-grey  ;
+}
+/* .tabLabel:focus .tabCyrcleIcon{
+    @apply  border-5 border-primary ;
+} */
+
+
+
+
+
+/* ****************************************forms **************************************/
+.inputFrame{
+    @apply  pr-2 py-2 border border-grey-shd5 rounded-md w-19xl h-3xl  flex justify-between items-center hover:border-grey-shd1 ;
+}
+/* note :focus-within note supported in some v */
+.inputFrame:focus-within  {
+    @apply border-dark ;
+}
+.inputText{
+    @apply bg-transparent w-18xl pl-3 pr-4xs text-dark outline-none;
+}
+#error .inputFrame:focus-within{
+    @apply border-error ;
+}
+#success .inputFrame:focus-within{
+    @apply border-dark-grey ;
+}
+
+.errorSVG ,.successSVG ,.defaultSVG
+{
+    @apply  cursor-pointer hidden; 
+}
+.errorSVG2 ,.successSVG2 ,.defaultSVG2
+{
+    @apply ml-m cursor-pointer
+}
+/* #error .inputText:focus #default .inputText:focus,#success .inputText +svg{
+    @apply  block;
+} */
+#default .inputText:focus + .defaultSVG {
+      @apply  block;
+}
+#success .inputText:focus + .successSVG{
+      @apply  block;
+}
+#error .inputText:focus + .errorSVG{
+      @apply  block;
+}
+
+.labelLeftIcon{
+ @apply ml-3 cursor-pointer;
+}
+/********************************* prefix ****************************/
+.labelPrefix{
+   @apply text-grey border-r border-grey-shd6 pr-2 pl-3 h-m font-sans font-normal text-sm flex justify-center items-center;
+}
+.PrefixChoice{
+    @apply text-grey rounded-xs px-2 py-1 ml-2 bg-grey-shd7 font-sans font-normal text-sm ;
+ }
+
+
+/* ********************************global toggels ************************************** */
+.btnToggele{
+  @apply  appearance-none outline-none rounded-xl bg-grey-shd4 hover:bg-grey-shd3;
+}
+.btnToggeleCircle
+{
+    @apply transition-all duration-500 ease-in-out rounded-xl bg-white   pointer-events-none;
+}
+/*general event */
+.btnToggele:checked:hover{ 
+    @apply bg-primary-shd6 ;
+}
+.btnToggele:checked:focus{ 
+    @apply bg-primary-shd7 ;
+}
+/* ********************************toggels default size************************************** */
+/* size */
+.toggeleDefSize{
+    @apply h-xl w-2xl ;
+}
+.toggeleCirDefSize{
+    @apply h-m w-m  absolute top-xxs left-xxs;
+}
+/* event */
+.btnToggele:checked +.toggeleCirDefSize{
+    @apply bg-primary transform translate-x-mv ;
+}
+.toggeleDefSize:checked{
+    @apply bg-primary-shd7 border-2 border-primary-shd5;
+}
+/* ********************************toggels small size************************************** */
+/* size */
+.toggeleSmSize{
+    @apply h-m w-xl;
+}
+.toggeleCirSmSize{
+    @apply h-xsvv w-xsvv   absolute top-1 left-4xs;
+}
+/* event */
+.toggeleSmSize:checked +.toggeleCirSmSize{
+    @apply bg-primary transform translate-x-s ;
+}
+.toggeleSmSize:checked{
+    @apply bg-primary-shd7 border border-primary-shd5;
+}
+
+
+/* ********************************checkBox default size************************************** */
+.checkBoxDefSize
+{
+   @apply h-l w-l;
+}
+.checkBoxDefBorder
+{
+    @apply border;
+}
+.inputCheckBox:focus + .checkBoxDefBorder 
+{
+    @apply border-2 border-grey-shd2;
+}
+/* ********************************checkBox small size************************************** */
+.checkBoxSmSize
+{
+   @apply h-m w-m;
+}
+.checkBoxSmBorder
+{
+    @apply border;
+}
+.inputCheckBox:focus + .checkBoxSmBorder 
+{
+    @apply border-2 border-grey-shd2;
+}
+/* ********************************checkBox general************************************* */
+.inputCheckBox
+{
+   @apply opacity-0 absolute  cursor-pointer;
+}
+.boxCheckmark{
+    @apply  border-grey-shd4  rounded-sm flex justify-center items-center;
+}
+.inputCheckBox:checked + .boxCheckmark
+{
+    @apply bg-primary;
+}
+.inputCheckBox:checked:hover + .boxCheckmark
+{
+    @apply bg-primary-hover;
+}
+.inputCheckBox:checked + .boxCheckmark svg
+{
+    @apply block;
+}
+
+.inputCheckBox:hover + .boxCheckmark 
+{
+    @apply border-grey-shd1;
+}
+/*********************************************radio general***********************************/
+
+.inputRadio{
+    @apply cursor-pointer opacity-0 ;
+}
+.radioBordCir{
+    @apply absolute top-0 left-0 ring-grey-shd4  pointer-events-none justify-center items-center flex  
+        rounded-xl transition-opacity duration-500;
+}
+.radioOuterCir{
+    @apply bg-primary  rounded-xl justify-center items-center flex opacity-0  ;
+}
+.radioInnerCir{
+    @apply  rounded-xl bg-white ;
+}
+.inputRadio:hover + .radioBordCir {
+    @apply ring-grey-shd1;
+}
+/* when checked */
+.inputRadio:checked + .radioBordCir {
+    @apply ring-transparent;
+  }
+.inputRadio:checked + .radioBordCir .radioOuterCir{
+    @apply opacity-100;
+}
+.inputRadio:checked:focus + .radioBordCir .radioOuterCir{
+    @apply bg-primary;
+}
+.inputRadio:checked:hover + .radioBordCir .radioOuterCir{
+    @apply bg-primary-hover;
+}
+/*********************************************radio default***********************************/
+.radioDefSize{
+    @apply  h-l w-l;
+}
+
+.radioInnerCirDefSize{
+    @apply h-2.5 w-2.5;
+}
+.radioBordCirDefSize{
+    @apply ring-1;
+}
+.inputRadio:focus + .radioBordCirDefSize {
+    @apply ring-2 ring-grey-shd2;
+}
+.inputRadio:checked:focus + .radioBordCirDefSize{
+    @apply ring-2 ring-primary-shd6;
+}
+/*********************************************radio smaal size***********************************/
+.radioSmSize{
+    @apply  h-m w-m;
+}
+
+.radioInnerCirSmSize{
+    @apply h-1.5 w-1.5;
+}
+.radioBordCirSmSize{
+    @apply ring-1 ;
+}
+.inputRadio:focus + .radioBordCirSmSize {
+    @apply ring-2    ring-grey-shd2;
+}
+.inputRadio:checked:focus + .radioBordCirSmSize{
+    @apply ring-2 ring-primary-shd6;
+}
+
+
+/*-- ------------------------------------------------------Avetar------------------------------------------------*/
+
+
+
+/*-- ------------------------------------------------------Sliders------------------------------------------------*/
+
+.sliderStart{
+    @apply w-1 h-1 bg-primary rounded-xs;
+}
+.sliderProgress{
+    @apply w-40 h-1 bg-primary rounded-sm;
+}
+.sliderComplete{
+    @apply w-13xxxl h-1 bg-success rounded-sm;
+
+}
+.sliderVotMet1{
+    @apply w-2 h-19xxxl bg-primary rounded-xl m-1;
+}
+.sliderVotMet2{
+    @apply w-2 h-19xxxl bg-primary-shd5 rounded-xl m-1;
+}
+.sliderVotMet3{
+    @apply w-2 h-28 bg-error rounded-xl m-1;
+}
+.sliderVotMet4{
+
+}
+.sliderVotMet5{
+
+}
+
+/*-- ------------------------------------------------------Divider------------------------------------------------*/
+.DividVertical{
+  @apply  w-52 h-px bg-grey-shd6;
+}
+.DivHorizontal{
+  @apply  w-px h-52 bg-grey-shd6;
+}
