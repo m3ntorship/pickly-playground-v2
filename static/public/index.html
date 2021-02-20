@@ -146,7 +146,7 @@
          <div class="flex">
         <!--  -->
            <div class="">
-        <button class="tabLabel bg-grey-bg ">
+        <button class="tabLabel bg-grey-bg">
           <div class="tabCyrcleIcon"></div>
           <svg
           width="16"
@@ -241,14 +241,11 @@
       </div>
       <span  class="ml-2 mr-m  text-xs font-normal ">Hide my identity</span>
       <span class="ml-4xs mr-2  text-xs font-normal ">Privacy:</span>
-      <span class="text-sm font-medium   mr-1">Public</span>
-      <svg width="16" height="16" 
-        viewBox="0 0 16 16" 
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.862 6.19534L7.99998 9.05734L5.13798 6.19534L4.19531 7.13801L7.99998 10.9427L11.8046 7.13801L10.862 6.19534Z"
-        fill="#5B6366"/>
-       </svg>
+      <select class="cursor-pointer text-sm font-medium" name="ahmed" id="1aaxz">
+        <option value="mostafa">Public</option>
+        <option value="waheed">Friends</option>
+        <option value="saif">Only me</option>
+      </select>
       
     </div>
   </div>
@@ -262,7 +259,7 @@
     <form id="default">
       <div class="inputFrame mt-1 rounded-t-none  w-full">
         <span class="PrefixChoice">A</span>
-           <input id="input1" class="inputText w-full" placeholder="Enter text" type="text">
+           <input id="input1" class="inputText w-full text-sm font-normal text-grey-shd1" placeholder="Type Caption(optional)" type="text">
            <svg 
            class="defaultSVG "         
            width="14" height="14"
@@ -301,7 +298,7 @@
       <form id="default">
         <div class="inputFrame mt-1 rounded-t-none  w-full">
           <span class="PrefixChoice">A</span>
-             <input id="input1" class="inputText w-full" placeholder="Enter text" type="text">
+             <input id="input1" class="inputText w-full" placeholder="Type Caption(optional)" type="text">
              <svg 
              class="defaultSVG "         
              width="14" height="14"
@@ -312,7 +309,7 @@
          </svg>
         </div>
       </form>
-      <div class="bg-white w-8 h-8 rounded-full absolute top-4 right-4 cursor-pointer  flex justify-center items-center">   
+      <div class=" hidden  bg-white w-8 h-8 rounded-full absolute top-4 right-4 cursor-pointer  flex justify-center items-center">   
         <svg
           width="4" height="12" 
           viewBox="0 0 4 12" 
@@ -321,9 +318,8 @@
           <path d="M1.99984 4.66669C1.2665 4.66669 0.666504 5.26669 0.666504 6.00002C0.666504 6.73335 1.2665 7.33335 1.99984 7.33335C2.73317 7.33335 3.33317 6.73335 3.33317 6.00002C3.33317 5.26669 2.73317 4.66669 1.99984 4.66669ZM1.99984 0.666687C1.2665 0.666687 0.666504 1.26669 0.666504 2.00002C0.666504 2.73335 1.2665 3.33335 1.99984 3.33335C2.73317 3.33335 3.33317 2.73335 3.33317 2.00002C3.33317 1.26669 2.73317 0.666687 1.99984 0.666687ZM1.99984 8.66669C1.2665 8.66669 0.666504 9.26669 0.666504 10C0.666504 10.7334 1.2665 11.3334 1.99984 11.3334C2.73317 11.3334 3.33317 10.7334 3.33317 10C3.33317 9.26669 2.73317 8.66669 1.99984 8.66669Z" 
           fill="#5B6366"/>
        </svg>
-          
-      
       </div>
+      
     </div>
   
   
@@ -356,9 +352,9 @@
       </div>
       
       <form id="default">
-        <div class="inputFrame mt-1 rounded-t-none  w-full">
+        <div class="inputFrame mt-1 rounded-t-none  w-full btnDisabled">
           <span class="PrefixChoice">A</span>
-             <input id="input1" class="inputText w-full" placeholder="Enter text" type="text">
+             <input id="input1" class="inputText w-full " placeholder="Type Caption(optional)" type="text">
              <svg 
              class="defaultSVG "         
              width="14" height="14"
@@ -369,7 +365,7 @@
          </svg>
         </div>
       </form>
-      <div class="bg-white w-8 h-8 rounded-full absolute top-4 right-4 cursor-pointer  flex justify-center items-center">   
+      <div class="hidden bg-white w-8 h-8 rounded-full absolute top-4 right-4 cursor-pointer  flex justify-center items-center">   
         <svg
           width="4" height="12" 
           viewBox="0 0 4 12" 
@@ -403,7 +399,7 @@
     <form id="default">
       <div class="inputFrame w-41xl">
         <span class="PrefixChoice">A</span>
-           <input id="input1" class="inputText w-full" placeholder="Enter text" type="text">
+           <input id="input1" class="inputText w-full" placeholder="Type Caption(optional)" type="text">
            <svg 
            class="defaultSVG "         
            width="14" height="14"
@@ -429,7 +425,7 @@
     <form id="default">
       <div class="inputFrame w-39xl mx-m">
         <span class="PrefixChoice">A</span>
-           <input id="input1" class="inputText w-full" placeholder="Enter text" type="text">
+           <input id="input1" class="inputText w-full" placeholder="Type Caption(optional)" type="text">
            <svg 
            class="defaultSVG "         
            width="14" height="14"
@@ -510,10 +506,10 @@
           <div class="w-4 h-0.5 bg-grey"></div>
           <div class="w-4 h-0.5 bg-grey mt-3xs"></div>
         </div>
-        <form id="default">
-          <div class="inputFrame w-33xl">
+        <form class="bg-white" id="default">
+          <div class="inputFrame w-33xl bg-transparent">
             <span class="PrefixChoice">A</span>
-               <input id="input1" class="inputText w-full" placeholder="Option 1" type="text">
+               <input id="input1" class="inputText w-full " placeholder="Option 1" type="text">
                <svg 
                class="defaultSVG "         
                width="14" height="14"
@@ -531,8 +527,8 @@
           <div class="w-4 h-0.5 bg-grey"></div>
           <div class="w-4 h-0.5 bg-grey mt-3xs"></div>
         </div>
-        <form id="default">
-          <div class="inputFrame w-33xl">
+        <form class="bg-white" id="default">
+          <div class="inputFrame w-33xl bg-transparent">
             <span class="PrefixChoice">B</span>
                <input id="input1" class="inputText w-full" placeholder="Option 2" type="text">
                <svg 
@@ -616,8 +612,8 @@
           <div class="w-4 h-0.5 bg-grey"></div>
           <div class="w-4 h-0.5 bg-grey mt-3xs"></div>
         </div>
-        <form id="default">
-          <div class="inputFrame w-33xl">
+        <form class="bg-white" id="default">
+          <div class="inputFrame w-33xl bg-transparent">
             <span class="PrefixChoice">A</span>
                <input id="input1" class="inputText w-full" placeholder="Option 1" type="text">
                <svg 
@@ -637,8 +633,8 @@
           <div class="w-4 h-0.5 bg-grey"></div>
           <div class="w-4 h-0.5 bg-grey mt-3xs"></div>
         </div>
-        <form id="default">
-          <div class="inputFrame w-33xl">
+        <form class="bg-white" id="default">
+          <div class="inputFrame w-33xl bg-transparent">
             <span class="PrefixChoice">B</span>
                <input id="input1" class="inputText w-full" placeholder="Option 2" type="text">
                <svg 
@@ -1074,7 +1070,7 @@
        <div class="py-10">
         <h3>Text Poll - Results - Others</h3>
   
-        <div class=" bg-grey-shd7 rounded-md w-39xl h-10 flex items-center justify-between">
+        <div class=" bg-primary-shd7 rounded-md w-39xl h-10 flex items-center justify-between">
           <div class="font-normal text-sm flex items-center  ">
               <span class="ml-2 text-dark-grey py-4xs px-2 bg-white rounded-sm">A</span>
               <span class="ml-3 mr-2 text-dark ">Choice</span>
@@ -1122,7 +1118,7 @@
       <div class="">
         <p class="text-dark-grey text-sm  font-normal ">Group name</p>
         <!--  -->
-        <div class="mt-2 bg-grey-shd7 rounded-md w-28xl h-10 flex items-center justify-between">
+        <div class="mt-2 bg-primary-shd7 rounded-md w-28xl h-10 flex items-center justify-between">
           <div class="font-normal text-sm flex items-center  ">
               <span class="ml-2 text-dark-grey py-4xs px-2 bg-white rounded-sm">A</span>
               <span class="ml-3 mr-2 text-dark ">Choice</span>
@@ -1148,7 +1144,7 @@
           </div>
         </div>
         <!--  -->
-        <div class=" bg-grey-shd7 rounded-md w-30xl h-10 flex items-center justify-between">
+        <div class=" bg-primary-shd7 rounded-md w-30xl h-10 flex items-center justify-between">
           <div class="font-normal text-sm flex items-center  ">
               <span class="ml-2 text-dark-grey py-4xs px-2 bg-white rounded-sm">A</span>
               <span class="ml-3 text-dark ">Choice</span>

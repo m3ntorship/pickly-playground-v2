@@ -95,7 +95,7 @@
     @apply border-dark ;
 }
 .inputText{
-    @apply bg-transparent w-18xl pl-3 pr-4xs text-dark outline-none;
+    @apply bg-transparent w-18xl pl-3 pr-4xs text-dark outline-none text-sm font-normal;
 }
 #error .inputFrame:focus-within{
     @apply border-error ;
