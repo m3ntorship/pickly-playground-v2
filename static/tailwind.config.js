@@ -82,7 +82,7 @@ module.exports = {
     },
     borderRadius: {
       none: '0',
-      xsm:'0.125rem',
+      xsm: '0.125rem',
       xs: '0.125rem',
       sm: '0.25rem',
       md: '0.5rem',
@@ -97,6 +97,8 @@ module.exports = {
         '0px 8px 16px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);',
       heavy:
         '0px 16px 24px rgba(0, 0, 0, 0.04), 0px 8px 12px rgba(0, 0, 0, 0.08);',
+      heart: '0px 0px 0px 5px rgba(112,72,232,0.35)',
+      error: '0px 0px 0px 5px rgba(254, 84, 74, 0.3)',
       none: 'none'
     },
     fontSize: {
@@ -139,8 +141,8 @@ module.exports = {
         s: '.75rem',
         sv: '0.875rem',
         m: '1rem',
-        'ml':'1.125rem',
-        'll':'1.25rem',
+        ml: '1.125rem',
+        ll: '1.25rem',
         mv: '1.125rem',
         l: '1.5rem',
         lv: '1.625rem',
@@ -152,8 +154,8 @@ module.exports = {
         '4xl': '4rem',
         '5xl': '8rem',
         '3xxsl': '3.25rem',
-        '4xxl' : '2.625rem',
-        'mvv':'29.5rem',
+        '4xxl': '2.625rem',
+        mvv: '29.5rem'
       },
 
       backgroundOpacity: {
@@ -179,6 +181,8 @@ module.exports = {
         '18xl': '18.5rem',
         '9xsl': '9.25.5rem',
         '33xl': '33.25rem',
+        '3.6xl': '3.625rem',
+        '3.7xl': '3.7rem',
         '29xl': '29.5rem',
         '3.6xl': '3.625rem',
         '13xxxl': '13.25rem',
@@ -190,7 +194,7 @@ module.exports = {
         '22xl': '22.5rem',
         '21xl': '21.5rem',
         '6xl': '6.75rem',
-        '4xl' : '4.5rem',
+        '4xl': '4.5rem',
         '3xl': '3.625rem',
         '9xsl': '9.25.5rem',
         '30xl': '30rem',
@@ -218,6 +222,8 @@ module.exports = {
         '18xl': '18.5rem',
         '22xl': '22.375rem',
         '23xl': '23.125rem',
+        '3.6xl': '3.625rem',
+        '3.7xl': '3.7rem',
         '24xl': '24.75rem',
         '33xl': '33rem',
         '6xl': '6.75rem',
@@ -226,7 +232,6 @@ module.exports = {
         xl: '1.5rem'
       },
       borderWidth: {
-
         5: '5px',
         6: '6px',
         7: '7px'
@@ -238,17 +243,17 @@ module.exports = {
         12: '0.75rem',
         38: '2.275rem',
         40: '2.5rem',
-        '14.5': '3.75rem'
+        '12l': '3rem',
+        14.5: '3.75rem'
       }
     }
   },
   variants: {
     extend: {
       textDecoration: ['group-focus'],
-
+      width: ['hover'],
+      height: ['hover']
     }
   },
-  plugins: [
-  ]
-}
-;
+  plugins: []
+};
