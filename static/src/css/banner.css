@@ -429,14 +429,14 @@
   @apply bg-grey-bg;
 }
 
+.logo {
+  font-size: 18px;
+  @apply font-bold float-left w-auto;
+}
+
 /*********** navigation ***********/
 .nav {
   @apply float-right;
-}
-
-.logo {
-  font-size: 18px;
-  @apply float-left w-auto font-bold;
 }
 
 .nav a {
@@ -645,15 +645,15 @@ input:checked + .slider::before {
   @apply w-7 h-4 rounded-xl absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-grey-shd4 transition duration-500 border-2 border-transparent;
 }
 
+.slider-sm:hover {
+  @apply bg-grey-shd3;
+}
+
 .slider-sm::before {
   content: '';
   @apply absolute w-2.5 h-2.5 bg-white transition duration-500 rounded-full;
   top: 0.05rem;
   left: 0.1rem;
-}
-
-.slider-sm:hover {
-  @apply bg-grey-shd3;
 }
 
 .switch-checkbox-sm:checked + .slider-sm {
@@ -681,6 +681,27 @@ input:checked + .slider::before {
 
 .txtBtn:focus span {
   @apply underline;
+}
+
+.voteBTN > svg:nth-child(odd) {
+  @apply inline;
+}
+
+.voteBTN > svg:nth-child(even) {
+  @apply hidden;
+}
+
+.voteBTN:hover > svg:nth-child(odd) {
+  @apply hidden;
+}
+
+.voteBTN:hover > svg:nth-child(even) {
+  @apply inline;
+}
+
+.dislike {
+  transform: rotateY(180deg);
+  @apply inline-block;
 }
 
 /********************** End of Aya.O Custom Style Section *************/
