@@ -252,7 +252,9 @@ module.exports = {
     extend: {
       textDecoration: ['group-focus'],
       width: ['hover'],
-      height: ['hover']
+      height: ['hover'],
+      borderWidth: ['hover', 'focus'],
+      opacity: ['disabled']
     }
   },
   plugins: []
