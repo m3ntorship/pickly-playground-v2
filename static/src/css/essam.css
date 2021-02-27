@@ -1,0 +1,72 @@
+#essam .btn {
+  @apply capitalize  flex items-center justify-center gap-sv box-border m-0;
+}
+#essam .btn-primary {
+  @apply bg-primary focus:border-2 focus:border-dark-btnFocus rounded-full text-white hover:bg-primary-hover m-0;
+}
+#essam .btn-secondary {
+  @apply bg-white  text-primary focus:border-dark-btnFocus rounded-full hover:bg-grey-bg m-0;
+}
+#essam .btn-text {
+  @apply bg-transparent text-accent hover:text-accent-hover border-0 focus:underline p-0;
+}
+#essam .btn svg,
+#essam .btn path {
+  @apply fill-current;
+}
+#essam .btn-large {
+  @apply text-md font-bold;
+}
+#essam .btn-medium {
+  @apply text-base font-medium;
+}
+#essam .btn-small {
+  @apply text-sm font-medium;
+}
+#essam .btn-large.btn-primary,
+#essam .btn-large.btn-secondary {
+  @apply px-xl py-sv;
+}
+#essam .btn-medium.btn-primary,
+#essam .btn-medium.btn-secondary {
+  @apply px-l py-xsv text-base;
+}
+#essam .btn-small.btn-primary,
+#essam .btn-small.btn-secondary {
+  @apply px-m py-xxsv text-sm;
+}
+#essam .btn-rounded-large {
+  @apply p-s;
+}
+#essam .btn-rounded-medium,
+#essam .btn-rounded-small {
+  @apply p-xs;
+}
+#essam .btn-rounded-large span,
+#essam .btn-rounded-medium span,
+#essam .btn-rounded-small span {
+  @apply flex items-center justify-center;
+}
+#essam .btn-rounded-large span {
+  @apply w-8 h-8;
+}
+#essam .btn-rounded-medium span {
+  @apply w-6 h-6;
+}
+#essam .btn-rounded-small span {
+  @apply w-4 h-4;
+}
+#essam button[disabled] {
+  @apply disabled:opacity-24 cursor-not-allowed;
+}
+#essam .btn-primary[disabled] {
+  @apply hover:bg-primary;
+}
+#essam .btn-secondary[disabled] {
+  @apply hover:bg-white;
+}
+/* for the sake of presentation*/
+#essam .btn {
+  @apply m-1;
+}
+/* for the sake of presentation*/
