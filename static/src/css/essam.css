@@ -72,6 +72,7 @@
 /**************/
 /* Forms */
 /**************/
+/*Text Inputs*/
 #essam .form-group {
   @apply w-19xl;
 }
@@ -143,6 +144,126 @@
 #essam .form-input.input-choice ~ .control-icon {
   @apply absolute top-xs left-xs text-grey bg-grey-shd7 py-3xs px-xs;
 }
+/*Text Inputs*/
+/*Toggles*/
+#essam .toggle-button .toggle-checkbox {
+  @apply hidden;
+}
+#essam .toggle-button .toggle-checkbox:checked + .toggle-btn-body {
+  @apply border-2 border-primary-shd5 bg-primary-shd7;
+}
+#essam
+  .toggle-button
+  .toggle-checkbox:checked
+  + .toggle-btn-body
+  .toggle-btn-head {
+  @apply bg-primary transform translate-x-4;
+}
+
+#essam
+  .toggle-button.small
+  .toggle-checkbox:checked
+  + .toggle-btn-body
+  .toggle-btn-head {
+  @apply bg-primary transform translate-x-2;
+}
+
+#essam .toggle-button .toggle-btn-body {
+  @apply w-2xl h-l;
+}
+#essam .toggle-button.small .toggle-btn-body {
+  @apply w-xl h-4;
+}
+
+#essam .toggle-button .toggle-btn-body,
+#essam .toggle-button.small .toggle-btn-body {
+  @apply block flex items-center bg-grey-shd4 rounded-full p-xxs hover:bg-grey-shd3 cursor-pointer transition duration-500 ease-in-out;
+}
+#essam .toggle-button .toggle-btn-head {
+  @apply w-m h-m;
+}
+#essam .toggle-button.small .toggle-btn-head {
+  @apply w-2.5 h-2.5;
+}
+#essam .toggle-button .toggle-btn-head,
+#essam .toggle-button.small .toggle-btn-head {
+  @apply bg-white rounded-full transition duration-500 ease-in-out;
+}
+#essam .toggle-button .toggle-checkbox[disabled] + .toggle-btn-body {
+  @apply bg-grey-shd6 hover:bg-grey-shd6;
+}
+/*Toggles*/
+/*Checkboxes*/
+#essam .checkbox .checkbox-input {
+  @apply hidden;
+}
+#essam .checkbox .checkbox-input:checked + .check-box .check-mark {
+  @apply block;
+}
+#essam .checkbox .checkbox-input:checked + .check-box {
+  @apply bg-primary hover:bg-primary-hover;
+}
+#essam .checkbox .check-box {
+  @apply w-6 h-6;
+}
+#essam .checkbox.small .check-box {
+  @apply w-4 h-4;
+}
+#essam .checkbox.small .check-box,
+#essam .checkbox .check-box {
+  @apply border border-grey-shd4 block rounded-sm flex items-center justify-center transition duration-200 ease-in-out hover:border-grey-shd1;
+}
+#essam .checkbox .check-box .check-mark {
+  @apply hidden;
+}
+#essam .checkbox .checkbox-input[disabled] + .check-box {
+  @apply border-grey-shd6 hover:border-grey-shd6;
+}
+#essam .checkbox .checkbox-input[disabled][checked] + .check-box {
+  @apply bg-primary-shd7 hover:bg-primary-shd7;
+}
+/*Checkboxes*/
+/*Radios*/
+#essam .radio-button .radio-input {
+  @apply hidden;
+}
+#essam .radio-button .radio-btn .circle-mark {
+  @apply hidden;
+}
+#essam .radio-button .radio-btn {
+  @apply w-6 h-6;
+}
+#essam .radio-button.small .radio-btn {
+  @apply w-4 h-4;
+}
+#essam .radio-button .radio-btn,
+#essam .radio-button.small .radio-btn {
+  @apply rounded-full border border-grey-shd4 block hover:border-grey-shd1 flex items-center justify-center;
+}
+#essam .radio-button .radio-btn .circle-mark {
+  @apply w-2.5 h-2.5;
+}
+#essam .radio-button.small .radio-btn .circle-mark {
+  @apply w-1.5 h-1.5;
+}
+#essam .radio-button.small .radio-btn .circle-mark,
+#essam .radio-button .radio-btn .circle-mark {
+  @apply bg-white rounded-full;
+}
+#essam .radio-button .radio-input:checked + .radio-btn {
+  @apply bg-primary hover:bg-primary-hover;
+}
+#essam .radio-button .radio-input:checked + .radio-btn .circle-mark,
+#essam .radio-button .radio-input[disabled] + .radio-btn .circle-mark {
+  @apply block;
+}
+#essam .radio-button .radio-input[disabled] + .radio-btn {
+  @apply border-grey-shd6 hover:border-grey-shd6;
+}
+#essam .radio-button .radio-input[disabled][checked] + .radio-btn {
+  @apply bg-primary-shd7 hover:bg-primary-shd7;
+}
+/*Radios*/
 /**************/
 /* Forms */
 /**************/
