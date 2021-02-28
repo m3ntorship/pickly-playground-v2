@@ -1,3 +1,6 @@
+/**************/
+/* Buttons */
+/**************/
 #essam .btn {
   @apply capitalize  flex items-center justify-center gap-sv box-border m-0;
 }
@@ -65,8 +68,87 @@
 #essam .btn-secondary[disabled] {
   @apply hover:bg-white;
 }
+
+/**************/
+/* Forms */
+/**************/
+#essam .form-group {
+  @apply w-19xl;
+}
+#essam .form-label {
+  @apply block font-light text-xs text-dark-grey;
+}
+#essam .form-control {
+  @apply my-xs relative;
+}
+
+#essam .form-input {
+  @apply box-border border border-grey-shd5 rounded-md px-m py-xsvv w-full text-dark-grey hover:border-grey-shd2 focus:border-dark focus:text-dark;
+}
+#essam .form-input::placeholder {
+  @apply text-grey-shd1;
+}
+#essam .form-input[disabled] {
+  @apply text-grey-shd4 border-grey-shd7 hover:border-grey-shd7 bg-transparent;
+}
+#essam .form-input.error {
+  @apply border-error;
+}
+#essam .form-input.success {
+  @apply border-success;
+}
+#essam .form-input + .status-icon {
+  @apply absolute top-3 right-3 hidden cursor-pointer;
+}
+#essam .form-input:focus + .status-icon {
+  @apply block;
+}
+#essam .form-input.error + .status-icon,
+#essam .form-input.success + .status-icon {
+  @apply block;
+}
+#essam .form-input.input-with-right-icon + .status-icon {
+  @apply top-3 right-10;
+}
+#essam .form-input.input-with-right-icon ~ .control-icon {
+  @apply absolute top-3 right-3 cursor-pointer;
+}
+#essam .form-input.input-with-left-icon {
+  @apply pl-xxl;
+}
+#essam .form-input.input-choice {
+  @apply pl-xvxl;
+}
+#essam .form-input.input-with-prefix {
+  @apply pl-4xl;
+}
+#essam .form-input.input-with-dropdown-prefix {
+  @apply pl-20;
+}
+#essam .form-input.input-with-left-icon ~ .control-icon,
+#essam .form-input.input-with-prefix ~ .control-icon,
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon {
+  @apply absolute top-3 left-3 text-grey;
+}
+#essam .form-input.input-with-prefix ~ .control-icon,
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon {
+  @apply pr-xs border-r border-grey-shd6;
+}
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon {
+  @apply flex justify-between items-center;
+}
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon svg {
+  @apply ml-xxs;
+}
+#essam .form-input.input-choice ~ .control-icon {
+  @apply absolute top-xs left-xs text-grey bg-grey-shd7 py-3xs px-xs;
+}
+/**************/
+/* Forms */
+/**************/
 /* for the sake of presentation*/
-#essam .btn {
+#essam .btn,
+#essam .form-group {
   @apply m-1;
 }
 /* for the sake of presentation*/
