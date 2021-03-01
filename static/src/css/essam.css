@@ -289,6 +289,33 @@
 /**************/
 /* Forms */
 /**************/
+/**************/
+/* Avatars */
+/**************/
+#essam .avatar {
+  @apply rounded-full overflow-hidden;
+}
+#essam .avatar-img {
+  @apply w-full h-full block object-cover;
+}
+/*Large*/
+#essam .avatar.large {
+  @apply w-14  h-14;
+}
+/*Large*/
+/*Medium*/
+#essam .avatar.medium {
+  @apply w-10  h-10;
+}
+/*Medium*/
+/*Medium*/
+#essam .avatar.small {
+  @apply w-8  h-8;
+}
+/*Medium*/
+/**************/
+/* Avatars */
+/**************/
 /* for the sake of presentation*/
 #essam .btn,
 #essam .form-group {
