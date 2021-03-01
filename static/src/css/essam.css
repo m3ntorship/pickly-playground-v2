@@ -316,6 +316,51 @@
 /**************/
 /* Avatars */
 /**************/
+/**************/
+/* Tabs */
+/**************/
+/*With Icons*/
+#essam .tab {
+  @apply relative;
+}
+#essam .tab .tab-radio-input {
+  @apply absolute top-0 left-0 opacity-0;
+}
+#essam .tab .tab-radio-input:focus + .tab-radio-label {
+  @apply border border-grey;
+}
+#essam .tab .tab-radio-input:checked + .tab-radio-label {
+  @apply border border-grey;
+}
+#essam .tab .tab-radio-input:checked + .tab-radio-label:before {
+  @apply border-5 border-primary;
+}
+#essam .tab .tab-radio-label {
+  @apply bg-grey-bg hover:bg-grey-shd6;
+}
+#essam .tab.disabled .tab-radio-label {
+  @apply opacity-40 bg-grey-shd6;
+}
+#essam .tab .tab-radio-label,
+#essam .tab.disabled .tab-radio-label {
+  @apply flex items-center  block  px-sv py-xxsv rounded-full text-sm text-dark-grey font-normal  box-border border border-transparent;
+}
+#essam .tab .tab-radio-label .tab-radio-icon {
+  @apply mx-xs;
+}
+#essam .tab .tab-radio-label:before {
+  @apply block w-4 h-4 bg-white border border-grey-shd4  rounded-full;
+  content: '';
+}
+/*With Icons*/
+/*Without Icons*/
+#essam .tab.tab-without-icon .tab-radio-label:before {
+  content: none;
+}
+/*Without Icons*/
+/**************/
+/* Tabs */
+/**************/
 /* for the sake of presentation*/
 #essam .btn,
 #essam .form-group {
