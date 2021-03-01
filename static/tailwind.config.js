@@ -219,6 +219,7 @@ module.exports = {
         '19xxxl': '19.9375rem',
         '7xl': '7.5rem',
         '5xl': '5.5rem',
+        '4xl': '4.5rem',
         '18xl': '18.5rem',
         '22xl': '22.375rem',
         '23xl': '23.125rem',
@@ -245,6 +246,17 @@ module.exports = {
         40: '2.5rem',
         '12l': '3rem',
         14.5: '3.75rem'
+      },
+      strokeWidth: {
+        7: '7'
+      },
+      stroke: theme => ({
+        primary: theme('colors.primary'),
+        error: theme('colors.error')
+      }),
+      fill: {
+        none: 'none',
+        white: '#FFFFFF'
       }
     }
   },
