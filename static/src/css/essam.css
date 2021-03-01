@@ -361,6 +361,57 @@
 /**************/
 /* Tabs */
 /**************/
+/**************/
+/* Sliders */
+/**************/
+#essam .progress[value] {
+  @apply bg-white border-none rounded-full w-13xxxl overflow-hidden h-3 p-1;
+}
+#essam .progress[value]::-webkit-progress-bar {
+  @apply bg-white border-none rounded-xsm w-13xxxl;
+}
+#essam .progress[value]::-webkit-progress-value {
+  @apply bg-primary border-none rounded-full;
+}
+#essam .progress[value='100']::-webkit-progress-value {
+  @apply bg-success border-none rounded-full;
+}
+
+#essam .progress.vote-meter-1,
+#essam .progress.vote-meter-2,
+#essam .progress.vote-meter-3 {
+  @apply transform -rotate-90;
+}
+#essam .progress.vote-meter-1[value]::-webkit-progress-value {
+  @apply bg-success;
+}
+#essam .progress.vote-meter-2[value]::-webkit-progress-value {
+  @apply bg-primary-shd5;
+}
+#essam .progress.vote-meter-3[value]::-webkit-progress-value {
+  @apply bg-error;
+}
+#essam .progress.vote-meter-4,
+#essam .progress.vote-meter-5 {
+  @apply w-4xl h-4xl;
+}
+#essam .progress.vote-meter-4 .progress-value,
+#essam .progress.vote-meter-5 .progress-value {
+  @apply stroke-7  fill-white origin-center transform rotate-90;
+}
+#essam .progress.vote-meter-4 .progress-value {
+  @apply stroke-primary;
+  stroke-dasharray: 212;
+  stroke-dashoffset: 53;
+}
+#essam .progress.vote-meter-5 .progress-value {
+  @apply stroke-error;
+  stroke-dasharray: 212;
+  stroke-dashoffset: 159;
+}
+/**************/
+/* Sliders */
+/**************/
 /* for the sake of presentation*/
 #essam .btn,
 #essam .form-group {
