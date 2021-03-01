@@ -146,11 +146,18 @@
 }
 /*Text Inputs*/
 /*Toggles*/
+#essam .toggle-button {
+  @apply relative;
+}
 #essam .toggle-button .toggle-checkbox {
-  @apply hidden;
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
 }
 #essam .toggle-button .toggle-checkbox:checked + .toggle-btn-body {
   @apply border-2 border-primary-shd5 bg-primary-shd7;
+}
+#essam .toggle-button .toggle-checkbox:focus + .toggle-btn-body {
+  @apply border-grey-shd3 border-2;
 }
 #essam
   .toggle-button
@@ -194,14 +201,21 @@
 }
 /*Toggles*/
 /*Checkboxes*/
+#essam .checkbox {
+  @apply relative;
+}
 #essam .checkbox .checkbox-input {
-  @apply hidden;
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
 }
 #essam .checkbox .checkbox-input:checked + .check-box .check-mark {
   @apply block;
 }
 #essam .checkbox .checkbox-input:checked + .check-box {
   @apply bg-primary hover:bg-primary-hover;
+}
+#essam .checkbox .checkbox-input:focus + .check-box {
+  @apply border-grey-shd3 border-2;
 }
 #essam .checkbox .check-box {
   @apply w-6 h-6;
@@ -211,7 +225,8 @@
 }
 #essam .checkbox.small .check-box,
 #essam .checkbox .check-box {
-  @apply border border-grey-shd4 block rounded-sm flex items-center justify-center transition duration-200 ease-in-out hover:border-grey-shd1;
+  @apply border border-grey-shd4 block rounded-sm flex items-center justify-center transition duration-200 ease-in-out hover:border-grey-shd1 relative;
+  z-index: 1;
 }
 #essam .checkbox .check-box .check-mark {
   @apply hidden;
@@ -224,8 +239,12 @@
 }
 /*Checkboxes*/
 /*Radios*/
+#essam .radio-button {
+  @apply relative;
+}
 #essam .radio-button .radio-input {
-  @apply hidden;
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
 }
 #essam .radio-button .radio-btn .circle-mark {
   @apply hidden;
@@ -252,6 +271,9 @@
 }
 #essam .radio-button .radio-input:checked + .radio-btn {
   @apply bg-primary hover:bg-primary-hover;
+}
+#essam .radio-button .radio-input:focus + .radio-btn {
+  @apply border-grey-shd3 border-2;
 }
 #essam .radio-button .radio-input:checked + .radio-btn .circle-mark,
 #essam .radio-button .radio-input[disabled] + .radio-btn .circle-mark {
