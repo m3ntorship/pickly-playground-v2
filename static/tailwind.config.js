@@ -192,6 +192,7 @@ module.exports = {
         '7xl': '7.75rem',
         '23xl': '23.125rem',
         '22xl': '22.5rem',
+        '22.1xl': '22.125rem',
         '21xl': '21.5rem',
         '6xl': '6.75rem',
         '4xl': '4.5rem',
@@ -219,9 +220,11 @@ module.exports = {
         '19xxxl': '19.9375rem',
         '7xl': '7.5rem',
         '5xl': '5.5rem',
+        '4xl': '4.5rem',
         '18xl': '18.5rem',
         '22xl': '22.375rem',
         '23xl': '23.125rem',
+        '11.8xl': '11.875rem',
         '3.6xl': '3.625rem',
         '3.7xl': '3.7rem',
         '24xl': '24.75rem',
@@ -245,6 +248,17 @@ module.exports = {
         40: '2.5rem',
         '12l': '3rem',
         14.5: '3.75rem'
+      },
+      strokeWidth: {
+        7: '7'
+      },
+      stroke: theme => ({
+        primary: theme('colors.primary'),
+        error: theme('colors.error')
+      }),
+      fill: {
+        none: 'none',
+        white: '#FFFFFF'
       }
     }
   },
@@ -252,7 +266,9 @@ module.exports = {
     extend: {
       textDecoration: ['group-focus'],
       width: ['hover'],
-      height: ['hover']
+      height: ['hover'],
+      borderWidth: ['hover', 'focus'],
+      opacity: ['disabled']
     }
   },
   plugins: []
