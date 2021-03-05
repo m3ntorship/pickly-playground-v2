@@ -68,9 +68,9 @@
   @apply bg-white outline-none  border-dark-grey;
 }
 
-/* .tabLabel:focus .tabCyrcleIcon{
+.tabLabel:focus .tabCyrcleIcon{
     @apply  border-5 border-primary ;
-} */
+}
 
 /* ****************************************forms **************************************/
 .inputFrame {

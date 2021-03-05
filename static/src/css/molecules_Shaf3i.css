@@ -1,0 +1,9 @@
+.RateSpan{
+    @apply  py-1 px-2.5  bg-white rounded-tl-md rounded-bl-md;
+}
+.VotingFont{
+    @apply font-sans text-base  text-dark font-medium;
+}
+/* .imgBlur{
+    filter: blur(1rem);
+} */
