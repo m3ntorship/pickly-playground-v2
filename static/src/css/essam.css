@@ -1,0 +1,569 @@
+/**************/
+/* Buttons */
+/**************/
+#essam .btn {
+  @apply capitalize  flex items-center justify-center
+   box-border m-0;
+}
+#essam .btn-primary {
+  @apply bg-primary focus:border-2 focus:border-dark-btnFocus rounded-full text-white hover:bg-primary-hover m-0;
+}
+#essam .btn-secondary {
+  @apply bg-white  text-primary focus:border-dark-btnFocus rounded-full hover:bg-grey-bg m-0;
+}
+#essam .btn-text {
+  @apply bg-transparent text-accent hover:text-accent-hover border-0 focus:underline p-0;
+}
+#essam .btn svg,
+#essam .btn path {
+  @apply fill-current;
+}
+#essam .btn-large {
+  @apply text-md font-bold;
+}
+#essam .btn-medium {
+  @apply text-base font-medium;
+}
+#essam .btn-small {
+  @apply text-sm font-medium;
+}
+#essam .btn-large.btn-primary,
+#essam .btn-large.btn-secondary {
+  @apply px-xl py-sv;
+}
+#essam .btn-medium.btn-primary,
+#essam .btn-medium.btn-secondary {
+  @apply px-l py-xsv text-base;
+}
+#essam .btn-small.btn-primary,
+#essam .btn-small.btn-secondary {
+  @apply px-m py-xxsv text-sm;
+}
+#essam .btn-rounded-large {
+  @apply p-s;
+}
+#essam .btn-rounded-medium,
+#essam .btn-rounded-small {
+  @apply p-xs;
+}
+#essam .btn-rounded-large span,
+#essam .btn-rounded-medium span,
+#essam .btn-rounded-small span {
+  @apply flex items-center justify-center;
+}
+#essam .btn-rounded-large span {
+  @apply w-8 h-8;
+}
+#essam .btn-rounded-medium span {
+  @apply w-6 h-6;
+}
+#essam .btn-rounded-small span {
+  @apply w-4 h-4;
+}
+#essam button[disabled] {
+  @apply disabled:opacity-24 cursor-not-allowed;
+}
+#essam .btn-primary[disabled] {
+  @apply hover:bg-primary;
+}
+#essam .btn-secondary[disabled] {
+  @apply hover:bg-white;
+}
+
+/**************/
+/* Forms */
+/**************/
+/*Text Inputs*/
+#essam .form-group {
+  @apply w-19xl;
+}
+#essam .form-label {
+  @apply block font-light text-xs text-dark-grey;
+}
+#essam .form-control {
+  @apply my-xs relative;
+}
+
+#essam .form-input {
+  @apply box-border border border-grey-shd5 rounded-md px-m py-xsvv w-full text-dark-grey hover:border-grey-shd2 focus:border-dark focus:text-dark;
+}
+#essam .form-input::placeholder {
+  @apply text-grey-shd1;
+}
+#essam .form-input[disabled] {
+  @apply text-grey-shd4 border-grey-shd7 hover:border-grey-shd7 bg-transparent;
+}
+#essam .form-input.error {
+  @apply border-error;
+}
+#essam .form-input.success {
+  @apply border-success;
+}
+#essam .form-input + .status-icon {
+  @apply absolute top-3 right-3 hidden cursor-pointer;
+}
+#essam .form-input:focus + .status-icon {
+  @apply block;
+}
+#essam .form-input.error + .status-icon,
+#essam .form-input.success + .status-icon {
+  @apply block;
+}
+#essam .form-input.input-with-right-icon + .status-icon {
+  @apply top-3 right-10;
+}
+#essam .form-input.input-with-right-icon ~ .control-icon {
+  @apply absolute top-3 right-3 cursor-pointer;
+}
+#essam .form-input.input-with-left-icon {
+  @apply pl-xxl;
+}
+#essam .form-input.input-choice {
+  @apply pl-xvxl;
+}
+#essam .form-input.input-with-prefix {
+  @apply pl-4xl;
+}
+#essam .form-input.input-with-dropdown-prefix {
+  @apply pl-20;
+}
+#essam .form-input.input-with-left-icon ~ .control-icon,
+#essam .form-input.input-with-prefix ~ .control-icon,
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon {
+  @apply absolute top-3 left-3 text-grey;
+}
+#essam .form-input.input-with-prefix ~ .control-icon,
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon {
+  @apply pr-xs border-r border-grey-shd6;
+}
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon {
+  @apply flex justify-between items-center;
+}
+#essam .form-input.input-with-dropdown-prefix ~ .control-icon svg {
+  @apply ml-xxs;
+}
+#essam .form-input.input-choice ~ .control-icon {
+  @apply absolute top-xs left-xs text-grey bg-grey-shd7 py-3xs px-xs;
+}
+/*Text Inputs*/
+/*Toggles*/
+#essam .toggle-button {
+  @apply relative;
+}
+#essam .toggle-button .toggle-checkbox {
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
+}
+#essam .toggle-button .toggle-checkbox:checked + .toggle-btn-body {
+  @apply border-2 border-primary-shd5 bg-primary-shd7;
+}
+#essam .toggle-button .toggle-checkbox:focus + .toggle-btn-body {
+  @apply border-grey-shd3 border-2;
+}
+#essam
+  .toggle-button
+  .toggle-checkbox:checked
+  + .toggle-btn-body
+  .toggle-btn-head {
+  @apply bg-primary transform translate-x-4;
+}
+
+#essam
+  .toggle-button.small
+  .toggle-checkbox:checked
+  + .toggle-btn-body
+  .toggle-btn-head {
+  @apply bg-primary transform translate-x-2;
+}
+
+#essam .toggle-button .toggle-btn-body {
+  @apply w-2xl h-l;
+}
+#essam .toggle-button.small .toggle-btn-body {
+  @apply w-xl h-4;
+}
+
+#essam .toggle-button .toggle-btn-body,
+#essam .toggle-button.small .toggle-btn-body {
+  @apply block flex items-center bg-grey-shd4 rounded-full p-xxs hover:bg-grey-shd3 cursor-pointer transition duration-500 ease-in-out;
+}
+#essam .toggle-button .toggle-btn-head {
+  @apply w-m h-m;
+}
+#essam .toggle-button.small .toggle-btn-head {
+  @apply w-2.5 h-2.5;
+}
+#essam .toggle-button .toggle-btn-head,
+#essam .toggle-button.small .toggle-btn-head {
+  @apply bg-white rounded-full transition duration-500 ease-in-out;
+}
+#essam .toggle-button .toggle-checkbox[disabled] + .toggle-btn-body {
+  @apply bg-grey-shd6 hover:bg-grey-shd6;
+}
+/*Toggles*/
+/*Checkboxes*/
+#essam .checkbox {
+  @apply relative;
+}
+#essam .checkbox .checkbox-input {
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
+}
+#essam .checkbox .checkbox-input:checked + .check-box .check-mark {
+  @apply block;
+}
+#essam .checkbox .checkbox-input:checked + .check-box {
+  @apply bg-primary hover:bg-primary-hover;
+}
+#essam .checkbox .checkbox-input:focus + .check-box {
+  @apply border-grey-shd3 border-2;
+}
+#essam .checkbox .check-box {
+  @apply w-6 h-6;
+}
+#essam .checkbox.small .check-box {
+  @apply w-4 h-4;
+}
+#essam .checkbox.small .check-box,
+#essam .checkbox .check-box {
+  @apply border border-grey-shd4 block rounded-sm flex items-center justify-center transition duration-200 ease-in-out hover:border-grey-shd1 relative;
+  z-index: 1;
+}
+#essam .checkbox .check-box .check-mark {
+  @apply hidden;
+}
+#essam .checkbox .checkbox-input[disabled] + .check-box {
+  @apply border-grey-shd6 hover:border-grey-shd6;
+}
+#essam .checkbox .checkbox-input[disabled][checked] + .check-box {
+  @apply bg-primary-shd7 hover:bg-primary-shd7;
+}
+/*Checkboxes*/
+/*Radios*/
+#essam .radio-button {
+  @apply relative;
+}
+#essam .radio-button .radio-input {
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
+}
+#essam .radio-button .radio-btn .circle-mark {
+  @apply hidden;
+}
+#essam .radio-button .radio-btn {
+  @apply w-6 h-6;
+}
+#essam .radio-button.small .radio-btn {
+  @apply w-4 h-4;
+}
+#essam .radio-button .radio-btn,
+#essam .radio-button.small .radio-btn {
+  @apply rounded-full border border-grey-shd4 block hover:border-grey-shd1 flex items-center justify-center;
+}
+#essam .radio-button .radio-btn .circle-mark {
+  @apply w-2.5 h-2.5;
+}
+#essam .radio-button.small .radio-btn .circle-mark {
+  @apply w-1.5 h-1.5;
+}
+#essam .radio-button.small .radio-btn .circle-mark,
+#essam .radio-button .radio-btn .circle-mark {
+  @apply bg-white rounded-full;
+}
+#essam .radio-button .radio-input:checked + .radio-btn {
+  @apply bg-primary hover:bg-primary-hover;
+}
+#essam .radio-button .radio-input:focus + .radio-btn {
+  @apply border-grey-shd3 border-2;
+}
+#essam .radio-button .radio-input:checked + .radio-btn .circle-mark,
+#essam .radio-button .radio-input[disabled] + .radio-btn .circle-mark {
+  @apply block;
+}
+#essam .radio-button .radio-input[disabled] + .radio-btn {
+  @apply border-grey-shd6 hover:border-grey-shd6;
+}
+#essam .radio-button .radio-input[disabled][checked] + .radio-btn {
+  @apply bg-primary-shd7 hover:bg-primary-shd7;
+}
+/*Radios*/
+/**************/
+/* Forms */
+/**************/
+/**************/
+/* Avatars */
+/**************/
+#essam .avatar {
+  @apply rounded-full overflow-hidden;
+}
+#essam .avatar-img {
+  @apply w-full h-full block object-cover;
+}
+/*Large*/
+#essam .avatar.large {
+  @apply w-14  h-14;
+}
+/*Large*/
+/*Medium*/
+#essam .avatar.medium {
+  @apply w-10  h-10;
+}
+/*Medium*/
+/*Medium*/
+#essam .avatar.small {
+  @apply w-8  h-8;
+}
+/*Medium*/
+/**************/
+/* Avatars */
+/**************/
+/**************/
+/* Tabs */
+/**************/
+/*With Icons*/
+#essam .tab {
+  @apply relative;
+}
+#essam .tab .tab-radio-input {
+  @apply absolute top-0 left-0 opacity-0;
+}
+#essam .tab .tab-radio-input:focus + .tab-radio-label {
+  @apply border border-grey;
+}
+#essam .tab .tab-radio-input:checked + .tab-radio-label {
+  @apply border border-grey;
+}
+#essam .tab .tab-radio-input:checked + .tab-radio-label:before {
+  @apply border-5 border-primary;
+}
+#essam .tab .tab-radio-label {
+  @apply bg-grey-bg hover:bg-grey-shd6;
+}
+#essam .tab.disabled .tab-radio-label {
+  @apply opacity-40 bg-grey-shd6;
+}
+#essam .tab .tab-radio-label,
+#essam .tab.disabled .tab-radio-label {
+  @apply flex items-center  block pl-s pr-sv py-xxsv rounded-full text-sm text-dark-grey font-medium  box-border border border-transparent cursor-pointer;
+}
+#essam .tab .tab-radio-label .tab-radio-icon {
+  @apply mx-xs;
+}
+#essam .tab .tab-radio-label:before {
+  @apply block w-4 h-4 bg-white border border-grey-shd4  rounded-full;
+  content: '';
+}
+/*With Icons*/
+/*Without Icons*/
+#essam .tab.tab-without-icon .tab-radio-label:before {
+  content: none;
+}
+/*Without Icons*/
+/**************/
+/* Tabs */
+/**************/
+/**************/
+/* Sliders */
+/**************/
+#essam .progress[value] {
+  @apply bg-white border-none rounded-full w-13xxxl overflow-hidden h-3 p-1;
+}
+#essam .progress[value]::-webkit-progress-bar {
+  @apply bg-white border-none rounded-xsm;
+}
+#essam .progress[value]::-webkit-progress-value {
+  @apply bg-primary border-none rounded-full;
+}
+#essam .progress[value='100']::-webkit-progress-value {
+  @apply bg-success border-none rounded-full;
+}
+
+#essam .progress.vote-meter-1[value],
+#essam .progress.vote-meter-2[value],
+#essam .progress.vote-meter-3[value] {
+  @apply transform -rotate-90;
+}
+#essam .progress.vote-meter-1[value]::-webkit-progress-value {
+  @apply bg-success;
+}
+#essam .progress.vote-meter-2[value]::-webkit-progress-value {
+  @apply bg-primary-shd5;
+}
+#essam .progress.vote-meter-3[value]::-webkit-progress-value {
+  @apply bg-error;
+}
+#essam .progress.vote-meter-4,
+#essam .progress.vote-meter-5 {
+  @apply w-4xl h-4xl;
+}
+#essam .progress.vote-meter-4 .progress-value,
+#essam .progress.vote-meter-5 .progress-value {
+  @apply stroke-7  fill-white origin-center transform rotate-90;
+}
+#essam .progress.vote-meter-4 .progress-value {
+  @apply stroke-primary;
+  stroke-dasharray: 212;
+  stroke-dashoffset: 53;
+}
+#essam .progress.vote-meter-5 .progress-value {
+  @apply stroke-error;
+  stroke-dasharray: 212;
+  stroke-dashoffset: 159;
+}
+/**************/
+/* Sliders */
+/**************/
+/**************/
+/* Voting Stats */
+/**************/
+#essam .vote-meter-with-stats {
+  @apply flex items-start;
+}
+#essam .vote-meter-with-stats .vote-meter-label {
+  @apply bg-white py-xxs px-xsvv rounded-l-md;
+}
+#essam .vote-meter-with-stats .progress {
+  @apply bg-white p-xxs rounded-tr-md rounded-br-md rounded-bl-md;
+}
+#essam .vote-meter-with-stats .progress-value {
+  @apply w-2 h-60 rounded-full;
+}
+#essam .vote-meter-with-stats.vote-winner .progress-value {
+  @apply bg-primary;
+}
+#essam .vote-meter-with-stats.vote-runner .progress-value {
+  @apply bg-primary-shd5;
+}
+#essam .vote-meter-with-stats.vote-loser .progress-value {
+  @apply bg-error;
+}
+#essam .vote-with-stats-roudnded {
+  @apply relative;
+}
+#essam .vote-with-stats-roudnded .vote-stats {
+  @apply flex flex-col items-center absolute  top-2/4 left-2/4 transform -translate-y-2/4 -translate-x-2/4;
+}
+/**************/
+/* Voting Stats */
+/**************/
+/**************/
+/* Misc */
+/**************/
+#essam .error-box,
+#essam .success-box {
+  @apply w-22.1xl h-11.8xl flex flex-col items-center justify-between;
+}
+#essam .error-box .msg,
+#essam .success-box .msg {
+  @apply text-center;
+}
+#essam .error-box .msg {
+  @apply text-error;
+}
+#essam .success-box .msg {
+  @apply text-dark;
+}
+#essam .error-box .msg .msg-heading,
+#essam .success-box .msg .msg-heading {
+  @apply font-bold text-lg mb-xs;
+}
+#essam .error-box .msg .msg-paragraph,
+#essam .success-box .msg .msg-paragraph {
+  @apply text-md;
+}
+#essam .success-box .msg .msg-heading {
+  @apply text-dark-grey;
+}
+#essam .success-box .msg .msg-paragraph {
+  @apply text-grey;
+}
+/**************/
+/* Misc */
+/**************/
+/**************/
+/* Tab Group */
+/**************/
+#essam .voting-tab-group {
+  @apply flex;
+}
+/**************/
+/* Tab Group */
+/**************/
+/**************/
+/* Image Upload */
+/**************/
+#essam .img-upload-box {
+  @apply w-44xl h-14 bg-grey-shd7 box-border border border-accent rounded-md border-dashed flex items-center justify-center;
+}
+#essam .img-upload-box-msg {
+  @apply flex items-center text-accent font-bold text-sm;
+}
+/**************/
+/* Image Upload */
+/**************/
+/**************/
+/* Privacy */
+/**************/
+#essam .privacy-box p {
+  @apply text-dark-grey text-xs;
+}
+#essam .privacy-box button {
+  @apply text-dark-grey text-xs hover:text-dark-grey;
+}
+/**************/
+/* Privacy */
+/**************/
+/**************/
+/* Uploading Images */
+/**************/
+#essam .upload-img-box {
+  @apply w-44xl;
+}
+#essam .upload-img-box .uploaded-img-box {
+  @apply w-44xl h-44xl rounded-t-md overflow-hidden;
+}
+#essam .upload-img-box .uploaded-img-box .uploaded-img {
+  @apply w-full h-full object-cover;
+}
+#essam .upload-img-box .uploaded-img-caption {
+  @apply relative mt-xxs;
+}
+#essam .upload-img-box .uploaded-img-caption .uploaded-img-caption-input {
+  @apply border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-dark-grey w-full rounded-b-md focus:outline-none focus:border-dark focus:text-dark hover:border-grey-shd2;
+}
+#essam .upload-img-box .uploaded-img-caption .input-choice {
+  @apply absolute top-2 left-2;
+}
+/**************/
+/* Uploading Images */
+/**************/
+/**************/
+/* Text - Default */
+/**************/
+#essam .option-text-box {
+  @apply flex flex-row mb-3xl items-center w-44xl;
+}
+#essam .option-text-box .option-dragger {
+  @apply text-grey mr-m;
+}
+#essam .option-text-box .option-input-box {
+  @apply mt-xxs flex border border-grey-shd4 p-xs rounded-md w-full hover:border-grey-shd2;
+}
+#essam .option-text-box .option-input-box:focus-within {
+  @apply border-dark;
+}
+#essam .option-text-box .option-input-box .option-input-icon {
+  @apply py-3xs px-xs bg-grey-shd7 text-grey mr-s rounded-sm;
+}
+#essam .option-text-box .option-input-box .option-input {
+  @apply text-sm w-full text-dark-grey focus:outline-none focus:text-dark;
+}
+/****************/
+/* Text - Default */
+/**************/
+/* for the sake of presentation*/
+#essam .btn,
+#essam .form-group {
+  @apply m-1;
+}
+/* for the sake of presentation*/
