@@ -2,7 +2,8 @@
 /* Buttons */
 /**************/
 #essam .btn {
-  @apply capitalize  flex items-center justify-center gap-sv box-border m-0;
+  @apply capitalize  flex items-center justify-center
+   box-border m-0;
 }
 #essam .btn-primary {
   @apply bg-primary focus:border-2 focus:border-dark-btnFocus rounded-full text-white hover:bg-primary-hover m-0;
@@ -343,7 +344,7 @@
 }
 #essam .tab .tab-radio-label,
 #essam .tab.disabled .tab-radio-label {
-  @apply flex items-center  block  px-sv py-xxsv rounded-full text-sm text-dark-grey font-normal  box-border border border-transparent;
+  @apply flex items-center  block pl-s pr-sv py-xxsv rounded-full text-sm text-dark-grey font-medium  box-border border border-transparent cursor-pointer;
 }
 #essam .tab .tab-radio-label .tab-radio-icon {
   @apply mx-xs;
@@ -483,7 +484,7 @@
 /* Tab Group */
 /**************/
 #essam .voting-tab-group {
-  @apply flex w-29xl justify-between items-center;
+  @apply flex;
 }
 /**************/
 /* Tab Group */
@@ -528,7 +529,7 @@
   @apply relative mt-xxs;
 }
 #essam .upload-img-box .uploaded-img-caption .uploaded-img-caption-input {
-  @apply border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-grey-shd1 w-full rounded-b-md focus:outline-none;
+  @apply border border-grey-shd5 py-xsvv pr-m pl-11 text-sm font-normal text-dark-grey w-full rounded-b-md focus:outline-none focus:border-dark focus:text-dark hover:border-grey-shd2;
 }
 #essam .upload-img-box .uploaded-img-caption .input-choice {
   @apply absolute top-2 left-2;
@@ -543,16 +544,19 @@
   @apply flex flex-row mb-3xl items-center w-44xl;
 }
 #essam .option-text-box .option-dragger {
-  @apply text-grey mr-l;
+  @apply text-grey mr-m;
 }
 #essam .option-text-box .option-input-box {
-  @apply mt-xxs flex border border-grey-shd4 p-xs rounded-md w-full;
+  @apply mt-xxs flex border border-grey-shd4 p-xs rounded-md w-full hover:border-grey-shd2;
+}
+#essam .option-text-box .option-input-box:focus-within {
+  @apply border-dark;
 }
 #essam .option-text-box .option-input-box .option-input-icon {
   @apply py-3xs px-xs bg-grey-shd7 text-grey mr-s rounded-sm;
 }
 #essam .option-text-box .option-input-box .option-input {
-  @apply text-sm w-full text-grey-shd1 focus:outline-none;
+  @apply text-sm w-full text-dark-grey focus:outline-none focus:text-dark;
 }
 /****************/
 /* Text - Default */
