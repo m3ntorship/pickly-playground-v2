@@ -2,7 +2,7 @@
 /* Buttons */
 /**************/
 #essam .btn {
-  @apply capitalize  flex items-center justify-center gap-sv box-border m-0;
+  @apply capitalize  flex items-center justify-between box-border m-0;
 }
 #essam .btn-primary {
   @apply bg-primary focus:border-2 focus:border-dark-btnFocus rounded-full text-white hover:bg-primary-hover m-0;
@@ -92,6 +92,10 @@
 #essam .form-input[disabled] {
   @apply text-grey-shd4 border-grey-shd7 hover:border-grey-shd7 bg-transparent;
 }
+#essam .form-input[disabled]::placeholder {
+  @apply text-grey-shd4;
+}
+
 #essam .form-input.error {
   @apply border-error;
 }
@@ -99,7 +103,7 @@
   @apply border-success;
 }
 #essam .form-input + .status-icon {
-  @apply absolute top-3 right-3 hidden cursor-pointer;
+  @apply absolute top-3.5 right-3 hidden cursor-pointer;
 }
 #essam .form-input:focus + .status-icon {
   @apply block;
@@ -109,10 +113,10 @@
   @apply block;
 }
 #essam .form-input.input-with-right-icon + .status-icon {
-  @apply top-3 right-10;
+  @apply top-3.5 right-10;
 }
 #essam .form-input.input-with-right-icon ~ .control-icon {
-  @apply absolute top-3 right-3 cursor-pointer;
+  @apply absolute top-3.5 right-3 cursor-pointer;
 }
 #essam .form-input.input-with-left-icon {
   @apply pl-xxl;
@@ -144,6 +148,12 @@
 #essam .form-input.input-choice ~ .control-icon {
   @apply absolute top-xs left-xs text-grey bg-grey-shd7 py-3xs px-xs;
 }
+#essam .form-input[disabled] ~ .control-icon {
+  @apply text-grey-shd3;
+}
+#essam .form-input[disabled] ~ .control-icon path {
+  fill: #b6cdd6;
+}
 /*Text Inputs*/
 /*Toggles*/
 #essam .toggle-button {
@@ -152,6 +162,9 @@
 #essam .toggle-button .toggle-checkbox {
   @apply absolute top-0 left-0 opacity-0;
   z-index: -1;
+}
+#essam .toggle-button .toggle-checkbox + .toggle-btn-body {
+  @apply border-2 border-transparent;
 }
 #essam .toggle-button .toggle-checkbox:checked + .toggle-btn-body {
   @apply border-2 border-primary-shd5 bg-primary-shd7;
@@ -214,8 +227,12 @@
 #essam .checkbox .checkbox-input:checked + .check-box {
   @apply bg-primary hover:bg-primary-hover;
 }
+#essam .checkbox .checkbox-input:checked:focus + .check-box {
+  @apply border-2 border-primary-shd6;
+}
+
 #essam .checkbox .checkbox-input:focus + .check-box {
-  @apply border-grey-shd3 border-2;
+  @apply border-2 border-grey-shd3;
 }
 #essam .checkbox .check-box {
   @apply w-6 h-6;
@@ -271,6 +288,9 @@
 }
 #essam .radio-button .radio-input:checked + .radio-btn {
   @apply bg-primary hover:bg-primary-hover;
+}
+#essam .radio-button .radio-input:checked:focus + .radio-btn {
+  @apply border-2 border-primary-shd6;
 }
 #essam .radio-button .radio-input:focus + .radio-btn {
   @apply border-grey-shd3 border-2;
@@ -368,7 +388,7 @@
   @apply bg-white border-none rounded-full w-13xxxl overflow-hidden h-3 p-1;
 }
 #essam .progress[value]::-webkit-progress-bar {
-  @apply bg-white border-none rounded-xsm w-13xxxl;
+  @apply bg-white border-none rounded-xsm;
 }
 #essam .progress[value]::-webkit-progress-value {
   @apply bg-primary border-none rounded-full;
