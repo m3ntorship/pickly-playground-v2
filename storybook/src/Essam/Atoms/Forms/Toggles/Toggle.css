@@ -1,0 +1,59 @@
+/* Toggles */
+.toggle-button {
+  @apply relative;
+}
+
+.toggle-button .toggle-checkbox {
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
+}
+
+.toggle-button .toggle-checkbox:checked + .toggle-btn-body {
+  @apply border-2 border-primary-shd5 bg-primary-shd7;
+}
+
+.toggle-button .toggle-checkbox:focus + .toggle-btn-body {
+  @apply border-grey-shd3 border-2;
+}
+
+.toggle-button .toggle-checkbox:checked + .toggle-btn-body .toggle-btn-head {
+  @apply bg-primary transform translate-x-4;
+}
+
+.toggle-button.small
+  .toggle-checkbox:checked + .toggle-btn-body
+  .toggle-btn-head {
+  @apply bg-primary transform translate-x-2;
+}
+
+.toggle-button.small .toggle-btn-body {
+  @apply w-xl h-4;
+}
+
+.toggle-button .toggle-btn-body,
+.toggle-button.small .toggle-btn-body {
+  @apply block flex items-center bg-grey-shd4 rounded-full p-xxs hover:bg-grey-shd3 cursor-pointer transition duration-300 ease-in-out;
+}
+
+.toggle-button .toggle-btn-body {
+  @apply border-2 border-transparent w-2xl h-l;
+}
+
+.toggle-button .toggle-btn-head {
+  @apply w-m h-m;
+}
+
+.toggle-button.small .toggle-btn-head {
+  @apply w-2.5 h-2.5;
+}
+
+.toggle-button .toggle-btn-head,
+.toggle-button.small .toggle-btn-head {
+  @apply bg-white rounded-full transition duration-300 ease-in-out;
+}
+
+.toggle-button .toggle-checkbox[disabled] + .toggle-btn-body {
+  @apply bg-grey-shd6 hover:bg-grey-shd6;
+}
+
+/* Toggles */

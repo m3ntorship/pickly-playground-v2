@@ -1,0 +1,107 @@
+/*************   */
+
+/* Buttons */
+
+/*************   */
+.btn {
+  @apply capitalize  flex items-center justify-center  box-border m-0 focus:outline-none;
+}
+
+.btn-primary {
+  @apply bg-primary border-2 focus:border-2 focus:border-dark-btnFocus rounded-full text-white hover:bg-primary-hover m-0;
+}
+
+.btn-secondary {
+  @apply bg-white border border-primary text-primary focus:border-2 focus:border-dark-btnFocus rounded-full hover:bg-grey-bg m-0;
+}
+
+.btn-text {
+  @apply bg-transparent text-accent hover:text-accent-hover border-0 focus:underline p-0;
+}
+
+.btn svg,
+.btn path {
+  @apply fill-current;
+}
+
+.btn-large {
+  @apply text-md font-bold;
+}
+
+.btn-medium {
+  @apply text-base font-medium;
+}
+
+.btn-small {
+  @apply text-sm font-medium;
+}
+
+.btn-large.btn-primary,
+.btn-large.btn-secondary {
+  @apply px-xl py-sv;
+}
+
+.btn-medium.btn-primary,
+.btn-medium.btn-secondary {
+  @apply px-l py-xsv text-base;
+}
+
+.btn-small.btn-primary,
+.btn-small.btn-secondary {
+  @apply px-m py-xxsv text-sm;
+}
+
+.btn-rounded.btn-large {
+  @apply p-s;
+}
+
+.btn-rounded.btn-medium,
+.btn-rounded.btn-small {
+  @apply p-xs;
+}
+
+.btn span,
+.btn-rounded.btn-large span,
+.btn-rounded.btn-medium span,
+.btn-rounded.btn-small span {
+  @apply flex items-center justify-center;
+}
+
+.btn.btn-large span {
+  @apply w-6 h-6;
+}
+
+.btn.btn-medium span,
+.btn.btn-small span {
+  @apply w-4 h-4;
+}
+
+.btn-rounded.btn-large span {
+  @apply w-8 h-8;
+}
+
+.btn-rounded.btn-medium span {
+  @apply w-6 h-6;
+}
+
+.btn-rounded.btn-small span {
+  @apply w-4 h-4;
+}
+
+button[disabled] {
+  @apply disabled:opacity-24 cursor-not-allowed;
+}
+
+.btn-primary[disabled] {
+  @apply hover:bg-primary;
+}
+
+.btn-secondary[disabled] {
+  @apply hover:bg-white;
+}
+
+/*************   */
+
+/* Buttons */
+
+/*************   */

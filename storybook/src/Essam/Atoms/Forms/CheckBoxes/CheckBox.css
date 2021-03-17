@@ -1,0 +1,49 @@
+/* Checkboxes */
+.checkbox {
+  @apply relative;
+}
+
+.checkbox .checkbox-input {
+  @apply absolute top-0 left-0 opacity-0;
+  z-index: -1;
+}
+
+.checkbox .checkbox-input:checked + .check-box .check-mark {
+  @apply block;
+}
+
+.checkbox .checkbox-input:checked + .check-box {
+  @apply bg-primary hover:bg-primary-hover;
+}
+
+.checkbox .checkbox-input:focus + .check-box {
+  @apply border-grey-shd3 border-2;
+}
+
+.checkbox .check-box {
+  @apply w-6 h-6;
+}
+
+.checkbox.small .check-box {
+  @apply w-4 h-4;
+}
+
+.checkbox.small .check-box,
+.checkbox .check-box {
+  @apply border border-grey-shd4 block rounded-sm flex items-center justify-center transition duration-100 ease-in-out hover:border-grey-shd1 relative;
+  z-index: 1;
+}
+
+.checkbox .check-box .check-mark {
+  @apply hidden;
+}
+
+.checkbox .checkbox-input[disabled] + .check-box {
+  @apply border-grey-shd6 hover:border-grey-shd6;
+}
+
+.checkbox .checkbox-input[disabled][checked] + .check-box {
+  @apply bg-primary-shd7 hover:bg-primary-shd7;
+}
+
+/* Checkboxes */
