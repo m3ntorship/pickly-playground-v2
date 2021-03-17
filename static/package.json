@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack  serve --watch --config webpack/webpack.dev.js",
-    "build": "NODE_ENV=production webpack --config webpack/webpack.prod.js",
+    "build": "webpack --config webpack/webpack.prod.js",
     "pretty": "prettier --write --config .prettierrc src/**/*.{js,css,html}",
     "lint": "eslint --fix src/",
     "lint:css": "stylelint --fix src/css/*.css"
