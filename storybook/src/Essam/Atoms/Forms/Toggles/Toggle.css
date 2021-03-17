@@ -36,7 +36,7 @@
 }
 
 .toggle-button .toggle-btn-body {
-  @apply border-2 border-transparent @apply w-2xl h-l;
+  @apply border-2 border-transparent w-2xl h-l;
 }
 
 .toggle-button .toggle-btn-head {
