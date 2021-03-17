@@ -1,0 +1,47 @@
+.img-poll {
+  @apply bg-white shadow-soft rounded-t-md border-b border-grey-shd6 flex flex-col p-m  w-39xl;
+}
+
+.voting-tab-group {
+  @apply flex w-29xl items-center;
+}
+
+.voting-tab-group .tab {
+  @apply mr-xs;
+}
+
+.img-poll .form-control {
+  @apply flex-grow my-m;
+}
+
+.img-poll .form-group {
+  @apply w-full;
+}
+
+.img-poll .avatar {
+  @apply mr-m;
+}
+
+.img-upload-box {
+  @apply h-14 bg-grey-shd7 box-border border border-accent rounded-md border-dashed flex items-center justify-center;
+}
+
+.img-upload-box-msg {
+  @apply flex items-center text-accent font-bold text-sm;
+}
+
+.img-poll .img-poll-footer {
+  @apply bg-white shadow-soft rounded-b-md border-b border-grey-shd6 border-none flex p-m mb-10 justify-between;
+}
+
+.img-poll-footer {
+  @apply bg-white shadow-soft rounded-b-md border-b border-grey-shd6 border-none flex p-m mb-10 justify-between w-39xl;
+}
+
+.privacy-box p {
+  @apply text-dark-grey text-xs;
+}
+
+.privacy-box button {
+  @apply text-dark-grey text-xs hover:text-dark-grey;
+}

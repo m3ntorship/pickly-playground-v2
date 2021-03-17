@@ -1,0 +1,64 @@
+/*************   */
+
+/* Sliders */
+
+/*************   */
+.progress[value] {
+  @apply bg-white border-none rounded-full w-13.7xxl overflow-hidden h-3 p-1;
+}
+
+.progress[value]::-webkit-progress-bar {
+  @apply bg-white border-none rounded-xsm w-13xxxl;
+}
+
+.progress[value]::-webkit-progress-value {
+  @apply bg-primary border-none rounded-full;
+}
+
+.progress[value="100"]::-webkit-progress-value {
+  @apply bg-success border-none rounded-full;
+}
+
+.progress.vote-meter-1,
+.progress.vote-meter-2,
+.progress.vote-meter-3 {
+  @apply transform -rotate-90;
+}
+
+.progress.vote-meter-1[value]::-webkit-progress-value {
+  @apply bg-success;
+}
+
+.progress.vote-meter-2[value]::-webkit-progress-value {
+  @apply bg-primary-shd5;
+}
+
+.progress.vote-meter-3[value]::-webkit-progress-value {
+  @apply bg-error;
+}
+
+.progress.vote-meter-4,
+.progress.vote-meter-5 {
+  @apply w-4xl h-4xl;
+}
+
+.progress.vote-meter-4 .progress-value,
+.progress.vote-meter-5 .progress-value {
+  @apply stroke-7  fill-white origin-center transform rotate-90;
+}
+
+.progress.vote-meter-4 .progress-value {
+  @apply stroke-primary;
+  transition: all 0.5s ease-in-out;
+}
+
+.progress.vote-meter-5 .progress-value {
+  @apply stroke-error;
+  transition: all 0.5s ease-in-out;
+}
+
+/*************   */
+
+/* Sliders */
+
+/*************   */

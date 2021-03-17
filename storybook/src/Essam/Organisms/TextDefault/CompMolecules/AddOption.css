@@ -1,0 +1,7 @@
+.addoption-input-box {
+  @apply relative w-full;
+}
+
+.addoption-input {
+  @apply hover:border-grey-shd2 focus:text-dark-grey focus:border-dark border border-accent placeholder-accent bg-accent-shd7 bg-opacity-10 py-2.5 px-m text-sm font-normal text-accent w-full rounded-md focus:outline-none;
+}

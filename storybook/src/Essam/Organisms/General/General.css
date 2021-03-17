@@ -1,0 +1,11 @@
+.general-section {
+  @apply w-39xl h-4xl bg-white rounded-md shadow-soft px-m py-m flex items-center;
+}
+
+.general-section .form-group {
+  @apply w-full;
+}
+
+.general-section .avatar {
+  @apply mr-m;
+}
