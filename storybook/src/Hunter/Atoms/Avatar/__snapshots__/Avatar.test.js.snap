@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Component should render (anon) when we apply (anon) 1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-8 h-8"
+  src="large-anan.png"
+/>
+`;
+
+exports[`Avatar Component should render (large) when we apply (large)  1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-14 h-14"
+  src="large-notfilled.png"
+/>
+`;
+
+exports[`Avatar Component should render (meduim) when we apply (meduim)  1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-8 h-8"
+  src="large-notfilled.png"
+/>
+`;
+
+exports[`Avatar Component should render (notfilled)  when we apply (notfilled)  1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-8 h-8"
+  src="large-notfilled.png"
+/>
+`;
+
+exports[`Avatar Component should render (person) when we apply (person)  1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-8 h-8"
+  src="large-avatar.png"
+/>
+`;
+
+exports[`Avatar Component should render (person-large)  when we apply nothing  1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-8 h-8"
+  src="large-notfilled.png"
+/>
+`;
+
+exports[`Avatar Component should render (small) when we apply (small)  1`] = `
+<img
+  className="ml-4 mt-4 rounded-full w-8 h-8"
+  src="large-notfilled.png"
+/>
+`;

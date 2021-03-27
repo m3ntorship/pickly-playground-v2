@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio component should render (default-unchecked) Radio when we apply nothing 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    type="radio"
+  />
+  <div
+    className="cursor-pointer rounded-full bg-white
+                w-4 h-4
+                
+                border border-grey-shd4 hover:border-grey-shd1     
+                "
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Radio component should render (default-unchecked) checkedbox when we apply nothing 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    type="radio"
+  />
+  <div
+    className="cursor-pointer rounded-full bg-white
+                w-4 h-4
+                
+                border border-grey-shd4 hover:border-grey-shd1     
+                "
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Radio component should render (disabled) Radio when we apply disabled 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    type="radio"
+  />
+  <div
+    className="cursor-pointer rounded-full bg-white
+                w-4 h-4
+                pointer-events-none opacity-25
+                border border-grey-shd4 hover:border-grey-shd1     
+                "
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Radio component should render (disabled) checkedbox when we apply disabled 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    type="radio"
+  />
+  <div
+    className="cursor-pointer rounded-full bg-white
+                w-4 h-4
+                pointer-events-none opacity-25
+                border border-grey-shd4 hover:border-grey-shd1     
+                "
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Radio component should render (small) Radio when we apply small 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    type="radio"
+  />
+  <div
+    className="cursor-pointer rounded-full bg-white
+                w-4 h-4
+                
+                border border-grey-shd4 hover:border-grey-shd1     
+                "
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Radio component should render (small) checkedbox when we apply small 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    type="radio"
+  />
+  <div
+    className="cursor-pointer rounded-full bg-white
+                w-4 h-4
+                
+                border border-grey-shd4 hover:border-grey-shd1     
+                "
+    onClick={[Function]}
+  />
+</div>
+`;

@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render (disapled) button when we apply disapled 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        opacity-25 cursor-default
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (large) button when we apply (large) 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (lefticon) button when we apply lefticon 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        py-3.5 px-8 font-bold text-md
+        
+        "
+>
+  <svg
+    className="w-6 h-6 "
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19 9l-7 7-7-7"
+      strokelinecap="round"
+      strokelinejoin="round"
+      strokewidth="2"
+    />
+  </svg>
+  <p
+    className="
+            false
+            ml-2       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (meduim) button when we apply (meduim) 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-1.5 px-4 font-semibold text-sm
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (onlyicon)  button when we apply nothing 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        false
+        p-3
+        false
+        false
+        
+        "
+>
+  <svg
+    className="w-6 h-6  "
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19 9l-7 7-7-7"
+      strokelinecap="round"
+      strokelinejoin="round"
+      strokewidth="2"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Button component should render (primary) button when we apply primary 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (primary-large) button when we apply nothing 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (righticon) button when we apply righticon 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        
+        "
+>
+  <p
+    className="
+            mr-2
+            false       
+            "
+  >
+    Button
+  </p>
+  <svg
+    className="w-6 h-6  "
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19 9l-7 7-7-7"
+      strokelinecap="round"
+      strokelinejoin="round"
+      strokewidth="2"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Button component should render (secondery) button when we apply (secondery) 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:text-accent-hover focus:underline focus:outline-none text-accent  
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (small) button when we apply (small) 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-dark-btnFocus text-white bg-primary 
+        false
+        py-1.5 px-4 font-semibold text-sm
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
+
+exports[`Button component should render (text) button when we apply text 1`] = `
+<button
+  className="rounded-full flex flex-row justify-between items-center
+        hover:text-accent-hover focus:underline focus:outline-none text-accent  
+        false
+        py-3.5 px-8 font-bold text-md
+        false
+        false
+        false
+        
+        "
+>
+  <p
+    className="
+            false
+            false       
+            "
+  >
+    Button
+  </p>
+</button>
+`;
