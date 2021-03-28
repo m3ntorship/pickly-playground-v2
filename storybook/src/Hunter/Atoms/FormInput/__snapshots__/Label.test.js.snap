@@ -13,6 +13,7 @@ Array [
           border border-grey-shd7
           false
           
+          
           "
   >
     <input
@@ -53,6 +54,7 @@ Array [
           border border-grey-shd7
           false
           
+          
           "
   >
     <input
@@ -79,6 +81,7 @@ Array [
             
           border border-grey-shd7
           pointer-events-none opacity-50 border border-grey-shd5
+          
           
           "
   >
@@ -107,6 +110,7 @@ Array [
           border border-grey-shd7
           false
           
+          
           "
   >
     <input
@@ -133,6 +137,7 @@ Array [
           px-4xl  
           border border-grey-shd7
           false
+          
           
           "
   >
@@ -189,8 +194,9 @@ Array [
           flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
           px-m  
             
-          border border-grey-shd7
+          border border-success focus:border-success
           false
+          
           
           "
   >
@@ -201,7 +207,19 @@ Array [
       type="text"
       value=""
     />
-    
+    <svg
+      className="absolute right-10"
+      fill="none"
+      height="9"
+      viewBox="0 0 11 9"
+      width="11"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.66681 6.39061L1.47148 4.19527L0.528809 5.13794L3.66681 8.27594L10.1381 1.8046L9.19547 0.861938L3.66681 6.39061Z"
+        fill="#07B255"
+      />
+    </svg>
   </div>,
 ]
 `;

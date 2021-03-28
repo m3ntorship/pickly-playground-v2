@@ -6,6 +6,7 @@ exports[`checkbox component should render (default-unchecked) checkedbox when we
 >
   <input
     className="w-0 h-0 opacity-0 absolute"
+    data-testid="checkbox"
     type="checkbox"
   />
   <div
@@ -38,6 +39,7 @@ exports[`checkbox component should render (disabled) checkedbox when we apply di
 >
   <input
     className="w-0 h-0 opacity-0 absolute"
+    data-testid="checkbox"
     type="checkbox"
   />
   <div
@@ -70,6 +72,7 @@ exports[`checkbox component should render (small) checkedbox when we apply small
 >
   <input
     className="w-0 h-0 opacity-0 absolute"
+    data-testid="checkbox"
     type="checkbox"
   />
   <div
