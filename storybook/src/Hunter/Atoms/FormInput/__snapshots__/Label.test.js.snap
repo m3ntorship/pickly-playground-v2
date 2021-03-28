@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label component should render ( righticon) Label when we apply icon 1`] = `
+Array [
+  <label
+    className="block my-2 text-xs  text-dark-grey"
+  />,
+  <div
+    className="
+          flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
+          px-m  
+            
+          border border-grey-shd7
+          false
+          
+          
+          "
+  >
+    <input
+      className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+    
+    <svg
+      className="absolute right-3 cursor-pointer"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.862 6.19537L7.99998 9.05737L5.13798 6.19537L4.19531 7.13804L7.99998 10.9427L11.8046 7.13804L10.862 6.19537Z"
+        fill="#94ACB5"
+      />
+    </svg>
+  </div>,
+]
+`;
+
+exports[`Label component should render (default) Label when we apply nothing 1`] = `
+Array [
+  <label
+    className="block my-2 text-xs  text-dark-grey"
+  />,
+  <div
+    className="
+          flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
+          px-m  
+            
+          border border-grey-shd7
+          false
+          
+          
+          "
+  >
+    <input
+      className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+    
+  </div>,
+]
+`;
+
+exports[`Label component should render (disabled) Label when we apply disabled 1`] = `
+Array [
+  <label
+    className="block my-2 text-xs  text-dark-grey"
+  />,
+  <div
+    className="
+          flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
+          px-m  
+            
+          border border-grey-shd7
+          pointer-events-none opacity-50 border border-grey-shd5
+          
+          
+          "
+  >
+    <input
+      className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+    
+  </div>,
+]
+`;
+
+exports[`Label component should render (error) Label when we apply error 1`] = `
+Array [
+  <label
+    className="block my-2 text-xs  text-dark-grey"
+  />,
+  <div
+    className="
+          flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
+          px-m  
+            
+          border border-grey-shd7
+          false
+          
+          
+          "
+  >
+    <input
+      className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+    
+  </div>,
+]
+`;
+
+exports[`Label component should render (prefix) Label when we apply prefix 1`] = `
+Array [
+  <label
+    className="block my-2 text-xs  text-dark-grey"
+  />,
+  <div
+    className="
+          flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
+          px-m  
+          px-4xl  
+          border border-grey-shd7
+          false
+          
+          
+          "
+  >
+    <input
+      className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+    
+    <div
+      className="flex flex-row items-center absolute left-3"
+    >
+      <div
+        className=" "
+      >
+        <h3
+          className="font-medium text-sm leading-5 text-grey"
+        >
+          +20
+        </h3>
+      </div>
+      <div>
+        <svg
+          className="mx-0.5"
+          fill="none"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.862 6.19537L7.99998 9.05737L5.13798 6.19537L4.19531 7.13804L7.99998 10.9427L11.8046 7.13804L10.862 6.19537Z"
+            fill="#8D9A9E"
+          />
+        </svg>
+      </div>
+      <div
+        className=" mt-0.5 bg-grey-shd6 w-0.5 h-4"
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`Label component should render (success) Label when we apply success 1`] = `
+Array [
+  <label
+    className="block my-2 text-xs  text-dark-grey"
+  />,
+  <div
+    className="
+          flex items-center w-full py-xs relative rounded-md text-sm text-grey-shd1
+          px-m  
+            
+          border border-success focus:border-success
+          false
+          
+          
+          "
+  >
+    <input
+      className="w-full focus:outline-none focus:placeholder-dark focus:text-dark disabled:opacity-50"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+    <svg
+      className="absolute right-10"
+      fill="none"
+      height="9"
+      viewBox="0 0 11 9"
+      width="11"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.66681 6.39061L1.47148 4.19527L0.528809 5.13794L3.66681 8.27594L10.1381 1.8046L9.19547 0.861938L3.66681 6.39061Z"
+        fill="#07B255"
+      />
+    </svg>
+  </div>,
+]
+`;

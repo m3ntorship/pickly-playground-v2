@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkbox component should render (default-unchecked) checkedbox when we apply nothing 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    data-testid="checkbox"
+    type="checkbox"
+  />
+  <div
+    className="cursor-pointer border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-500 ease-out rounded-sm 
+                    
+                    bg-white    
+                    w-6 h-6     
+                    "
+    onClick={[Function]}
+  >
+    <svg
+      fill="none"
+      height="w-4 h-4 "
+      viewBox="0 0 16 16"
+      width="w-4 h-4 "
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.66632 10.3907L4.47099 8.19539L3.52832 9.13806L6.66632 12.2761L13.1377 5.80473L12.195 4.86206L6.66632 10.3907Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`checkbox component should render (disabled) checkedbox when we apply disabled 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    data-testid="checkbox"
+    type="checkbox"
+  />
+  <div
+    className="cursor-pointer border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-500 ease-out rounded-sm 
+                    pointer-events-none opacity-25
+                    bg-white    
+                    w-6 h-6     
+                    "
+    onClick={[Function]}
+  >
+    <svg
+      fill="none"
+      height="w-4 h-4 "
+      viewBox="0 0 16 16"
+      width="w-4 h-4 "
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.66632 10.3907L4.47099 8.19539L3.52832 9.13806L6.66632 12.2761L13.1377 5.80473L12.195 4.86206L6.66632 10.3907Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`checkbox component should render (small) checkedbox when we apply small 1`] = `
+<div
+  className="relative"
+>
+  <input
+    className="w-0 h-0 opacity-0 absolute"
+    data-testid="checkbox"
+    type="checkbox"
+  />
+  <div
+    className="cursor-pointer border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-500 ease-out rounded-sm 
+                    
+                    bg-white    
+                    w-4 h-4     
+                    "
+    onClick={[Function]}
+  >
+    <svg
+      fill="none"
+      height="w-3 h-3 "
+      viewBox="0 0 16 16"
+      width="w-3 h-3 "
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.66632 10.3907L4.47099 8.19539L3.52832 9.13806L6.66632 12.2761L13.1377 5.80473L12.195 4.86206L6.66632 10.3907Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</div>
+`;
