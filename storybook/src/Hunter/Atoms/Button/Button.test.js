@@ -1,6 +1,8 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import Button from "./Button";
+import userEvent from "@testing-library/user-event";
+import { render } from "@testing-library/react";
+import renderer from "react-test-renderer";
 
 describe("Button component", () => {
   it("should render (primary-large) button when we apply nothing", () => {
@@ -46,5 +48,21 @@ describe("Button component", () => {
   it("should render (onlyicon)  button when we apply nothing", () => {
     const tree = renderer.create(<Button onlyicon />).toJSON();
     expect(tree).toMatchSnapshot();
+  });
+});
+
+describe("test button component", () => {
+  it("should be disabled (not active) ", () => {
+    const { getByRole } = render(<Button disabled />);
+    const button = getByRole("button");
+    expect(button).toBeDisabled();
+  });
+
+  it("should run a function when clicked", () => {
+    const mockFunction = jest.fn();
+    const { getByText } = render(<Button onClick={mockFunction} />);
+    const button = getByText("button");
+    userEvent.click(button);
+    expect(mockFunction).toHaveBeenCalled();
   });
 });

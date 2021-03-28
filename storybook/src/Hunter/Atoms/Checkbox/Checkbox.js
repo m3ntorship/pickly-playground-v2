@@ -10,7 +10,11 @@ const Checkbox = ({ size = "default", disabled = false }) => {
 
   return (
     <div className="relative">
-      <input type="checkbox" className="w-0 h-0 opacity-0 absolute" />
+      <input
+        type="checkbox"
+        data-testid="checkbox"
+        className="w-0 h-0 opacity-0 absolute"
+      />
       <div
         className={`cursor-pointer border border-grey-shd4 flex items-center justify-center hover:border-grey-shd1 transition-all duration-500 ease-out rounded-sm 
                     ${disabled ? "pointer-events-none opacity-25" : ""}

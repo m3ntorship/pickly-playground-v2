@@ -1,5 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import Radio from "./Radio";
 
 describe("Radio component", () => {
@@ -19,4 +21,19 @@ describe("Radio component", () => {
   //     const tree = renderer.create(<Radio  />).toJSON();
   //     expect(tree).toMatchSnapshot();
   // });
+});
+
+test("Radio checked or not", () => {
+  const { getByTestId } = render(<Radio />);
+  expect(getByTestId("Radio")).not.toBeChecked();
+});
+test("Radio checked after clicked", () => {
+  const { getByTestId } = render(<Radio />);
+  const Radio = getByTestId("Radio");
+  userEvent.click(Radio);
+  expect(Radio).toBeChecked();
+});
+test("Radio checked or not", () => {
+  const { getByTestId } = render(<Radio disabled />);
+  expect(getByTestId("Radio")).toBeDisabled();
 });
